@@ -25,7 +25,7 @@ namespace Tuto
         public Form1()
         {
             InitializeComponent();
-            loadSPK();
+            loadImage();
             this.controller = new Controller();
             this.listener = new LeapEventListener(this);
             controller.AddListener(listener);
@@ -121,8 +121,9 @@ namespace Tuto
             }
         }
 
-        private void loadSPK()
+        private void loadImage()
         {
+            //Comentari
             string rutaImagen = @"C:\Users\Alejandro\Documents\4to\NPI\Leap Motion\UNI.png"; // Reemplaza "nombreDeTuArchivo.jpg" con el nombre real de tu archivo de imagen.
             //string rutaImagen = @"C:\Users\Alejandro\Documents\4to\NPI\Leap Motion\MODELOETSIIT.skp"; // Reemplaza "nombreDeTuArchivo.jpg" con el nombre real de tu archivo de imagen.
 

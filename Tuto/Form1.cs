@@ -21,11 +21,12 @@ namespace Tuto
         private long currentTime;
         private long previousTime;
         private long timeChange;
+        private int waitUntilMoveCursor;
 
         public Form1()
         {
             InitializeComponent();
-            loadImage();
+            //loadImage();
             this.controller = new Controller();
             this.listener = new LeapEventListener(this);
             controller.AddListener(listener);
@@ -43,12 +44,14 @@ namespace Tuto
                         break;
                     case "onConnect":
                         //MessageBox.Show("Connected");
+                        connectHandler();
                         break;
                     case "onFrame":
 
                         //MessageBox.Show("Frame");
                         //SetCursorPos(1, 2);
-                        movingMouse(this.controller.Frame(), this.controller);
+                        detectGesture(this.controller.Frame());
+                        //movingMouse(this.controller.Frame(), this.controller);
                         break;
                 }
             }
@@ -58,8 +61,52 @@ namespace Tuto
             }
         }
 
+        private void detectGesture(Leap.Frame frame)
+        {
+
+            currentTime = frame.Timestamp;
+            timeChange = currentTime - previousTime;
+
+            GestureList gestures = frame.Gestures();
+            for(int i = 0; i < gestures.Count(); i++)
+            {
+                Gesture gesture = gestures[i];
+                switch (gesture.Type) {
+                    case Gesture.GestureType.TYPEKEYTAP:
+                        this.richTextBox1.AppendText("KeyTAP DETECTED" + Environment.NewLine);
+                        
+                        if(this.button1.BackColor == Color.Green)
+                        {
+                            this.richTextBox1.AppendText("BOTON PULSADO" + Environment.NewLine);
+                        }
+                        break;
+                    
+                }
+            }
+
+            if (gestures.Count() > 0)  
+            {
+                waitUntilMoveCursor = 35;
+            }
+
+            if(waitUntilMoveCursor == 0)
+            {
+                movingMouse(frame, this.controller);
+            } else
+            {
+                waitUntilMoveCursor -= 1;
+            }
+            
+        }
+
+        private void connectHandler()
+        {
+            this.controller.EnableGesture(Gesture.GestureType.TYPEKEYTAP);
+        }
+
         private void movingMouse(Leap.Frame frame, Controller controlador)
         {
+
 
             currentTime = frame.Timestamp;
             timeChange = currentTime - previousTime;
@@ -144,18 +191,24 @@ namespace Tuto
             }
         }
 
-        private void btnCargar_Click(object sender, MouseEventArgs e)
+
+        private void button1_MouseHover(object sender, EventArgs e)
         {
-            
-            
-            
+            this.button1.BackColor = Color.Green;
+        }
+
+        private void button1_MouseLeave(object sender, EventArgs e)
+        {
+            this.button1.BackColor = Color.Transparent;
         }
     }
 
     class MouseCursor
     {
         [DllImport("user32.dll")]
+
         private static extern bool SetCursorPos(int x, int y);
+     
 
         public static void MoveCursor(int x, int y)
         {

@@ -32,6 +32,7 @@ namespace Tuto
             controller.AddListener(listener);
         }
 
+
         delegate void LeapEventDelegate(string EventName);
         public void LeapEventNotification(string EventName)
         {
@@ -200,6 +201,11 @@ namespace Tuto
         private void button1_MouseLeave(object sender, EventArgs e)
         {
             this.button1.BackColor = Color.Transparent;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 

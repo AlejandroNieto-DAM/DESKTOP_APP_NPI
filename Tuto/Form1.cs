@@ -45,7 +45,7 @@ namespace Tuto
                         break;
                     case "onConnect":
                         //MessageBox.Show("Connected"); yhjprophtrhfofogioigjiogf
-
+                        //y esto funciona bien?
                         connectHandler();
                         break;
                     case "onFrame":

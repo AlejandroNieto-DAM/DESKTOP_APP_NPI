@@ -44,7 +44,8 @@ namespace Tuto
                         //MessageBox.Show("Initialize");
                         break;
                     case "onConnect":
-                        //MessageBox.Show("Connected");
+                        //MessageBox.Show("Connected"); yhjprophtrhfofogioigjiogf
+
                         connectHandler();
                         break;
                     case "onFrame":

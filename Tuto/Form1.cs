@@ -16,7 +16,7 @@ namespace Tuto
     public partial class Form1 : Form, ILeapEventDelegate
     {
 
-        private Controller controller; //fuck nieto
+        private Controller controller;
         private LeapEventListener listener;
         private long currentTime;
         private long previousTime;

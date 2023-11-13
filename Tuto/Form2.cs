@@ -80,7 +80,7 @@ namespace Tuto
         {
             Form1 f1 = new Form1 ();
             f1.Show();
-            this.Close();
+            this.Close();   //cerrar ventana para que la camara no siga abierta
         }
     }
 }

@@ -214,6 +214,13 @@ namespace Tuto
             f2.Show();
             this.Hide();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Home homeWindow = new Home();
+            homeWindow.Show();
+            this.Hide();
+        }
     }
 
     class MouseCursor

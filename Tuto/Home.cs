@@ -17,9 +17,7 @@ namespace Tuto
         public Home()
         {
             InitializeComponent();
-
-            
-
+        
             // Initialize the timer
             timer = new Timer();
             timer.Interval = 1000; // Set the interval in milliseconds (1000 ms = 1 second)
@@ -27,11 +25,63 @@ namespace Tuto
 
             // Start the timer
             timer.Start();
+
+            ApplyCommonStyleButton();
+            AdjustBackgroundPicture();
         }
+
+        private void AdjustBackgroundPicture()
+        {
+            try
+            {
+                this.BackgroundImage = Properties.Resources.Pantalla_Background;
+                this.BackgroundImageLayout = ImageLayout.Stretch;
+            }
+            catch (Exception ex)
+            {
+                this.BackColor = Color.FromArgb(27, 127, 121);
+                MessageBox.Show("Error al cargar la imagen de fondo: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void ApplyCommonStyleButton()
+        {
+            // TODO: this is not working
+            // Iterar sobre todos los controles en el formulario
+            foreach (Control control in tableLayoutOptions.Controls)
+            {
+                if (control is Button)
+                {
+                    Button boton = (Button)control;
+                    // Hacer algo con el botón, por ejemplo:
+                    // boton.BackColor = Color.FromArgb(255, 128, 0);
+                    // boton.ForeColor = Color.White;
+                    boton.Font = new Font("Arial", 20, FontStyle.Bold);
+
+                    // Verificar si el botón tiene una imagen
+                    if (boton.Image != null)
+                    {
+                        Image originalImage = boton.Image;
+                        // Especificar la nueva altura deseada
+                        int nuevaAltura = 50;  // Reemplaza con la altura deseada
+
+                        // Calcular la nueva proporción para mantener la relación de aspecto
+                        int nuevaAnchura = (int)((double)nuevaAltura / originalImage.Height * originalImage.Width);
+
+                        // Crear una nueva imagen con la altura ajustada
+                        Image nuevaImagen = new Bitmap(originalImage, new Size(nuevaAnchura, nuevaAltura));
+
+                        // Asignar la nueva imagen al botón
+                        boton.Image = nuevaImagen;
+                    }
+                }
+            }
+        }
+
         private void time_Tick(object sender, EventArgs e)
         {
             // Update the Label's text with the current time
-            hourLabel.Text = DateTime.Now.ToString("HH:mm:ss");
+            hourLabel.Text = DateTime.Now.ToString("HH:mm");
             dayLabel.Text = DateTime.Now.ToString("dd.MM.yy");
 
         }

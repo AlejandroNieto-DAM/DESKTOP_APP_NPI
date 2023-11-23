@@ -35,24 +35,25 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.button2 = new System.Windows.Forms.Button();
             this.buttonQR = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(139, 75);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Location = new System.Drawing.Point(174, 51);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(311, 692);
+            this.pictureBox2.Size = new System.Drawing.Size(207, 72);
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1010, 350);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(174, 397);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(365, 416);
+            this.button1.Size = new System.Drawing.Size(207, 155);
             this.button1.TabIndex = 1;
             this.button1.Text = "LOAD";
             this.button1.UseVisualStyleBackColor = true;
@@ -61,54 +62,66 @@
             // 
             // richTextBox2
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(508, 75);
-            this.richTextBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.richTextBox2.Location = new System.Drawing.Point(174, 148);
+            this.richTextBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(470, 690);
+            this.richTextBox2.Size = new System.Drawing.Size(206, 109);
             this.richTextBox2.TabIndex = 3;
             this.richTextBox2.Text = "";
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(1010, 75);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.richTextBox1.Location = new System.Drawing.Point(174, 275);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(364, 226);
+            this.richTextBox1.Size = new System.Drawing.Size(206, 112);
             this.richTextBox1.TabIndex = 4;
             this.richTextBox1.Text = "";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(1412, 84);
+            this.button2.Location = new System.Drawing.Point(33, 338);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(189, 187);
+            this.button2.Size = new System.Drawing.Size(108, 123);
             this.button2.TabIndex = 5;
             this.button2.Text = "QR Reading";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // buttonQR
             // 
-            this.buttonQR.Location = new System.Drawing.Point(51, 141);
+            this.buttonQR.Location = new System.Drawing.Point(57, 175);
+            this.buttonQR.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.buttonQR.Name = "buttonQR";
-            this.buttonQR.Size = new System.Drawing.Size(75, 23);
+            this.buttonQR.Size = new System.Drawing.Size(84, 29);
             this.buttonQR.TabIndex = 6;
             this.buttonQR.Text = "QR";
             this.buttonQR.UseVisualStyleBackColor = true;
             this.buttonQR.Click += new System.EventHandler(this.buttonQR_Click);
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(497, 148);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(115, 109);
+            this.button3.TabIndex = 7;
+            this.button3.Text = "Horario";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1710, 844);
+            this.ClientSize = new System.Drawing.Size(786, 1410);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.buttonQR);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox2);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -128,6 +141,7 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button buttonQR;
+        private System.Windows.Forms.Button button3;
     }
 }
 

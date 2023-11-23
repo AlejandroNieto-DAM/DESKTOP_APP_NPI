@@ -221,6 +221,13 @@ namespace Tuto
             homeWindow.Show();
             this.Hide();
         }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            Horario horarioV = new Horario();
+            horarioV.Show();
+            this.Dispose();
+        }
     }
 
     class MouseCursor

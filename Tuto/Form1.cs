@@ -226,7 +226,7 @@ namespace Tuto
         {
             Horario horarioV = new Horario();
             horarioV.Show();
-            this.Dispose();
+            this.Hide();
         }
     }
 

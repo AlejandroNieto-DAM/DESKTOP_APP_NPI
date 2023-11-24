@@ -99,21 +99,11 @@
             this.buttonQR.UseVisualStyleBackColor = true;
             this.buttonQR.Click += new System.EventHandler(this.buttonQR_Click);
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(497, 148);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(115, 109);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Horario";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click_1);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(786, 1410);
+            this.ClientSize = new System.Drawing.Size(1710, 844);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.buttonQR);
             this.Controls.Add(this.button2);

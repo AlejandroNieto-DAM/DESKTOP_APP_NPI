@@ -106,6 +106,18 @@
     <Compile Include="Horario.Designer.cs">
       <DependentUpon>Horario.cs</DependentUpon>
     </Compile>
+    <Compile Include="NewHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewHome.Designer.cs">
+      <DependentUpon>NewHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewSchedule.Designer.cs">
+      <DependentUpon>NewSchedule.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -119,6 +131,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Horario.resx">
       <DependentUpon>Horario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewHome.resx">
+      <DependentUpon>NewHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewSchedule.resx">
+      <DependentUpon>NewSchedule.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

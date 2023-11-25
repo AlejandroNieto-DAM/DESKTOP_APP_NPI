@@ -26,12 +26,19 @@ namespace Tuto
         public Form1()
         {
             InitializeComponent();
-            //loadImage();
+         
             this.controller = new Controller();
             this.listener = new LeapEventListener(this);
             controller.AddListener(listener);
-        }
 
+            //var bitmap = (Bitmap)Image.FromFile(@"C:\Users\Alejandro\Downloads\cursor1.png");
+            //this.Cursor = CreateCursor(bitmap, new Size(bitmap.Width/10, bitmap.Height/10));
+        }
+        public Cursor CreateCursor(Bitmap bitmap, Size size)
+        {
+            bitmap = new Bitmap(bitmap, size);
+            return new Cursor(bitmap.GetHicon());
+        }
 
         delegate void LeapEventDelegate(string EventName);
         public void LeapEventNotification(string EventName)
@@ -67,7 +74,7 @@ namespace Tuto
 
             currentTime = frame.Timestamp;
             timeChange = currentTime - previousTime;
-
+            //this.richTextBox1.AppendText("KeyTAP DETECTED" + Environment.NewLine);
             GestureList gestures = frame.Gestures();
             for(int i = 0; i < gestures.Count(); i++)
             {
@@ -169,28 +176,6 @@ namespace Tuto
             }
         }
 
-        private void loadImage()
-        {
-            //Comentari
-            string rutaImagen = @"C:\Users\Alejandro\Documents\4to\NPI\Leap Motion\UNI.png"; // Reemplaza "nombreDeTuArchivo.jpg" con el nombre real de tu archivo de imagen.
-            //string rutaImagen = @"C:\Users\Alejandro\Documents\4to\NPI\Leap Motion\MODELOETSIIT.skp"; // Reemplaza "nombreDeTuArchivo.jpg" con el nombre real de tu archivo de imagen.
-
-            try
-            {
-                // Carga la imagen desde la ruta especificada
-                Image imagen = Image.FromFile(rutaImagen);
-
-                // Asigna la imagen al PictureBox pictureBox2
-                pictureBox2.Image = imagen;
-
-                MessageBox.Show("Imagen cargada correctamente.");
-            }
-            catch (Exception ex)
-            {
-                // Manejo de errores
-                MessageBox.Show("Error al cargar la imagen: " + ex.Message);
-            }
-        }
 
 
         private void button1_MouseHover(object sender, EventArgs e)
@@ -224,9 +209,7 @@ namespace Tuto
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-            Horario horarioV = new Horario();
-            horarioV.Show();
-            this.Hide();
+            this.richTextBox1.AppendText("Hemos clickado" + Environment.NewLine);
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -241,6 +224,19 @@ namespace Tuto
             NewHome horarioV = new NewHome();
             horarioV.Show();
             this.Hide();
+        }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyValue == (char)Keys.S)
+            {
+                this.richTextBox2.AppendText("Pulsado S" + Environment.NewLine);
+                NewHome.LeftClick(Cursor.Position.X, Cursor.Position.Y);
+            }
+            else if (e.KeyCode == Keys.L)
+            {
+                //Some Other Code
+            }
         }
     }
 

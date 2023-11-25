@@ -52,12 +52,12 @@
             this.label1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(345, 58);
+            this.label1.Size = new System.Drawing.Size(460, 71);
             this.label1.TabIndex = 0;
             this.label1.Text = "Welcome!! ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -69,10 +69,10 @@
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label5, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(20, 62);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(27, 77);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(5);
+            this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.tableLayoutPanel1.RowCount = 6;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
@@ -80,7 +80,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(305, 299);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(406, 368);
             this.tableLayoutPanel1.TabIndex = 2;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
@@ -88,9 +88,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Location = new System.Drawing.Point(9, 6);
+            this.label4.Location = new System.Drawing.Point(12, 7);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(140, 47);
+            this.label4.Size = new System.Drawing.Size(186, 58);
             this.label4.TabIndex = 0;
             this.label4.Text = "8:30";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -99,9 +100,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Location = new System.Drawing.Point(156, 6);
+            this.label5.Location = new System.Drawing.Point(207, 7);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(140, 47);
+            this.label5.Size = new System.Drawing.Size(187, 58);
             this.label5.TabIndex = 1;
             this.label5.Text = "Computer Vision";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -111,11 +113,11 @@
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.label3.Dock = System.Windows.Forms.DockStyle.Top;
             this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label3.Location = new System.Drawing.Point(20, 20);
-            this.label3.Margin = new System.Windows.Forms.Padding(30);
+            this.label3.Location = new System.Drawing.Point(27, 25);
+            this.label3.Margin = new System.Windows.Forms.Padding(40, 37, 40, 37);
             this.label3.Name = "label3";
-            this.label3.Padding = new System.Windows.Forms.Padding(10);
-            this.label3.Size = new System.Drawing.Size(305, 42);
+            this.label3.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
+            this.label3.Size = new System.Drawing.Size(406, 52);
             this.label3.TabIndex = 1;
             this.label3.Text = "Today";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -128,11 +130,11 @@
             this.panel6.Controls.Add(this.tableLayoutPanel1);
             this.panel6.Controls.Add(this.label3);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel6.Location = new System.Drawing.Point(0, 135);
-            this.panel6.Margin = new System.Windows.Forms.Padding(20);
+            this.panel6.Location = new System.Drawing.Point(0, 166);
+            this.panel6.Margin = new System.Windows.Forms.Padding(27, 25, 27, 25);
             this.panel6.Name = "panel6";
-            this.panel6.Padding = new System.Windows.Forms.Padding(20);
-            this.panel6.Size = new System.Drawing.Size(345, 453);
+            this.panel6.Padding = new System.Windows.Forms.Padding(27, 25, 27, 25);
+            this.panel6.Size = new System.Drawing.Size(460, 558);
             this.panel6.TabIndex = 3;
             // 
             // panel2
@@ -143,20 +145,20 @@
             this.panel2.Controls.Add(this.label6);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Enabled = false;
-            this.panel2.Location = new System.Drawing.Point(20, 361);
-            this.panel2.Margin = new System.Windows.Forms.Padding(10);
+            this.panel2.Location = new System.Drawing.Point(27, 445);
+            this.panel2.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(305, 34);
+            this.panel2.Size = new System.Drawing.Size(406, 42);
             this.panel2.TabIndex = 3;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Right;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(238, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Location = new System.Drawing.Point(317, 0);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(67, 34);
+            this.pictureBox2.Size = new System.Drawing.Size(89, 42);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
@@ -166,10 +168,10 @@
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(121, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(161, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(94, 34);
+            this.pictureBox1.Size = new System.Drawing.Size(125, 42);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -178,9 +180,8 @@
             // 
             this.label6.Dock = System.Windows.Forms.DockStyle.Left;
             this.label6.Location = new System.Drawing.Point(0, 0);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(121, 34);
+            this.label6.Size = new System.Drawing.Size(161, 42);
             this.label6.TabIndex = 0;
             this.label6.Text = "Menu";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -189,10 +190,9 @@
             // 
             this.label2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label2.Location = new System.Drawing.Point(0, 58);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(0, 71);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(345, 31);
+            this.label2.Size = new System.Drawing.Size(460, 38);
             this.label2.TabIndex = 4;
             this.label2.Text = "Your next class starts in:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -200,13 +200,13 @@
             // 
             // Horario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(345, 588);
+            this.ClientSize = new System.Drawing.Size(460, 724);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Horario";
             this.Text = "Horario";
             this.ResizeEnd += new System.EventHandler(this.Horario_ResizeEnd);

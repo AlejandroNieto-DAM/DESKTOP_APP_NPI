@@ -43,19 +43,17 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(155, 41);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(116, 33);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(184, 58);
+            this.pictureBox2.Size = new System.Drawing.Size(138, 47);
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(155, 318);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(116, 258);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(184, 124);
+            this.button1.Size = new System.Drawing.Size(138, 101);
             this.button1.TabIndex = 1;
             this.button1.Text = "LOAD";
             this.button1.UseVisualStyleBackColor = true;
@@ -64,38 +62,37 @@
             // 
             // richTextBox2
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(155, 118);
-            this.richTextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.richTextBox2.Location = new System.Drawing.Point(116, 96);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(184, 88);
+            this.richTextBox2.Size = new System.Drawing.Size(139, 72);
             this.richTextBox2.TabIndex = 3;
             this.richTextBox2.Text = "";
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(155, 220);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.richTextBox1.Location = new System.Drawing.Point(116, 179);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(184, 90);
+            this.richTextBox1.Size = new System.Drawing.Size(139, 74);
             this.richTextBox1.TabIndex = 4;
             this.richTextBox1.Text = "";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(29, 270);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Location = new System.Drawing.Point(22, 220);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(96, 98);
+            this.button2.Size = new System.Drawing.Size(72, 80);
             this.button2.TabIndex = 5;
-            this.button2.Text = "QR Reading";
+            this.button2.Text = "Test Menu";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // buttonQR
             // 
-            this.buttonQR.Location = new System.Drawing.Point(51, 140);
-            this.buttonQR.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.buttonQR.Location = new System.Drawing.Point(38, 114);
+            this.buttonQR.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.buttonQR.Name = "buttonQR";
-            this.buttonQR.Size = new System.Drawing.Size(75, 23);
+            this.buttonQR.Size = new System.Drawing.Size(56, 19);
             this.buttonQR.TabIndex = 6;
             this.buttonQR.Text = "QR";
             this.buttonQR.UseVisualStyleBackColor = true;
@@ -103,24 +100,35 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(20, 29);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button3.Location = new System.Drawing.Point(15, 23);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(106, 50);
+            this.button3.Size = new System.Drawing.Size(79, 40);
             this.button3.TabIndex = 0;
             this.button3.Text = "Principal";
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(40, 446);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button4.Location = new System.Drawing.Point(30, 362);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(99, 50);
+            this.button4.Size = new System.Drawing.Size(74, 40);
             this.button4.TabIndex = 7;
             this.button4.Text = "Horario";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button3_Click_1);
+            this.button4.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(22, 159);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 8;
+            this.button5.Text = "Test";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button5
             // 
@@ -134,9 +142,9 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1520, 675);
+            this.ClientSize = new System.Drawing.Size(1140, 549);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -146,12 +154,12 @@
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 

@@ -83,6 +83,36 @@ namespace Tuto.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dropDownTrans {
+            get {
+                object obj = ResourceManager.GetObject("dropDownTrans", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dropRight {
+            get {
+                object obj = ResourceManager.GetObject("dropRight", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dropRightTrans {
+            get {
+                object obj = ResourceManager.GetObject("dropRightTrans", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap maps_icon {
             get {
                 object obj = ResourceManager.GetObject("maps_icon", resourceCulture);
@@ -106,6 +136,16 @@ namespace Tuto.Properties {
         internal static System.Drawing.Bitmap Pantalla_Background {
             get {
                 object obj = ResourceManager.GetObject("Pantalla_Background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap QR_icon {
+            get {
+                object obj = ResourceManager.GetObject("QR_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

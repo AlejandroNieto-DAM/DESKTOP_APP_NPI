@@ -50,16 +50,16 @@ namespace Tuto
                 dispositivo.Items.Add(filterInfo.Name);
             dispositivo.SelectedIndex = 0;
 
-
+            captureDevice = new VideoCaptureDevice(filterInfoCollection[dispositivo.SelectedIndex].MonikerString);
+            captureDevice.NewFrame += CaptureDevice_NewFrame;
+            captureDevice.Start();
+            timer1.Start();
 
         }
 
         private void botonStart_Click(object sender, EventArgs e)
         {
-            captureDevice = new VideoCaptureDevice(filterInfoCollection[dispositivo.SelectedIndex].MonikerString);
-            captureDevice.NewFrame += CaptureDevice_NewFrame;
-            captureDevice.Start();
-            timer1.Start();
+            
         }
 
         private void CaptureDevice_NewFrame (object sender, NewFrameEventArgs eventArgs)

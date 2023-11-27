@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.botonStart = new System.Windows.Forms.Button();
             this.txtQRcode = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -38,11 +39,11 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dispositivo = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dayLabel = new System.Windows.Forms.Label();
             this.dayLabelTable = new System.Windows.Forms.TableLayoutPanel();
@@ -59,7 +60,7 @@
             this.botonStart.BackColor = System.Drawing.Color.Snow;
             this.botonStart.Font = new System.Drawing.Font("Yu Gothic UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.botonStart.Location = new System.Drawing.Point(137, 678);
-            this.botonStart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.botonStart.Margin = new System.Windows.Forms.Padding(2);
             this.botonStart.Name = "botonStart";
             this.botonStart.Size = new System.Drawing.Size(56, 19);
             this.botonStart.TabIndex = 0;
@@ -70,7 +71,7 @@
             // txtQRcode
             // 
             this.txtQRcode.Location = new System.Drawing.Point(353, 754);
-            this.txtQRcode.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtQRcode.Margin = new System.Windows.Forms.Padding(2);
             this.txtQRcode.Multiline = true;
             this.txtQRcode.Name = "txtQRcode";
             this.txtQRcode.Size = new System.Drawing.Size(69, 63);
@@ -85,7 +86,7 @@
             // 
             this.buttonExit.BackColor = System.Drawing.Color.Snow;
             this.buttonExit.Location = new System.Drawing.Point(24, 817);
-            this.buttonExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonExit.Margin = new System.Windows.Forms.Padding(2);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(56, 19);
             this.buttonExit.TabIndex = 5;
@@ -100,7 +101,7 @@
             this.hourLabelTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.hourLabelTable.Controls.Add(this.hourLabel, 0, 0);
             this.hourLabelTable.Location = new System.Drawing.Point(420, 1);
-            this.hourLabelTable.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hourLabelTable.Margin = new System.Windows.Forms.Padding(2);
             this.hourLabelTable.Name = "hourLabelTable";
             this.hourLabelTable.RowCount = 1;
             this.hourLabelTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -126,7 +127,7 @@
             "ES",
             "EN"});
             this.comboBox1.Location = new System.Drawing.Point(465, 811);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(36, 25);
             this.comboBox1.TabIndex = 9;
@@ -137,7 +138,7 @@
             this.dispositivo.BackColor = System.Drawing.Color.Snow;
             this.dispositivo.FormattingEnabled = true;
             this.dispositivo.Location = new System.Drawing.Point(101, 676);
-            this.dispositivo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dispositivo.Margin = new System.Windows.Forms.Padding(2);
             this.dispositivo.Name = "dispositivo";
             this.dispositivo.Size = new System.Drawing.Size(32, 21);
             this.dispositivo.TabIndex = 11;
@@ -150,11 +151,30 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Location = new System.Drawing.Point(55, 102);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(418, 459);
             this.panel1.TabIndex = 12;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(269, 323);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(74, 65);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(254, 265);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(114, 55);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Do not have the UGR App?";
             // 
             // label1
             // 
@@ -167,14 +187,16 @@
     "rofile!";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // pictureBox2
             // 
-            this.label2.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(254, 265);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(114, 55);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Do not have the UGR App?";
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(147, 31);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(141, 202);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
             // label3
             // 
@@ -186,27 +208,6 @@
             this.label3.TabIndex = 13;
             this.label3.Text = "Scan your QR code here";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Tuto.Properties.Resources.maps_icon;
-            this.pictureBox3.Location = new System.Drawing.Point(269, 323);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(74, 65);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Tuto.Properties.Resources.QR_icon;
-            this.pictureBox2.Location = new System.Drawing.Point(147, 31);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(141, 202);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -253,7 +254,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.BackgroundImage = global::Tuto.Properties.Resources.Pantalla_Background;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(524, 857);
             this.Controls.Add(this.label3);
@@ -266,7 +267,8 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtQRcode);
             this.Controls.Add(this.botonStart);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QR Code";

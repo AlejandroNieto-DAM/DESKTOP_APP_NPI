@@ -13,6 +13,10 @@ namespace Tuto
 {
     public partial class NewHome : Form
     {
+
+        public static String userLogged = "";
+        public static int ScreenHeight = 1920, ScreenWidth = 1440, FormHeight = 960, FormWidth = 540;
+
         [DllImport("user32.dll")]
         static extern void mouse_event(int dwFlags, int dx, int dy,
                       int dwData, int dwExtraInfo);
@@ -39,7 +43,7 @@ namespace Tuto
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 
-        private static extern IntPtr CreateRoundRectRgn
+        public static extern IntPtr CreateRoundRectRgn
         (
             int nLeftRect,
             int nTopRect,
@@ -53,11 +57,26 @@ namespace Tuto
         {
             InitializeComponent();
 
-            int ScreenHeight = 1920;
-            int ScreenWidth = 1440;
-
-            int FormHeight = 960;
-            int FormWidth = 540;
+            if (Language.SelectedLanguage == 1)
+            {
+                this.label3.Text = "Bienvenido! Escoge una opción entre las siguientes";
+                this.label5.Text = "Mi horario personal";
+                this.label6.Text = "Menu del comedor";
+                this.label7.Text = "Informacion del profesorado";
+                this.label8.Text = "Peticiones administrativas";
+                this.label4.Text = "Localizaciones";
+                this.label9.Text = "Para ir hacia atrás usa el gesto de pasar página hacia atrás";
+            }
+            else if (Language.SelectedLanguage == 2)
+            {
+                this.label3.Text = "Welcome! Select an option of the following";
+                this.label5.Text = "My personal horario";
+                this.label6.Text = "Canteen menu";
+                this.label7.Text = "Teacher information";
+                this.label8.Text = "Administrative petitions";
+                this.label4.Text = "Locations";
+                this.label9.Text = "To go back use the page back gesture";
+            }
 
 
             this.label1.Font = new Font("Yu Gothic UI", this.label1.Font.Size + (ScreenHeight / FormHeight), FontStyle.Bold);
@@ -137,7 +156,6 @@ namespace Tuto
             this.tableLayoutPanel3.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, tableLayoutPanel3.Width,
             tableLayoutPanel3.Height, 20, 20));
 
-            this.Refresh();
         }
 
         private void NewHome_Resize(object sender, EventArgs e)

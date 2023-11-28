@@ -160,7 +160,7 @@
             this.label5.Size = new System.Drawing.Size(141, 46);
             this.label5.TabIndex = 1;
             this.label5.Text = "My personal\r\nHorario\r\n";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label5.MouseHover += new System.EventHandler(this.label5_MouseHover);
             // 
             // pictureBox1
@@ -331,7 +331,7 @@
             this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(10, 10);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(186, 95);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

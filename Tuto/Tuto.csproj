@@ -106,6 +106,12 @@
     <Compile Include="Horario.Designer.cs">
       <DependentUpon>Horario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Language.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Language.Designer.cs">
+      <DependentUpon>Language.cs</DependentUpon>
+    </Compile>
     <Compile Include="NewHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Horario.resx">
       <DependentUpon>Horario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Language.resx">
+      <DependentUpon>Language.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewHome.resx">
       <DependentUpon>NewHome.cs</DependentUpon>

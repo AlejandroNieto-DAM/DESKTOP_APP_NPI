@@ -123,11 +123,11 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(382, 140);
+            this.button5.Location = new System.Drawing.Point(30, 422);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 188);
+            this.button5.Size = new System.Drawing.Size(75, 24);
             this.button5.TabIndex = 8;
-            this.button5.Text = "button5";
+            this.button5.Text = "Language";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 

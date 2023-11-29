@@ -38,6 +38,22 @@ namespace Tuto
             // Start the timer
             timer.Start();
 
+            if (Language.SelectedLanguage == 1)
+            {
+                this.label1.Text = "Para acceder necesitas tu código QR personal. \r\nPuedes encontrarlo en tu App de la UGR\r\n";
+                this.label3.Text = "¡Escanea tu código QR aquí!";
+                this.label2.Text = "Para ir hacia atrás usa el gesto de pasar página hacia atrás";
+
+
+            }
+            else if (Language.SelectedLanguage == 2)
+            {
+                this.label1.Text = "To log in you need your personal UGR QR code. \r\nYou can find it in your UGR App profile!\r\n";
+                this.label3.Text = "Scan your QR code here!";
+                this.label3.Text = "To go back use the page back gesture";
+
+
+            }
 
         }
 

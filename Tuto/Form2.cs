@@ -37,6 +37,8 @@ namespace Tuto
 
             // Start the timer
             timer.Start();
+
+
         }
 
         FilterInfoCollection filterInfoCollection;

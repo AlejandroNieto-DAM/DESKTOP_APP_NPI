@@ -148,6 +148,7 @@
             this.panel2.Padding = new System.Windows.Forms.Padding(10);
             this.panel2.Size = new System.Drawing.Size(161, 179);
             this.panel2.TabIndex = 4;
+            this.panel2.Click += new System.EventHandler(this.panel2_Click);
             this.panel2.MouseLeave += new System.EventHandler(this.panel2_MouseLeave);
             this.panel2.MouseHover += new System.EventHandler(this.panel2_MouseHover);
             // 
@@ -161,6 +162,7 @@
             this.label5.TabIndex = 1;
             this.label5.Text = "My personal\r\nHorario\r\n";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label5.Click += new System.EventHandler(this.panel2_Click);
             this.label5.MouseHover += new System.EventHandler(this.label5_MouseHover);
             // 
             // pictureBox1
@@ -173,6 +175,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.panel2_Click);
             this.pictureBox1.MouseHover += new System.EventHandler(this.pictureBox1_MouseHover);
             // 
             // panel3
@@ -377,8 +380,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "NewHome";
             this.Text = "NewHome";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Resize += new System.EventHandler(this.NewHome_Resize);
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);

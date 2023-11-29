@@ -257,6 +257,13 @@ namespace Tuto
             this.tableLayoutPanel3.BackColor = Color.FromArgb(236, 204, 69);
         }
 
+        private void panel2_Click(object sender, EventArgs e)
+        {
+            Form2 qrForm = new Form2();
+            qrForm.Show();
+            this.Hide();
+        }
+
         private void tableLayoutPanel3_MouseLeave(object sender, EventArgs e)
         {
             this.tableLayoutPanel3.BackColor = Color.Snow;

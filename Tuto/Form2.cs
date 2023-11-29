@@ -95,6 +95,12 @@ namespace Tuto
                     {
                         captureDevice.Stop();
                     }
+
+                    NewHome.userLogged = result.ToString().Split('@')[0];
+                    NewSchedule schedule = new NewSchedule();
+                    schedule.Show();
+                    this.Hide();
+
                 }
             }
         }

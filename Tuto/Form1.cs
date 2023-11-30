@@ -214,7 +214,7 @@ namespace Tuto
 
         private void button5_Click(object sender, EventArgs e)
         {
-            NewSchedule horarioV = new NewSchedule();
+            Language horarioV = new Language();
             horarioV.Show();
             this.Hide();
         }
@@ -237,6 +237,13 @@ namespace Tuto
             {
                 //Some Other Code
             }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            NewSchedule horarioV = new NewSchedule();
+            horarioV.Show();
+            this.Hide();
         }
     }
 

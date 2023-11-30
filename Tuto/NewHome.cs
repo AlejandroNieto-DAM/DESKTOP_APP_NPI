@@ -279,6 +279,13 @@ namespace Tuto
             this.tableLayoutPanel3.BackColor = Color.FromArgb(236, 204, 69);
         }
 
+        private void pictureBox2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+
+
         private void pictureBox4_Click(object sender, EventArgs e)
         {
 

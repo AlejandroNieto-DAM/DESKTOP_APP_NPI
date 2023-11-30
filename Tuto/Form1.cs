@@ -245,6 +245,13 @@ namespace Tuto
             horarioV.Show();
             this.Hide();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            MenuComedor menuCom = new MenuComedor();
+            menuCom.Show();
+            this.Hide();
+        }
     }
 
     class MouseCursor

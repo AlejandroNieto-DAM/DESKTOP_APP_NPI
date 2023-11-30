@@ -1,4 +1,7 @@
-﻿namespace Tuto
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace Tuto
 {
     partial class MenuComedor
     {
@@ -58,6 +61,10 @@
             this.Collapse5 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.MenuPanel1.SuspendLayout();
             this.week1Panel.SuspendLayout();
             this.MenuPanel0.SuspendLayout();
@@ -66,6 +73,7 @@
             this.MenuPanel4.SuspendLayout();
             this.MenuPanel5.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // MenuPanel1
@@ -112,7 +120,7 @@
             this.Menu1.Size = new System.Drawing.Size(199, 112);
             this.Menu1.TabIndex = 4;
             this.Menu1.Text = "label1";
-            this.Menu1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Menu1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Menu1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // Collapse1
@@ -153,10 +161,10 @@
             this.week1Panel.Controls.Add(this.MenuPanel5);
             this.week1Panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.week1Panel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.week1Panel.Location = new System.Drawing.Point(208, 100);
+            this.week1Panel.Location = new System.Drawing.Point(208, 247);
             this.week1Panel.Margin = new System.Windows.Forms.Padding(0);
             this.week1Panel.Name = "week1Panel";
-            this.week1Panel.Size = new System.Drawing.Size(307, 510);
+            this.week1Panel.Size = new System.Drawing.Size(307, 615);
             this.week1Panel.TabIndex = 0;
             // 
             // week1
@@ -288,7 +296,7 @@
             this.Menu2.Size = new System.Drawing.Size(199, 112);
             this.Menu2.TabIndex = 4;
             this.Menu2.Text = "label1";
-            this.Menu2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Menu2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Collapse2
             // 
@@ -302,7 +310,7 @@
             this.Collapse2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Collapse2.Location = new System.Drawing.Point(0, 0);
             this.Collapse2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Collapse2.MinimumSize = new System.Drawing.Size(245, 30);
+            this.Collapse2.MaximumSize = new System.Drawing.Size(245, 30);
             this.Collapse2.Name = "Collapse2";
             this.Collapse2.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.Collapse2.Size = new System.Drawing.Size(245, 30);
@@ -354,7 +362,7 @@
             this.Menu3.Size = new System.Drawing.Size(199, 112);
             this.Menu3.TabIndex = 4;
             this.Menu3.Text = "label1";
-            this.Menu3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Menu3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Collapse3
             // 
@@ -388,7 +396,7 @@
             this.MenuPanel4.MaximumSize = new System.Drawing.Size(245, 194);
             this.MenuPanel4.MinimumSize = new System.Drawing.Size(245, 30);
             this.MenuPanel4.Name = "MenuPanel4";
-            this.MenuPanel4.Size = new System.Drawing.Size(245, 194);
+            this.MenuPanel4.Size = new System.Drawing.Size(245, 30);
             this.MenuPanel4.TabIndex = 8;
             // 
             // Preorder4
@@ -420,7 +428,8 @@
             this.Menu4.Size = new System.Drawing.Size(199, 112);
             this.Menu4.TabIndex = 4;
             this.Menu4.Text = "label3";
-            this.Menu4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Menu4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Menu4.Click += new System.EventHandler(this.Menu4_Click);
             // 
             // Collapse4
             // 
@@ -437,7 +446,7 @@
             this.Collapse4.MaximumSize = new System.Drawing.Size(245, 30);
             this.Collapse4.Name = "Collapse4";
             this.Collapse4.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.Collapse4.Size = new System.Drawing.Size(245, 15);
+            this.Collapse4.Size = new System.Drawing.Size(245, 30);
             this.Collapse4.TabIndex = 4;
             this.Collapse4.Text = "Friday";
             this.Collapse4.UseVisualStyleBackColor = false;
@@ -449,7 +458,7 @@
             this.MenuPanel5.Controls.Add(this.Preorder5);
             this.MenuPanel5.Controls.Add(this.Menu5);
             this.MenuPanel5.Controls.Add(this.Collapse5);
-            this.MenuPanel5.Location = new System.Drawing.Point(29, 410);
+            this.MenuPanel5.Location = new System.Drawing.Point(29, 214);
             this.MenuPanel5.Margin = new System.Windows.Forms.Padding(29, 2, 29, 2);
             this.MenuPanel5.MaximumSize = new System.Drawing.Size(245, 194);
             this.MenuPanel5.MinimumSize = new System.Drawing.Size(245, 30);
@@ -529,27 +538,75 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 208F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 184F));
-            this.tableLayoutPanel1.Controls.Add(this.week1Panel, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.week1Panel, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.button1, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 4);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 54.31937F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45.68063F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(699, 1040);
+            this.tableLayoutPanel1.RowCount = 6;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 187F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 81.78571F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.21428F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(699, 1055);
             this.tableLayoutPanel1.TabIndex = 2;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(211, 190);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(301, 54);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Bienvenid@";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(211, 893);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(301, 22);
+            this.panel1.TabIndex = 4;
+            // 
+            // button2
+            // 
+            this.button2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button2.Location = new System.Drawing.Point(226, 0);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 22);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.button3.Location = new System.Drawing.Point(0, 0);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 22);
+            this.button3.TabIndex = 1;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // MenuComedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::Tuto.Properties.Resources.Pantalla_Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(699, 1040);
+            this.ClientSize = new System.Drawing.Size(699, 1055);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
@@ -565,6 +622,7 @@
             this.MenuPanel4.ResumeLayout(false);
             this.MenuPanel5.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -601,5 +659,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer SlideTimer;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private Button button1;
+        private Panel panel1;
+        private Button button3;
+        private Button button2;
     }
 }

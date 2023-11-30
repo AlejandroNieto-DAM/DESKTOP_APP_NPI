@@ -23,25 +23,12 @@ namespace Tuto
         public Form2()
         {
             InitializeComponent();
-
+            /*
             this.WindowState = FormWindowState.Maximized;
             /*int screenWidth = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Width;
             int screenHeight = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Height;
             Resolution objFormResizer = new Resolution();
             objFormResizer.ResizeForm(this, screenHeight, screenWidth);*/
-
-            if (Language.SelectedLanguage == 1)
-            {
-                this.label1.Text = "Para acceder necesitas tu código QR personal. \r\nPuedes encontrarlo en tu App de la UGR\r\n";
-                this.label3.Text = "¡Escanea tu código QR aquí!";
-                
-            }
-            else if (Language.SelectedLanguage == 2)
-            {
-                this.label1.Text = "To log in you need your personal UGR QR code. \r\nYou can find it in your UGR App profile!\r\n";
-                this.label3.Text = "Scan your QR code here!";
-                
-            }
 
             // Initialize the timer
             timer = new Timer();
@@ -50,11 +37,23 @@ namespace Tuto
 
             // Start the timer
             timer.Start();
-            /*
-            this.panel1.Region = Region.FromHrgn(NewHome.CreateRoundRectRgn(0, 0, panel1.Width,
-            panel1.Height, 20, 20));
-            this.label3.Region = Region.FromHrgn(NewHome.CreateRoundRectRgn(0, 0, label3.Width,
-            label3.Height, 20, 20));*/
+
+            if (Language.SelectedLanguage == 1)
+            {
+                this.label1.Text = "Para acceder necesitas tu código QR personal. \r\nPuedes encontrarlo en tu App de la UGR\r\n";
+                this.label3.Text = "¡Escanea tu código QR aquí!";
+                this.label2.Text = "Para ir hacia atrás usa el gesto de pasar página hacia atrás";
+
+
+            }
+            else if (Language.SelectedLanguage == 2)
+            {
+                this.label1.Text = "To log in you need your personal UGR QR code. \r\nYou can find it in your UGR App profile!\r\n";
+                this.label3.Text = "Scan your QR code here!";
+                this.label3.Text = "To go back use the page back gesture";
+
+
+            }
 
         }
 

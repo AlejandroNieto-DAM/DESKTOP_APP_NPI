@@ -59,11 +59,11 @@
             // txtQRcode
             // 
             this.txtQRcode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtQRcode.Location = new System.Drawing.Point(25, 15);
-            this.txtQRcode.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtQRcode.Location = new System.Drawing.Point(19, 12);
+            this.txtQRcode.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtQRcode.Multiline = true;
             this.txtQRcode.Name = "txtQRcode";
-            this.txtQRcode.Size = new System.Drawing.Size(91, 77);
+            this.txtQRcode.Size = new System.Drawing.Size(69, 63);
             this.txtQRcode.TabIndex = 3;
             this.txtQRcode.Visible = false;
             // 
@@ -78,9 +78,10 @@
             this.hourLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.hourLabel.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hourLabel.ForeColor = System.Drawing.Color.Snow;
-            this.hourLabel.Location = new System.Drawing.Point(103, 0);
+            this.hourLabel.Location = new System.Drawing.Point(77, 0);
+            this.hourLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.hourLabel.Name = "hourLabel";
-            this.hourLabel.Size = new System.Drawing.Size(94, 59);
+            this.hourLabel.Size = new System.Drawing.Size(71, 48);
             this.hourLabel.TabIndex = 0;
             this.hourLabel.Text = "label1";
             this.hourLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -91,10 +92,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dispositivo.BackColor = System.Drawing.Color.Snow;
             this.dispositivo.FormattingEnabled = true;
-            this.dispositivo.Location = new System.Drawing.Point(326, 891);
-            this.dispositivo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dispositivo.Location = new System.Drawing.Point(244, 724);
+            this.dispositivo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dispositivo.Name = "dispositivo";
-            this.dispositivo.Size = new System.Drawing.Size(60, 24);
+            this.dispositivo.Size = new System.Drawing.Size(46, 21);
             this.dispositivo.TabIndex = 11;
             // 
             // panel1
@@ -102,10 +103,10 @@
             this.panel1.BackColor = System.Drawing.Color.Snow;
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 2);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Location = new System.Drawing.Point(2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(515, 317);
+            this.panel1.Size = new System.Drawing.Size(387, 257);
             this.panel1.TabIndex = 12;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -115,9 +116,9 @@
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(515, 317);
+            this.pictureBox2.Size = new System.Drawing.Size(387, 257);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
@@ -129,10 +130,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.BackColor = System.Drawing.Color.Snow;
             this.label3.Font = new System.Drawing.Font("Yu Gothic UI", 18.2F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(4, 0);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(3, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(513, 91);
+            this.label3.Size = new System.Drawing.Size(385, 74);
             this.label3.TabIndex = 13;
             this.label3.Text = "Scan your QR code here";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -142,10 +142,10 @@
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Location = new System.Drawing.Point(61, 93);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(45, 76);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(398, 219);
+            this.pictureBox1.Size = new System.Drawing.Size(300, 178);
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
@@ -155,9 +155,10 @@
             this.dayLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dayLabel.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dayLabel.ForeColor = System.Drawing.Color.Snow;
-            this.dayLabel.Location = new System.Drawing.Point(3, 0);
+            this.dayLabel.Location = new System.Drawing.Point(2, 0);
+            this.dayLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.dayLabel.Name = "dayLabel";
-            this.dayLabel.Size = new System.Drawing.Size(94, 59);
+            this.dayLabel.Size = new System.Drawing.Size(71, 48);
             this.dayLabel.TabIndex = 0;
             this.dayLabel.Text = "label1";
             this.dayLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -170,12 +171,13 @@
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(2, 2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 74.70998F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.29002F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(521, 430);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(391, 350);
             this.tableLayoutPanel1.TabIndex = 14;
             // 
             // label1
@@ -183,10 +185,10 @@
             this.label1.BackColor = System.Drawing.Color.Snow;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(5, 321);
-            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label1.Location = new System.Drawing.Point(4, 261);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(511, 109);
+            this.label1.Size = new System.Drawing.Size(383, 89);
             this.label1.TabIndex = 1;
             this.label1.Text = "To log in you need your personal UGR QR code. \r\nYou can find it in your UGR App p" +
     "rofile!";
@@ -202,12 +204,13 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Controls.Add(this.label3, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.pictureBox1, 0, 1);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 439);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(2, 356);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29.01961F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70.98039F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(521, 314);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(391, 256);
             this.tableLayoutPanel2.TabIndex = 15;
             // 
             // tableLayoutPanel3
@@ -220,12 +223,13 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel2, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel1, 0, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(88, 130);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(66, 106);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57.80423F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.19577F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(527, 756);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(395, 614);
             this.tableLayoutPanel3.TabIndex = 16;
             // 
             // tableLayoutPanel4
@@ -235,11 +239,12 @@
             this.tableLayoutPanel4.ColumnCount = 1;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.Controls.Add(this.label2, 0, 0);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(2, 977);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(2, 794);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(696, 49);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(522, 40);
             this.tableLayoutPanel4.TabIndex = 17;
             // 
             // label2
@@ -248,9 +253,10 @@
             this.label2.BackColor = System.Drawing.Color.Gold;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 0);
+            this.label2.Location = new System.Drawing.Point(2, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(690, 49);
+            this.label2.Size = new System.Drawing.Size(518, 40);
             this.label2.TabIndex = 0;
             this.label2.Text = "Use the going back gesture for going back\r\n";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -264,21 +270,22 @@
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.Controls.Add(this.hourLabel, 1, 0);
             this.tableLayoutPanel5.Controls.Add(this.dayLabel, 0, 0);
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(487, 12);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(365, 10);
+            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(200, 59);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(150, 48);
             this.tableLayoutPanel5.TabIndex = 18;
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(699, 1055);
+            this.ClientSize = new System.Drawing.Size(524, 857);
             this.Controls.Add(this.tableLayoutPanel5);
             this.Controls.Add(this.tableLayoutPanel4);
             this.Controls.Add(this.tableLayoutPanel3);
@@ -286,7 +293,7 @@
             this.Controls.Add(this.txtQRcode);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QR Code";

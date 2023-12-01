@@ -16,30 +16,15 @@ namespace Tuto
 
         public static String userLogged = "";
         public static int ScreenHeight = 1920, ScreenWidth = 1440, FormHeight = 960, FormWidth = 540;
+        Form2 qrForm;
 
         [DllImport("user32.dll")]
-        static extern void mouse_event(int dwFlags, int dx, int dy,
-                      int dwData, int dwExtraInfo);
+        public static extern bool AnimateWindow(IntPtr hwnd, int dwTime, int dwFlags);
+        const int AW_ACTIVATE = 0X20000;
+        const int AW_SLIDE = 0X40000;
+        const int AW_HOR_POSITIVE = 0X1;
 
-        [Flags]
-        public enum MouseEventFlags
-        {
-            LEFTDOWN = 0x00000002,
-            LEFTUP = 0x00000004,
-            MIDDLEDOWN = 0x00000020,
-            MIDDLEUP = 0x00000040,
-            MOVE = 0x00000001,
-            ABSOLUTE = 0x00008000,
-            RIGHTDOWN = 0x00000008,
-            RIGHTUP = 0x00000010
-        }
-
-        public static void LeftClick(int x, int y)
-        {
-            Cursor.Position = new System.Drawing.Point(x, y);
-            mouse_event((int)(MouseEventFlags.LEFTDOWN), 0, 0, 0, 0);
-            mouse_event((int)(MouseEventFlags.LEFTUP), 0, 0, 0, 0);
-        }
+    
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 
@@ -56,6 +41,13 @@ namespace Tuto
         public NewHome()
         {
             InitializeComponent();
+
+            qrForm = new Form2();
+            qrForm.Visible = false;
+            qrForm.Show();
+
+            Language.FormStates = 1;
+            Language.actualForm = this;
 
             if (Language.SelectedLanguage == 1)
             {
@@ -259,9 +251,15 @@ namespace Tuto
 
         private void panel2_Click(object sender, EventArgs e)
         {
-            Form2 qrForm = new Form2();
-            qrForm.Show();
-            this.Hide();
+
+            Language.FormStates = 3;
+            this.Visible = false;
+            qrForm.Visible = true;
+        }
+
+        private void NewHome_Load(object sender, EventArgs e)
+        {
+            AnimateWindow(this.Handle, 1000, AW_ACTIVATE | AW_SLIDE | AW_HOR_POSITIVE);
         }
 
         private void tableLayoutPanel3_MouseLeave(object sender, EventArgs e)

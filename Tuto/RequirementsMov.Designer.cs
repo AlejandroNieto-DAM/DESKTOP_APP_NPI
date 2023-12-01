@@ -43,13 +43,14 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.Controls.Add(this.panelInformation, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 42);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 65);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 408);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1200, 627);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
             // panelInformation
@@ -57,9 +58,10 @@
             this.panelInformation.Controls.Add(this.listRequirements);
             this.panelInformation.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelInformation.ForeColor = System.Drawing.Color.Black;
-            this.panelInformation.Location = new System.Drawing.Point(123, 64);
+            this.panelInformation.Location = new System.Drawing.Point(184, 99);
+            this.panelInformation.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelInformation.Name = "panelInformation";
-            this.panelInformation.Size = new System.Drawing.Size(554, 279);
+            this.panelInformation.Size = new System.Drawing.Size(832, 428);
             this.panelInformation.TabIndex = 0;
             // 
             // listRequirements
@@ -67,18 +69,20 @@
             this.listRequirements.AutoSize = true;
             this.listRequirements.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listRequirements.Location = new System.Drawing.Point(0, 0);
+            this.listRequirements.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.listRequirements.Name = "listRequirements";
-            this.listRequirements.Size = new System.Drawing.Size(35, 13);
+            this.listRequirements.Size = new System.Drawing.Size(51, 20);
             this.listRequirements.TabIndex = 0;
             this.listRequirements.Text = "label1";
             this.listRequirements.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // RequirementsMov
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1200, 692);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "RequirementsMov";
             this.Text = "Form5";
             this.Load += new System.EventHandler(this.Form5_Load);

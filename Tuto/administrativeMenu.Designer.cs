@@ -69,12 +69,13 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 42);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 65);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 408);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(518, 839);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
             // tableLayoutPanel2
@@ -88,7 +89,8 @@
             this.tableLayoutPanel2.Controls.Add(this.buttonRequirements, 1, 6);
             this.tableLayoutPanel2.Controls.Add(this.labelTitle, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(83, 3);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(55, 5);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 8;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
@@ -99,16 +101,17 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(714, 402);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(459, 829);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
             // buttonOffers
             // 
             this.buttonOffers.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonOffers.Font = new System.Drawing.Font("Microsoft Sans Serif", 68.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonOffers.Location = new System.Drawing.Point(74, 63);
+            this.buttonOffers.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.buttonOffers.Location = new System.Drawing.Point(49, 128);
+            this.buttonOffers.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonOffers.Name = "buttonOffers";
-            this.buttonOffers.Size = new System.Drawing.Size(565, 74);
+            this.buttonOffers.Size = new System.Drawing.Size(359, 155);
             this.buttonOffers.TabIndex = 0;
             this.buttonOffers.Text = "Ofertas";
             this.buttonOffers.UseVisualStyleBackColor = true;
@@ -117,10 +120,11 @@
             // buttonCalendar
             // 
             this.buttonCalendar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonCalendar.Font = new System.Drawing.Font("Microsoft Sans Serif", 68.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCalendar.Location = new System.Drawing.Point(74, 163);
+            this.buttonCalendar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.buttonCalendar.Location = new System.Drawing.Point(49, 334);
+            this.buttonCalendar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonCalendar.Name = "buttonCalendar";
-            this.buttonCalendar.Size = new System.Drawing.Size(565, 74);
+            this.buttonCalendar.Size = new System.Drawing.Size(359, 155);
             this.buttonCalendar.TabIndex = 1;
             this.buttonCalendar.Text = "Calendario";
             this.buttonCalendar.UseVisualStyleBackColor = true;
@@ -128,10 +132,11 @@
             // buttonRequirements
             // 
             this.buttonRequirements.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonRequirements.Font = new System.Drawing.Font("Microsoft Sans Serif", 68.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonRequirements.Location = new System.Drawing.Point(74, 263);
+            this.buttonRequirements.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.buttonRequirements.Location = new System.Drawing.Point(49, 540);
+            this.buttonRequirements.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonRequirements.Name = "buttonRequirements";
-            this.buttonRequirements.Size = new System.Drawing.Size(565, 74);
+            this.buttonRequirements.Size = new System.Drawing.Size(359, 155);
             this.buttonRequirements.TabIndex = 2;
             this.buttonRequirements.Text = "Requisitos";
             this.buttonRequirements.UseVisualStyleBackColor = true;
@@ -141,11 +146,12 @@
             // 
             this.labelTitle.AutoSize = true;
             this.labelTitle.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 68.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.25F, System.Drawing.FontStyle.Bold);
             this.labelTitle.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelTitle.Location = new System.Drawing.Point(74, 0);
+            this.labelTitle.Location = new System.Drawing.Point(49, 0);
+            this.labelTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(565, 40);
+            this.labelTitle.Size = new System.Drawing.Size(359, 82);
             this.labelTitle.TabIndex = 3;
             this.labelTitle.Text = "Trámites";
             this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -157,19 +163,22 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(80, 408);
+            this.panel1.Size = new System.Drawing.Size(51, 839);
             this.panel1.TabIndex = 1;
             this.panel1.Click += new System.EventHandler(this.panel1_Click);
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // Form3
+            // administrativeMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = null;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = global::Tuto.Properties.Resources.Pantalla_Background;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(518, 904);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "Form3";
+            this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Name = "administrativeMenu";
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);
             this.Controls.SetChildIndex(this.tableLayoutPanel1, 0);

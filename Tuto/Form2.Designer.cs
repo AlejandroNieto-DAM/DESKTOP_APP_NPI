@@ -76,8 +76,8 @@
             // 
             this.hourLabel.BackColor = System.Drawing.Color.Transparent;
             this.hourLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.hourLabel.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hourLabel.ForeColor = System.Drawing.Color.Snow;
+            this.hourLabel.Font = new System.Drawing.Font("Yu Gothic UI", 15.25F, System.Drawing.FontStyle.Bold);
+            this.hourLabel.ForeColor = System.Drawing.Color.Black;
             this.hourLabel.Location = new System.Drawing.Point(77, 0);
             this.hourLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.hourLabel.Name = "hourLabel";
@@ -153,8 +153,8 @@
             // 
             this.dayLabel.BackColor = System.Drawing.Color.Transparent;
             this.dayLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dayLabel.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dayLabel.ForeColor = System.Drawing.Color.Snow;
+            this.dayLabel.Font = new System.Drawing.Font("Yu Gothic UI", 15.25F, System.Drawing.FontStyle.Bold);
+            this.dayLabel.ForeColor = System.Drawing.Color.Black;
             this.dayLabel.Location = new System.Drawing.Point(2, 0);
             this.dayLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.dayLabel.Name = "dayLabel";
@@ -285,7 +285,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(524, 857);
+            this.ClientSize = new System.Drawing.Size(524, 637);
             this.Controls.Add(this.tableLayoutPanel5);
             this.Controls.Add(this.tableLayoutPanel4);
             this.Controls.Add(this.tableLayoutPanel3);

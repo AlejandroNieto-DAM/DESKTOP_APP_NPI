@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -58,17 +59,18 @@ namespace Tuto
             InitializeComponent();
 
             Language.actualForm = this;
-            home = new NewHome();
-            home.Visible = false;
-            home.Show();
 
-            var bitmap = (Bitmap)Image.FromFile(@"C:\Users\Alejandro\Downloads\si.png");
-            this.Cursor = CreateCursor(bitmap, new Size(bitmap.Width, bitmap.Height));
+            
+
+            //var bitmap = (Bitmap)Image.FromFile(@"C:\Users\Alejandro\Downloads\si.png");
+            //this.Cursor = CreateCursor(bitmap, new Size(bitmap.Width, bitmap.Height));
+
+            //MouseCursor.MoveCursor(NewHome.ScreenWidth/2, NewHome.ScreenHeight/2);
 
             this.controller = new Controller();
             this.listener = new LeapEventListener(this);
             controller.AddListener(listener);
-
+            
 
             this.label1.Height = this.label1.Height * NewHome.ScreenHeight / NewHome.FormHeight;
             this.label1.Width = this.label1.Width * NewHome.ScreenWidth / NewHome.FormWidth;
@@ -81,19 +83,15 @@ namespace Tuto
             this.panel1.Margin = new Padding(this.panel1.Margin.Left * NewHome.ScreenWidth / NewHome.FormWidth, this.panel1.Margin.Top * NewHome.ScreenHeight / NewHome.FormHeight, this.panel1.Margin.Right * NewHome.ScreenWidth / NewHome.FormWidth, this.panel1.Margin.Bottom * NewHome.ScreenHeight / NewHome.FormHeight);
             this.panel1.Padding = new Padding(this.panel1.Padding.Left * NewHome.ScreenWidth / NewHome.FormWidth, this.panel1.Padding.Top * NewHome.ScreenHeight / NewHome.FormHeight, this.panel1.Padding.Right * NewHome.ScreenWidth / NewHome.FormWidth, this.panel1.Padding.Bottom * NewHome.ScreenHeight / NewHome.FormHeight);
             this.pictureBox1.Height = this.pictureBox1.Height * NewHome.ScreenHeight / NewHome.FormHeight;
-            this.label2.Height = this.label2.Height * NewHome.ScreenHeight / NewHome.FormHeight;
-            this.label2.Width = this.label2.Width * NewHome.ScreenWidth / NewHome.FormWidth;
-            this.label2.Font = new Font("Yu Gothic UI", this.label2.Font.Size + (NewHome.ScreenHeight / NewHome.FormHeight), FontStyle.Bold);
+            
 
             this.panel2.Height = this.panel2.Height * NewHome.ScreenHeight / NewHome.FormHeight;
             this.panel2.Width = this.panel2.Width * NewHome.ScreenWidth / NewHome.FormWidth;
             this.panel2.Margin = new Padding(this.panel2.Margin.Left * NewHome.ScreenWidth / NewHome.FormWidth, this.panel2.Margin.Top * NewHome.ScreenHeight / NewHome.FormHeight, this.panel2.Margin.Right * NewHome.ScreenWidth / NewHome.FormWidth, this.panel2.Margin.Bottom * NewHome.ScreenHeight / NewHome.FormHeight);
             this.panel2.Padding = new Padding(this.panel2.Padding.Left * NewHome.ScreenWidth / NewHome.FormWidth, this.panel2.Padding.Top * NewHome.ScreenHeight / NewHome.FormHeight, this.panel2.Padding.Right * NewHome.ScreenWidth / NewHome.FormWidth, this.panel2.Padding.Bottom * NewHome.ScreenHeight / NewHome.FormHeight);
             this.pictureBox2.Height = this.pictureBox2.Height * NewHome.ScreenHeight / NewHome.FormHeight;
-            this.label3.Height = this.label3.Height * NewHome.ScreenHeight / NewHome.FormHeight;
-            this.label3.Width = this.label3.Width * NewHome.ScreenWidth / NewHome.FormWidth;
-            this.label3.Font = new Font("Yu Gothic UI", this.label3.Font.Size + (NewHome.ScreenHeight / NewHome.FormHeight), FontStyle.Bold);
-
+          
+            
 
             this.panel1.Region = Region.FromHrgn(NewHome.CreateRoundRectRgn(0, 0, panel2.Width,
             panel1.Height, 20, 20));
@@ -103,27 +101,31 @@ namespace Tuto
 
         private void panel1_MouseHover(object sender, EventArgs e)
         {
-            this.panel1.BackColor = Color.FromArgb(236, 204, 69);
+            this.panel1.BackColor = Color.Snow;
         }
 
         private void panel1_MouseLeave(object sender, EventArgs e)
         {
-            this.panel1.BackColor = Color.Snow;
+            this.panel1.BackColor = Color.Transparent;
         }
 
         private void panel2_MouseHover(object sender, EventArgs e)
         {
-            this.panel2.BackColor = Color.FromArgb(236, 204, 69);
+            this.panel2.BackColor = Color.Snow;
         }
 
         private void panel2_MouseLeave(object sender, EventArgs e)
         {
-            this.panel2.BackColor = Color.Snow;
+            this.panel2.BackColor = Color.Transparent;
         }
 
         private void panel1_Click(object sender, EventArgs e)
         {
             Language.SelectedLanguage = 1;
+            Language.FormStates = 1;
+            NewHome home = new NewHome();
+            home.Show();
+            Language.actualForm = home;
             this.Visible = false;
             home.Visible = true;
         }
@@ -131,6 +133,10 @@ namespace Tuto
         private void panel2_Click(object sender, EventArgs e)
         {
             Language.SelectedLanguage = 2;
+            Language.FormStates = 1;
+            NewHome home = new NewHome();
+            home.Show();
+            Language.actualForm = home;
             this.Visible = false;
             home.Visible = true;
         }
@@ -180,45 +186,54 @@ namespace Tuto
             float new_radio = my_hand.SphereRadius;
 
 
+            GestureList gestures = frame.Gestures();
+            for (int i = 0; i < gestures.Count(); i++)
+            {
+                Gesture gesture = gestures[i];
+                switch (gesture.Type)
+                {
+                    case Gesture.GestureType.TYPEKEYTAP:
+
+                        break;
+                    case Gesture.GestureType.TYPESWIPE:
+
+                        if (Language.FormStates == 2)
+                        {
+
+                            Language.FormStates = 1;
+                            NewHome home = new NewHome();
+                            home.Show();
+                            Language.actualForm = home;
+                            this.Visible = false;
+                            home.Visible = true;
+
+                        }
+                        else if (Language.FormStates == 1)
+                        {
+
+                            this.Visible = true;
+                            actualForm.Visible = false;
+                            actualForm = this;
+                            Language.FormStates = 0;
+
+
+
+                        }
+
+                        home.printGesture();
+                        break;
+                }
+            }
+
+
+
             if (timeChange > 1000000)
             {
 
+                
                 if (frame.Hands.Count > 0 && last_finger_count == 0 && frame.Fingers.Count > 0)
                 {
                     Language.LeftClick(Cursor.Position.X, Cursor.Position.Y);
-                }
-
-                GestureList gestures = frame.Gestures();
-                for (int i = 0; i < gestures.Count(); i++)
-                {
-                    Gesture gesture = gestures[i];
-                    switch (gesture.Type)
-                    {
-                        case Gesture.GestureType.TYPEKEYTAP:
-                            
-                            break;
-                        case Gesture.GestureType.TYPESWIPE:
-                            if(Language.FormStates == 2)
-                            {
-                           
-                                actualForm.Visible = false;
-
-                                NewHome nh = new NewHome();
-                                //
-                                nh.Show();
-                               
-                            }
-                            else if (Language.FormStates == 1)
-                            {
-
-                                actualForm.Visible = false;
-                                this.Visible = true;
-                                
-                                
-
-                            }
-                            break;
-                    }
                 }
 
                 last_finger_count = frame.Fingers.Count;
@@ -247,19 +262,18 @@ namespace Tuto
             if (timeChange > 100000)
             {
 
-
-
                 if (frame.Hands.Count > 0)
                 {
 
 
                     var xScreenIntersect = my_hand.StabilizedPalmPosition.x;
-                    var yScreenIntersect = my_hand.StabilizedPalmPosition.z;
+                    var yScreenIntersect = my_hand.StabilizedPalmPosition.y;
 
                     if (xScreenIntersect.ToString() != "NaN")
                     {
                         var x = (int)(xScreenIntersect * System.Windows.Forms.Screen.PrimaryScreen.Bounds.Width) / 100;
-                        var y = (int)(yScreenIntersect * System.Windows.Forms.Screen.PrimaryScreen.Bounds.Height) / 100;
+                        
+                        var y = (int)(System.Windows.Forms.Screen.PrimaryScreen.Bounds.Height - (yScreenIntersect * System.Windows.Forms.Screen.PrimaryScreen.Bounds.Height) / 100) + NewHome.ScreenHeight/2;
 
                         MouseCursor.MoveCursor(x, y);
 
@@ -276,6 +290,10 @@ namespace Tuto
             return new Cursor(bitmap.GetHicon());
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 
     class MouseCursor

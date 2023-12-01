@@ -27,8 +27,6 @@ namespace Tuto
         {
             InitializeComponent();
 
-            Language.FormStates = 2;
-            Language.actualForm = this;
 
             /*
             this.WindowState = FormWindowState.Maximized;

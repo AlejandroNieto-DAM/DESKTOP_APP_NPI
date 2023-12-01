@@ -16,7 +16,7 @@ namespace Tuto
 
         public static String userLogged = "";
         public static int ScreenHeight = 1920, ScreenWidth = 1440, FormHeight = 960, FormWidth = 540;
-        Form2 qrForm;
+        
 
         [DllImport("user32.dll")]
         public static extern bool AnimateWindow(IntPtr hwnd, int dwTime, int dwFlags);
@@ -38,16 +38,14 @@ namespace Tuto
             int nHeightEllipse
         );
 
+        
         public NewHome()
         {
             InitializeComponent();
 
-            qrForm = new Form2();
-            qrForm.Visible = false;
-            qrForm.Show();
+            
+            
 
-            Language.FormStates = 1;
-            Language.actualForm = this;
 
             if (Language.SelectedLanguage == 1)
             {
@@ -69,7 +67,7 @@ namespace Tuto
                 this.label4.Text = "Locations";
                 this.label9.Text = "To go back use the page back gesture";
             }
-
+            
 
             this.label1.Font = new Font("Yu Gothic UI", this.label1.Font.Size + (ScreenHeight / FormHeight), FontStyle.Bold);
             this.label2.Font = new Font("Yu Gothic UI", this.label2.Font.Size + (ScreenHeight / FormHeight), FontStyle.Bold);
@@ -166,7 +164,7 @@ namespace Tuto
 
         private void panel3_MouseHover(object sender, EventArgs e)
         {
-            this.panel3.BackColor = Color.FromArgb(236, 204, 69);     
+            this.panel3.BackColor = Color.FromArgb(99, 126, 118);     
         }
 
         private void panel3_MouseLeave(object sender, EventArgs e)
@@ -176,17 +174,17 @@ namespace Tuto
 
         private void pictureBox2_MouseHover(object sender, EventArgs e)
         {
-            this.panel3.BackColor = Color.FromArgb(236, 204, 69);
+            this.panel3.BackColor = Color.FromArgb(99, 126, 118);
         }
 
         private void label6_MouseHover(object sender, EventArgs e)
         {
-            this.panel3.BackColor = Color.FromArgb(236, 204, 69);
+            this.panel3.BackColor = Color.FromArgb(99, 126, 118);
         }
 
         private void panel2_MouseHover(object sender, EventArgs e)
         {
-            this.panel2.BackColor = Color.FromArgb(236, 204, 69);
+            this.panel2.BackColor = Color.FromArgb(99, 126, 118);
         }
 
         private void panel2_MouseLeave(object sender, EventArgs e)
@@ -196,17 +194,17 @@ namespace Tuto
 
         private void pictureBox1_MouseHover(object sender, EventArgs e)
         {
-            this.panel2.BackColor = Color.FromArgb(236, 204, 69);
+            this.panel2.BackColor = Color.FromArgb(99, 126, 118);
         }
 
         private void label5_MouseHover(object sender, EventArgs e)
         {
-            this.panel2.BackColor = Color.FromArgb(236, 204, 69);
+            this.panel2.BackColor = Color.FromArgb(99, 126, 118);
         }
 
         private void panel4_MouseHover(object sender, EventArgs e)
         {
-            this.panel4.BackColor = Color.FromArgb(236, 204, 69);
+            this.panel4.BackColor = Color.FromArgb(99, 126, 118);
         }
 
         private void panel4_MouseLeave(object sender, EventArgs e)
@@ -216,17 +214,17 @@ namespace Tuto
 
         private void pictureBox3_MouseHover(object sender, EventArgs e)
         {
-            this.panel4.BackColor = Color.FromArgb(236, 204, 69);
+            this.panel4.BackColor = Color.FromArgb(99, 126, 118);
         }
 
         private void label7_MouseHover(object sender, EventArgs e)
         {
-            this.panel4.BackColor = Color.FromArgb(236, 204, 69);
+            this.panel4.BackColor = Color.FromArgb(99, 126, 118);
         }
 
         private void panel5_MouseHover(object sender, EventArgs e)
         {
-            this.panel5.BackColor = Color.FromArgb(236, 204, 69);
+            this.panel5.BackColor = Color.FromArgb(99, 126, 118);
         }
 
         private void panel5_MouseLeave(object sender, EventArgs e)
@@ -236,30 +234,34 @@ namespace Tuto
 
         private void pictureBox4_MouseHover(object sender, EventArgs e)
         {
-            this.panel5.BackColor = Color.FromArgb(236, 204, 69);
+            this.panel5.BackColor = Color.FromArgb(99, 126, 118);
         }
 
         private void label8_MouseHover(object sender, EventArgs e)
         {
-            this.panel5.BackColor = Color.FromArgb(236, 204, 69);
+            this.panel5.BackColor = Color.FromArgb(99, 126, 118);
         }
 
         private void tableLayoutPanel3_MouseHover(object sender, EventArgs e)
         {
-            this.tableLayoutPanel3.BackColor = Color.FromArgb(236, 204, 69);
+            this.tableLayoutPanel3.BackColor = Color.FromArgb(99, 126, 118);
         }
 
         private void panel2_Click(object sender, EventArgs e)
         {
-
-            Language.FormStates = 3;
+            Language.FormStates = 2;
             this.Visible = false;
-            qrForm.Visible = true;
+            Form2 qrForm;
+            qrForm = new Form2();
+            qrForm.Show();
+            Language.actualForm = qrForm;
+
+
         }
 
         private void NewHome_Load(object sender, EventArgs e)
         {
-            AnimateWindow(this.Handle, 1000, AW_ACTIVATE | AW_SLIDE | AW_HOR_POSITIVE);
+            //AnimateWindow(this.Handle, 1000, AW_ACTIVATE | AW_SLIDE | AW_HOR_POSITIVE);
         }
 
         private void tableLayoutPanel3_MouseLeave(object sender, EventArgs e)
@@ -269,12 +271,12 @@ namespace Tuto
 
         private void pictureBox5_MouseHover(object sender, EventArgs e)
         {
-            this.tableLayoutPanel3.BackColor = Color.FromArgb(236, 204, 69);
+            this.tableLayoutPanel3.BackColor = Color.FromArgb(99, 126, 118); ;
         }
 
         private void label4_MouseHover(object sender, EventArgs e)
         {
-            this.tableLayoutPanel3.BackColor = Color.FromArgb(236, 204, 69);
+            this.tableLayoutPanel3.BackColor = Color.FromArgb(99, 126, 118);
         }
 
         private void panel5_Click(object sender, EventArgs e)
@@ -299,6 +301,12 @@ namespace Tuto
             MenuComedor horarioV = new MenuComedor();
             horarioV.Show();
             this.Hide();
+        }
+
+        public void printGesture()
+        {
+            //this.label1.Text = "A" + Language.FormStates;
+
         }
     }
 }

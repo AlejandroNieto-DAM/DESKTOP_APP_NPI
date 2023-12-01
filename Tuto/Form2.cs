@@ -23,12 +23,12 @@ namespace Tuto
         public Form2()
         {
             InitializeComponent();
-
+            /*
             this.WindowState = FormWindowState.Maximized;
-            int screenWidth = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Width;
+            /*int screenWidth = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Width;
             int screenHeight = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Height;
             Resolution objFormResizer = new Resolution();
-            objFormResizer.ResizeForm(this, screenHeight, screenWidth);
+            objFormResizer.ResizeForm(this, screenHeight, screenWidth);*/
 
             // Initialize the timer
             timer = new Timer();
@@ -148,7 +148,7 @@ namespace Tuto
 
         }
     }
-
+    /*
     public class Resolution
     {
         float heightRatio = new float();
@@ -202,5 +202,5 @@ namespace Tuto
             }
 
         }
-    }
+    }*/
 }

@@ -133,6 +133,12 @@
     <Compile Include="Language.Designer.cs">
       <DependentUpon>Language.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuComedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuComedor.Designer.cs">
+      <DependentUpon>MenuComedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="NewHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +181,9 @@
     <EmbeddedResource Include="Language.resx">
       <DependentUpon>Language.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MenuComedor.resx">
+      <DependentUpon>MenuComedor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NewHome.resx">
       <DependentUpon>NewHome.cs</DependentUpon>
     </EmbeddedResource>
@@ -206,6 +215,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\dropRight.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\map_spain.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -229,6 +241,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Dropdown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dropDownTrans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dropRightTrans.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\map_europe.jpg" />

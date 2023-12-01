@@ -11,13 +11,15 @@ using System.Windows.Forms;
 
 namespace Tuto
 {
-    public partial class Home : Form
+    public partial class adminOptions : BasicFormLayout
     {
         private Timer timer;
-        public Home()
+        bool national = false;
+        public adminOptions()
         {
             InitializeComponent();
         
+            
             // Initialize the timer
             timer = new Timer();
             timer.Interval = 1000; // Set the interval in milliseconds (1000 ms = 1 second)
@@ -25,9 +27,17 @@ namespace Tuto
 
             // Start the timer
             timer.Start();
-
+            
+            
             ApplyCommonStyleButton();
-            AdjustBackgroundPicture();
+            //AdjustBackgroundPicture();
+
+            //hourLabel.Text = hourLabelText;
+            //dayLabel.Text = dayLabelText;
+
+            this.Size = FormSize;
+
+
         }
 
         private void AdjustBackgroundPicture()
@@ -35,11 +45,11 @@ namespace Tuto
             try
             {
                 this.BackgroundImage = Properties.Resources.Pantalla_Background;
-                this.BackgroundImageLayout = ImageLayout.Stretch;
+                this.BackgroundImageLayout = ImageLayout.Zoom;
             }
             catch (Exception ex)
             {
-                this.BackColor = Color.FromArgb(27, 127, 121);
+                //this.BackColor = Color.FromArgb(27, 127, 121);
                 MessageBox.Show("Error al cargar la imagen de fondo: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
@@ -48,36 +58,16 @@ namespace Tuto
         {
             // TODO: this is not working
             // Iterar sobre todos los controles en el formulario
-            foreach (Control control in tableLayoutOptions.Controls)
+            foreach (Control control in tableLayoutPanel2.Controls)
             {
                 if (control is Button)
                 {
                     Button boton = (Button)control;
-                    // Hacer algo con el botón, por ejemplo:
-                    // boton.BackColor = Color.FromArgb(255, 128, 0);
-                    // boton.ForeColor = Color.White;
-                    boton.Font = new Font("Arial", 20, FontStyle.Bold);
-
-                    // Verificar si el botón tiene una imagen
-                    if (boton.Image != null)
-                    {
-                        Image originalImage = boton.Image;
-                        // Especificar la nueva altura deseada
-                        int nuevaAltura = 50;  // Reemplaza con la altura deseada
-
-                        // Calcular la nueva proporción para mantener la relación de aspecto
-                        int nuevaAnchura = (int)((double)nuevaAltura / originalImage.Height * originalImage.Width);
-
-                        // Crear una nueva imagen con la altura ajustada
-                        Image nuevaImagen = new Bitmap(originalImage, new Size(nuevaAnchura, nuevaAltura));
-
-                        // Asignar la nueva imagen al botón
-                        boton.Image = nuevaImagen;
-                    }
+                    boton.Font = new Font("Arial", 68, FontStyle.Bold);
                 }
             }
         }
-
+        
         private void time_Tick(object sender, EventArgs e)
         {
             // Update the Label's text with the current time
@@ -85,6 +75,7 @@ namespace Tuto
             dayLabel.Text = DateTime.Now.ToString("dd.MM.yy");
 
         }
+        
         private void dayInfoPanel_Paint(object sender, PaintEventArgs e)
         {
         }
@@ -140,29 +131,31 @@ namespace Tuto
         {
 
         }
-
+        /*
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             int indice = languageBox.SelectedIndex;
             if (indice == 1)
             {
                 welcomeLabel.Text = "Welcome";
-                scheduleButton.Text = "My personal schedule";
+                nationalButton.Text = "My personal schedule";
                 menuButton.Text = "Canteen Menu";
-                professorsButton.Text = "Professors information";
+                Button.Text = "Professors information";
                 adminButton.Text = "Administrative requests";
                 placeButton.Text = "Search place";
             }
             else
             {
                 welcomeLabel.Text = "Bienvenidos";
-                scheduleButton.Text = "Mi horario";
+                nationalButton.Text = "Mi horario";
                 menuButton.Text = "Menú cafetería";
-                professorsButton.Text = "Información profesores";
+                Button.Text = "Información profesores";
                 adminButton.Text = "Procesos administrativos";
                 placeButton.Text = "Buscar lugar";
             }
         }
+        
+        */
         private void Home_FormClosing(object sender, FormClosingEventArgs e)
         {
             // Stop the timer when the form is closing
@@ -170,5 +163,39 @@ namespace Tuto
             timer.Stop();
         }
 
+        private void nationalButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void welcomePanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void labelTitle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonMovNacional_Click(object sender, EventArgs e)
+        {
+            national = !national;
+            administrativeMenu nationalWindow = new administrativeMenu(true);
+            nationalWindow.Show();
+            this.Hide();
+        }
+
+        private void buttonMovInterna_Click(object sender, EventArgs e)
+        {
+            administrativeMenu nationalWindow = new administrativeMenu(national);
+            nationalWindow.Show();
+            this.Hide();
+        }
     }
 }

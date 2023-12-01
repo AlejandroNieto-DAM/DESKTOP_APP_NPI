@@ -202,7 +202,7 @@ namespace Tuto
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Home homeWindow = new Home();
+            adminOptions homeWindow = new adminOptions();
             homeWindow.Show();
             this.Hide();
         }

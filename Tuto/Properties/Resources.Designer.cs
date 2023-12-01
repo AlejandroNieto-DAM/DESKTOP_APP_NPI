@@ -112,7 +112,6 @@ namespace Tuto.Properties {
         
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Image1 {
             get {
@@ -162,7 +161,6 @@ namespace Tuto.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
         ///   Looks up a localized string similar to Mínimo 45 créditos;Matrícula formalizada;Correo electrónico.
         /// </summary>
         internal static string national_requirements {
@@ -182,7 +180,6 @@ namespace Tuto.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap point {

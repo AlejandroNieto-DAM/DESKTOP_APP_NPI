@@ -279,6 +279,13 @@ namespace Tuto
             this.tableLayoutPanel3.BackColor = Color.FromArgb(236, 204, 69);
         }
 
+        private void panel5_Click(object sender, EventArgs e)
+        {
+            adminOptions homeWindow = new adminOptions();
+            homeWindow.Show();
+            this.Hide();
+        }
+
         private void pictureBox4_Click(object sender, EventArgs e)
         {
 

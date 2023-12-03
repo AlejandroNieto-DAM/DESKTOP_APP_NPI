@@ -113,6 +113,36 @@ namespace Tuto.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Image1 {
+            get {
+                object obj = ResourceManager.GetObject("Image1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap map_europe {
+            get {
+                object obj = ResourceManager.GetObject("map_europe", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap map_spain {
+            get {
+                object obj = ResourceManager.GetObject("map_spain", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap maps_icon {
             get {
                 object obj = ResourceManager.GetObject("maps_icon", resourceCulture);
@@ -131,11 +161,30 @@ namespace Tuto.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Mínimo 45 créditos;Matrícula formalizada;Correo electrónico.
+        /// </summary>
+        internal static string national_requirements {
+            get {
+                return ResourceManager.GetString("national_requirements", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Pantalla_Background {
             get {
                 object obj = ResourceManager.GetObject("Pantalla_Background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap point {
+            get {
+                object obj = ResourceManager.GetObject("point", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

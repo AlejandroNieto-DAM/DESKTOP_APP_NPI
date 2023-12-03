@@ -11,6 +11,7 @@ using Leap;
 using AForge.Video;
 using AForge.Video.DirectShow;
 using ZXing;
+using System.Runtime.CompilerServices;
 
 namespace Tuto
 {
@@ -20,9 +21,13 @@ namespace Tuto
 
         private Timer timer;
 
+
+
         public Form2()
         {
             InitializeComponent();
+
+
             /*
             this.WindowState = FormWindowState.Maximized;
             /*int screenWidth = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Width;
@@ -146,6 +151,11 @@ namespace Tuto
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void closingForm()
+        {
+            this.Hide();
         }
     }
     /*

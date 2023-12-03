@@ -82,6 +82,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BasicFormLayout.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,11 +97,29 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Home.cs">
+    <Compile Include="administrativeMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Home.Designer.cs">
-      <DependentUpon>Home.cs</DependentUpon>
+    <Compile Include="administrativeMenu.Designer.cs">
+      <DependentUpon>administrativeMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="offersExchange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="offersExchange.Designer.cs">
+      <DependentUpon>offersExchange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RequirementsMov.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequirementsMov.Designer.cs">
+      <DependentUpon>RequirementsMov.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminOptions.Designer.cs">
+      <DependentUpon>adminOptions.cs</DependentUpon>
     </Compile>
     <Compile Include="Horario.cs">
       <SubType>Form</SubType>
@@ -132,6 +153,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BasicFormLayout.resx">
+      <DependentUpon>BasicFormLayout.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -139,8 +163,17 @@
       <DependentUpon>Form2.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Home.resx">
-      <DependentUpon>Home.cs</DependentUpon>
+    <EmbeddedResource Include="administrativeMenu.resx">
+      <DependentUpon>administrativeMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="offersExchange.resx">
+      <DependentUpon>offersExchange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RequirementsMov.resx">
+      <DependentUpon>RequirementsMov.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminOptions.resx">
+      <DependentUpon>adminOptions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Horario.resx">
       <DependentUpon>Horario.cs</DependentUpon>
@@ -185,6 +218,9 @@
     <None Include="Resources\dropRight.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\map_spain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
@@ -197,6 +233,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\national_requirements.csv" />
     <None Include="Resources\QR_icon.png" />
   </ItemGroup>
   <ItemGroup>
@@ -210,6 +247,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\dropRightTrans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map_europe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\point.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -103,6 +103,12 @@
     <Compile Include="administrativeMenu.Designer.cs">
       <DependentUpon>administrativeMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="CalendarWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalendarWindow.Designer.cs">
+      <DependentUpon>CalendarWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="offersExchange.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="administrativeMenu.resx">
       <DependentUpon>administrativeMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalendarWindow.resx">
+      <DependentUpon>CalendarWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="offersExchange.resx">
       <DependentUpon>offersExchange.cs</DependentUpon>

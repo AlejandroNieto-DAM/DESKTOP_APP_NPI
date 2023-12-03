@@ -49,6 +49,7 @@ namespace Tuto
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BasicFormLayout));
             this.dayInfoPanel = new System.Windows.Forms.TableLayoutPanel();
             this.dayLabel = new System.Windows.Forms.Label();
             this.hourLabel = new System.Windows.Forms.Label();
@@ -77,30 +78,34 @@ namespace Tuto
             // dayLabel
             // 
             this.dayLabel.AutoSize = true;
+            this.dayLabel.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dayLabel.ForeColor = System.Drawing.Color.White;
             this.dayLabel.Location = new System.Drawing.Point(200, 0);
             this.dayLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.dayLabel.Name = "dayLabel";
-            this.dayLabel.Size = new System.Drawing.Size(0, 13);
+            this.dayLabel.Size = new System.Drawing.Size(33, 42);
             this.dayLabel.TabIndex = 0;
+            this.dayLabel.Text = "day";
             // 
             // hourLabel
             // 
             this.hourLabel.AutoSize = true;
-            this.hourLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hourLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hourLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.hourLabel.Location = new System.Drawing.Point(242, 0);
             this.hourLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.hourLabel.Name = "hourLabel";
-            this.hourLabel.Size = new System.Drawing.Size(39, 40);
+            this.hourLabel.Size = new System.Drawing.Size(34, 42);
             this.hourLabel.TabIndex = 1;
             this.hourLabel.Text = "hour";
             // 
             // BasicFormLayout
             // 
-            //this.BackgroundImage = global::Tuto.Properties.Resources.Pantalla_Background;
-            //this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.dayInfoPanel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "BasicFormLayout";
             this.Load += new System.EventHandler(this.BasicFormLayout_Load);
             this.dayInfoPanel.ResumeLayout(false);

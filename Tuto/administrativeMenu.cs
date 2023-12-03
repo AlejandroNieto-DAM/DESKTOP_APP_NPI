@@ -23,13 +23,6 @@ namespace Tuto
 
         }
 
-        private void buttonOffers_Click(object sender, EventArgs e)
-        {
-            offersExchange form4 = new offersExchange(isNationalExchange);
-            form4.Show();
-            this.Hide();
-        }
-
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -42,16 +35,30 @@ namespace Tuto
             this.Hide();
         }
 
-        private void buttonRequirements_Click(object sender, EventArgs e)
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonOffers_Click_1(object sender, EventArgs e)
+        {
+            offersExchange form4 = new offersExchange(isNationalExchange);
+            form4.Show();
+            this.Hide();
+        }
+
+        private void buttonRequirements_Click_1(object sender, EventArgs e)
         {
             RequirementsMov formRequirements = new RequirementsMov(this.isNationalExchange);
             formRequirements.Show();
             this.Hide();
         }
 
-        private void Form3_Load(object sender, EventArgs e)
+        private void buttonCalendar_Click(object sender, EventArgs e)
         {
-
+            CalendarWindow formCalendar = new CalendarWindow(this.isNationalExchange);
+            formCalendar.Show();
+            this.Hide();
         }
     }
 }

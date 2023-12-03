@@ -63,7 +63,7 @@ namespace Tuto
                 if (control is Button)
                 {
                     Button boton = (Button)control;
-                    boton.Font = new Font("Arial", 68, FontStyle.Bold);
+                    boton.Font = new Font("Arial", 16, FontStyle.Bold);
                 }
             }
         }
@@ -196,6 +196,11 @@ namespace Tuto
             administrativeMenu nationalWindow = new administrativeMenu(national);
             nationalWindow.Show();
             this.Hide();
+        }
+
+        private void tableLayoutPanel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

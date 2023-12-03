@@ -269,6 +269,7 @@
             this.panel5.Size = new System.Drawing.Size(188, 191);
             this.panel5.TabIndex = 7;
             this.panel5.Click += new System.EventHandler(this.panel5_Click);
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             this.panel5.MouseLeave += new System.EventHandler(this.panel5_MouseLeave);
             this.panel5.MouseHover += new System.EventHandler(this.panel5_MouseHover);
             // 

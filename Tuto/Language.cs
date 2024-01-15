@@ -77,7 +77,8 @@ namespace Tuto
             this.label1.Font = new Font("Yu Gothic UI", this.label1.Font.Size + (NewHome.ScreenHeight / NewHome.FormHeight), FontStyle.Bold);
 
             this.tableLayoutPanel1.Height = this.tableLayoutPanel1.Height * NewHome.ScreenHeight / NewHome.FormHeight;
-            
+
+            /*
             this.panel1.Height = this.panel1.Height * NewHome.ScreenHeight / NewHome.FormHeight;
             this.panel1.Width = this.panel1.Width * NewHome.ScreenWidth / NewHome.FormWidth;
             this.panel1.Margin = new Padding(this.panel1.Margin.Left * NewHome.ScreenWidth / NewHome.FormWidth, this.panel1.Margin.Top * NewHome.ScreenHeight / NewHome.FormHeight, this.panel1.Margin.Right * NewHome.ScreenWidth / NewHome.FormWidth, this.panel1.Margin.Bottom * NewHome.ScreenHeight / NewHome.FormHeight);
@@ -96,27 +97,27 @@ namespace Tuto
             this.panel1.Region = Region.FromHrgn(NewHome.CreateRoundRectRgn(0, 0, panel2.Width,
             panel1.Height, 20, 20));
             this.panel2.Region = Region.FromHrgn(NewHome.CreateRoundRectRgn(0, 0, panel2.Width,
-            panel2.Height, 20, 20));
+            panel2.Height, 20, 20));*/
         }
 
         private void panel1_MouseHover(object sender, EventArgs e)
         {
-            this.panel1.BackColor = Color.Snow;
+            //this.panel1.BackColor = Color.Snow;
         }
 
         private void panel1_MouseLeave(object sender, EventArgs e)
         {
-            this.panel1.BackColor = Color.Transparent;
+            //this.panel1.BackColor = Color.Transparent;
         }
 
         private void panel2_MouseHover(object sender, EventArgs e)
         {
-            this.panel2.BackColor = Color.Snow;
+            //this.panel2.BackColor = Color.Snow;
         }
 
         private void panel2_MouseLeave(object sender, EventArgs e)
         {
-            this.panel2.BackColor = Color.Transparent;
+            //this.panel2.BackColor = Color.Transparent;
         }
 
         private void panel1_Click(object sender, EventArgs e)
@@ -143,10 +144,10 @@ namespace Tuto
 
         private void Language_Resize(object sender, EventArgs e)
         {
-            this.panel1.Region = Region.FromHrgn(NewHome.CreateRoundRectRgn(0, 0, panel2.Width,
-            panel1.Height, 20, 20));
-            this.panel2.Region = Region.FromHrgn(NewHome.CreateRoundRectRgn(0, 0, panel2.Width,
-            panel2.Height, 20, 20));
+            //this.panel1.Region = Region.FromHrgn(NewHome.CreateRoundRectRgn(0, 0, panel2.Width,
+            //panel1.Height, 20, 20));
+            //this.panel2.Region = Region.FromHrgn(NewHome.CreateRoundRectRgn(0, 0, panel2.Width,
+            //panel2.Height, 20, 20));
         }
 
         delegate void LeapEventDelegate(string EventName);
@@ -293,6 +294,28 @@ namespace Tuto
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Language.SelectedLanguage = 1;
+            Language.FormStates = 1;
+            NewHome home = new NewHome();
+            home.Show();
+            Language.actualForm = home;
+            this.Visible = false;
+            home.Visible = true;
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Language.SelectedLanguage = 2;
+            Language.FormStates = 1;
+            NewHome home = new NewHome();
+            home.Show();
+            Language.actualForm = home;
+            this.Visible = false;
+            home.Visible = true;
         }
     }
 

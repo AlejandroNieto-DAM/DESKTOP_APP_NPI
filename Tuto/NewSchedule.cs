@@ -21,10 +21,10 @@ namespace Tuto
 
             if (Language.SelectedLanguage == 1)
             {
-                this.label1.Text = "Bienvenido!" + NewHome.userLogged;
+                this.label1.Text = "Bienvenido! " + NewHome.userLogged;
                 this.label2.Text = "Tu proxima clase comienza en: ";
                 this.label3.Text = "HOY";
-                this.label4.Text = "Para ver el menu haz el gesto de pasar pagina";
+                this.label4.Text = "Para ir hacia atras haz el gesto de retornar pagina";
                 
                 if  (NewHome.userLogged  == "Alejandro" || NewHome.userLogged == "Nieto")
                 {
@@ -69,6 +69,11 @@ namespace Tuto
 
             } else if(Language.SelectedLanguage == 2)
             {
+                this.label1.Text = "Welcome! " + NewHome.userLogged;
+                this.label3.Text = "TODAY";
+                this.label4.Text = "For coming back do the return page gesture";
+
+
                 if (NewHome.userLogged == "Alejandro" || NewHome.userLogged == "Nieto")
                 {
                     this.label11.Text = "Computer vision";

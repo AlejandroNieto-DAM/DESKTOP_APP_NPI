@@ -11,41 +11,22 @@ using System.Windows.Forms;
 
 namespace Tuto
 {
-    public partial class NewHome : Form
+    public partial class Locations : Form
     {
 
-        public static String userLogged = "";
-        public static int ScreenHeight = 2500, ScreenWidth = 2000, FormHeight = 960, FormWidth = 540;
-        
-
-        [DllImport("user32.dll")]
-        public static extern bool AnimateWindow(IntPtr hwnd, int dwTime, int dwFlags);
-        const int AW_ACTIVATE = 0X20000;
-        const int AW_SLIDE = 0X40000;
-        const int AW_HOR_POSITIVE = 0X1;
-
-    
-
-        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-
-        public static extern IntPtr CreateRoundRectRgn
-        (
-            int nLeftRect,
-            int nTopRect,
-            int nRightRect,
-            int nBottomRect,
-            int nWidthEllipse,
-            int nHeightEllipse
-        );
+       
 
         
-        public NewHome()
+        public Locations()
         {
             InitializeComponent();
 
-            
-            
 
+
+            int ScreenWidth = NewHome.ScreenWidth;
+            int FormWidth = NewHome.FormWidth;
+            int ScreenHeight = NewHome.ScreenHeight;
+            int FormHeight = NewHome.FormHeight;
 
             if (Language.SelectedLanguage == 1)
             {
@@ -68,15 +49,18 @@ namespace Tuto
                 this.label9.Text = "To go back use the page back gesture";
             }
             
+            
+            this.label1.Font = new Font("Yu Gothic UI", this.label1.Font.Size + (NewHome.ScreenHeight / NewHome.FormHeight), FontStyle.Bold);
+            this.label2.Font = new Font("Yu Gothic UI", this.label2.Font.Size + (NewHome.ScreenHeight / NewHome.FormHeight), FontStyle.Bold);
 
-            this.label1.Font = new Font("Yu Gothic UI", this.label1.Font.Size + (ScreenHeight / FormHeight), FontStyle.Bold);
-            this.label2.Font = new Font("Yu Gothic UI", this.label2.Font.Size + (ScreenHeight / FormHeight), FontStyle.Bold);
+            this.label3.Font = new Font("Yu Gothic UI", this.label3.Font.Size + (NewHome.ScreenHeight / NewHome.FormHeight), FontStyle.Bold);
+            this.label3.Height = this.label3.Height * ScreenHeight / FormHeight;
+            this.label3.Width = this.label3.Width * ScreenWidth / FormWidth;
 
-            this.label3.Font = new Font("Yu Gothic UI", this.label3.Font.Size + (ScreenHeight / FormHeight), FontStyle.Bold);
+            this.tableLayoutPanel1.Height = this.tableLayoutPanel1.Height * NewHome.ScreenHeight / NewHome.FormHeight;
 
-            this.tableLayoutPanel1.Height = this.tableLayoutPanel1.Height * ScreenHeight / FormHeight;
 
-            this.panel2.Height =  this.panel2.Height * ScreenHeight / FormHeight;
+            this.panel2.Height =  this.panel2.Height * NewHome.ScreenHeight / NewHome.FormHeight;
             this.panel2.Width =  this.panel2.Width * ScreenWidth / FormWidth;
             this.panel2.Margin = new Padding(this.panel2.Margin.Left * ScreenWidth / FormWidth, this.panel2.Margin.Top * ScreenHeight / FormHeight, this.panel2.Margin.Right * ScreenWidth / FormWidth, this.panel2.Margin.Bottom * ScreenHeight / FormHeight);
             this.panel2.Padding = new Padding(this.panel2.Padding.Left * ScreenWidth / FormWidth, this.panel2.Padding.Top * ScreenHeight / FormHeight, this.panel2.Padding.Right * ScreenWidth / FormWidth, this.panel2.Padding.Bottom * ScreenHeight / FormHeight);
@@ -134,31 +118,31 @@ namespace Tuto
             this.label9.Font = new Font("Yu Gothic UI", this.label9.Font.Size + (ScreenHeight / FormHeight), FontStyle.Bold);
 
             
-            this.panel2.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, panel2.Width,
+            this.panel2.Region = Region.FromHrgn(NewHome.CreateRoundRectRgn(0, 0, panel2.Width,
             panel2.Height, 20, 20));
             
-            this.panel3.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, panel3.Width,
+            this.panel3.Region = Region.FromHrgn(NewHome.CreateRoundRectRgn(0, 0, panel3.Width,
             panel3.Height, 20, 20));
-            this.panel4.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, panel4.Width,
+            this.panel4.Region = Region.FromHrgn(NewHome.CreateRoundRectRgn(0, 0, panel4.Width,
             panel4.Height, 20, 20));
-            this.panel5.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, panel5.Width,
+            this.panel5.Region = Region.FromHrgn(NewHome.CreateRoundRectRgn(0, 0, panel5.Width,
             panel5.Height, 20, 20));
-            this.tableLayoutPanel3.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, tableLayoutPanel3.Width,
+            this.tableLayoutPanel3.Region = Region.FromHrgn(NewHome.CreateRoundRectRgn(0, 0, tableLayoutPanel3.Width,
             tableLayoutPanel3.Height, 20, 20));
 
         }
 
         private void NewHome_Resize(object sender, EventArgs e)
         {
-            this.panel2.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, panel2.Width,
+            this.panel2.Region = Region.FromHrgn(NewHome.CreateRoundRectRgn(0, 0, panel2.Width,
             panel2.Height, 20, 20));
-            this.panel3.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, panel3.Width,
+            this.panel3.Region = Region.FromHrgn(NewHome.CreateRoundRectRgn(0, 0, panel3.Width,
             panel3.Height, 20, 20));
-            this.panel4.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, panel4.Width,
+            this.panel4.Region = Region.FromHrgn(NewHome.CreateRoundRectRgn(0, 0, panel4.Width,
             panel4.Height, 20, 20));
-            this.panel5.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, panel5.Width,
+            this.panel5.Region = Region.FromHrgn(NewHome.CreateRoundRectRgn(0, 0, panel5.Width,
             panel5.Height, 20, 20));
-            this.tableLayoutPanel3.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, tableLayoutPanel3.Width,
+            this.tableLayoutPanel3.Region = Region.FromHrgn(NewHome.CreateRoundRectRgn(0, 0, tableLayoutPanel3.Width,
             tableLayoutPanel3.Height, 20, 20));
         }
 
@@ -249,14 +233,10 @@ namespace Tuto
 
         private void panel2_Click(object sender, EventArgs e)
         {
-            Language.FormStates = 2;
-            this.Visible = false;
-            Form2 qrForm;
-            qrForm = new Form2();
-            qrForm.Show();
-            Language.actualForm = qrForm;
-
-
+            MostrarImagen.optionSelected = 1;
+            MostrarImagen horarioV = new MostrarImagen();
+            horarioV.Show();
+            this.Hide();
         }
 
         private void NewHome_Load(object sender, EventArgs e)
@@ -281,8 +261,9 @@ namespace Tuto
 
         private void panel5_Click(object sender, EventArgs e)
         {
-            adminOptions homeWindow = new adminOptions();
-            homeWindow.Show();
+            MostrarImagen.optionSelected = 4;
+            MostrarImagen horarioV = new MostrarImagen();
+            horarioV.Show();
             this.Hide();
         }
 
@@ -310,15 +291,37 @@ namespace Tuto
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            MenuComedor horarioV = new MenuComedor();
-            horarioV.Show();
-            this.Hide();
+            
         }
 
         public void printGesture()
         {
             //this.label1.Text = "A" + Language.FormStates;
 
+        }
+
+        private void panel3_Click(object sender, EventArgs e)
+        {
+            MostrarImagen.optionSelected = 2;
+            MostrarImagen horarioV = new MostrarImagen();
+            horarioV.Show();
+            this.Hide();
+        }
+
+        private void panel4_Click(object sender, EventArgs e)
+        {
+            MostrarImagen.optionSelected = 3;
+            MostrarImagen horarioV = new MostrarImagen();
+            horarioV.Show();
+            this.Hide();
+        }
+
+        private void tableLayoutPanel3_Click(object sender, EventArgs e)
+        {
+            MostrarImagen.optionSelected = 5;
+            MostrarImagen horarioV = new MostrarImagen();
+            horarioV.Show();
+            this.Hide();
         }
     }
 }

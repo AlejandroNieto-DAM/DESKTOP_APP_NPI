@@ -1,6 +1,6 @@
 ﻿namespace Tuto
 {
-    partial class RequirementsMov
+    partial class CalendarWindow
     {
         /// <summary>
         /// Required designer variable.
@@ -57,7 +57,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 408);
-            this.tableLayoutPanel1.TabIndex = 3;
+            this.tableLayoutPanel1.TabIndex = 4;
             // 
             // panelInformation
             // 
@@ -103,16 +103,16 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "Descargar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // RequirementsMov
+            // CalendarWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "RequirementsMov";
-            this.Text = "Form5";
-            this.Load += new System.EventHandler(this.Form5_Load);
+            this.Name = "CalendarWindow";
+            this.Text = "CalendarWindow";
             this.Controls.SetChildIndex(this.tableLayoutPanel1, 0);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

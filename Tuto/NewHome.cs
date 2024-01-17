@@ -281,6 +281,7 @@ namespace Tuto
 
         private void panel5_Click(object sender, EventArgs e)
         {
+            this.Visible = false;
             adminOptions homeWindow = new adminOptions();
             homeWindow.Show();
             this.Hide();
@@ -294,11 +295,6 @@ namespace Tuto
 
 
         private void pictureBox4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click_1(object sender, EventArgs e)
         {
 
         }

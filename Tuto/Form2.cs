@@ -121,7 +121,7 @@ namespace Tuto
 
            
                     NewHome.userLogged = result.ToString().Split('@')[0];
-                    label3.Text = NewHome.userLogged;
+                    //label3.Text = NewHome.userLogged;
                     NewSchedule schedule = new NewSchedule();
                     schedule.Show();
                     this.Hide();

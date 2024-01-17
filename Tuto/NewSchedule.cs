@@ -117,7 +117,6 @@ namespace Tuto
             }
 
             
-            
             label1.Width = label1.Width * NewHome.ScreenWidth / NewHome.FormWidth;
             label1.Height = label1.Height * NewHome.ScreenHeight / NewHome.FormHeight;
 
@@ -159,9 +158,6 @@ namespace Tuto
 
             label15.Width = label15.Width * NewHome.ScreenWidth / NewHome.FormWidth;
             label15.Height = label15.Height * NewHome.ScreenHeight / NewHome.FormHeight;
-
-          
-           
 
             panel1.Width = panel1.Width * NewHome.ScreenWidth / NewHome.FormWidth;
             panel1.Height = panel1.Height * NewHome.ScreenHeight / NewHome.FormHeight;

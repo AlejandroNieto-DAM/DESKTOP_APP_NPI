@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(adminOptions));
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -50,9 +51,10 @@
             // 
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 65);
+            this.panel2.Location = new System.Drawing.Point(0, 27);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(518, 839);
+            this.panel2.Size = new System.Drawing.Size(584, 922);
             this.panel2.TabIndex = 1;
             // 
             // panel4
@@ -60,8 +62,9 @@
             this.panel4.Controls.Add(this.tableLayoutPanel1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(518, 839);
+            this.panel4.Size = new System.Drawing.Size(584, 922);
             this.panel4.TabIndex = 4;
             // 
             // tableLayoutPanel1
@@ -74,12 +77,11 @@
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 1055F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(518, 839);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 545F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(584, 922);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -94,8 +96,7 @@
             this.tableLayoutPanel2.Controls.Add(this.buttonTF, 1, 6);
             this.tableLayoutPanel2.Controls.Add(this.labelTitle, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(55, 5);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(61, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 8;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
@@ -106,17 +107,16 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(459, 829);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(520, 916);
             this.tableLayoutPanel2.TabIndex = 0;
             this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
             // buttonMovNacional
             // 
             this.buttonMovNacional.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonMovNacional.Location = new System.Drawing.Point(49, 128);
-            this.buttonMovNacional.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonMovNacional.Location = new System.Drawing.Point(55, 139);
             this.buttonMovNacional.Name = "buttonMovNacional";
-            this.buttonMovNacional.Size = new System.Drawing.Size(359, 155);
+            this.buttonMovNacional.Size = new System.Drawing.Size(410, 177);
             this.buttonMovNacional.TabIndex = 0;
             this.buttonMovNacional.Text = "Movilidad nacional";
             this.buttonMovNacional.UseVisualStyleBackColor = true;
@@ -125,10 +125,9 @@
             // buttonMovInterna
             // 
             this.buttonMovInterna.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonMovInterna.Location = new System.Drawing.Point(49, 334);
-            this.buttonMovInterna.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonMovInterna.Location = new System.Drawing.Point(55, 367);
             this.buttonMovInterna.Name = "buttonMovInterna";
-            this.buttonMovInterna.Size = new System.Drawing.Size(359, 155);
+            this.buttonMovInterna.Size = new System.Drawing.Size(410, 177);
             this.buttonMovInterna.TabIndex = 1;
             this.buttonMovInterna.Text = "Movilidad internacional";
             this.buttonMovInterna.UseVisualStyleBackColor = true;
@@ -137,10 +136,9 @@
             // buttonTF
             // 
             this.buttonTF.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonTF.Location = new System.Drawing.Point(49, 540);
-            this.buttonTF.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonTF.Location = new System.Drawing.Point(55, 595);
             this.buttonTF.Name = "buttonTF";
-            this.buttonTF.Size = new System.Drawing.Size(359, 155);
+            this.buttonTF.Size = new System.Drawing.Size(410, 177);
             this.buttonTF.TabIndex = 2;
             this.buttonTF.Text = "Trabajo final";
             this.buttonTF.UseVisualStyleBackColor = true;
@@ -152,10 +150,9 @@
             this.labelTitle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitle.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelTitle.Location = new System.Drawing.Point(49, 0);
-            this.labelTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelTitle.Location = new System.Drawing.Point(55, 0);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(359, 82);
+            this.labelTitle.Size = new System.Drawing.Size(410, 91);
             this.labelTitle.TabIndex = 3;
             this.labelTitle.Text = "Trámites";
             this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -169,7 +166,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(51, 839);
+            this.panel1.Size = new System.Drawing.Size(58, 922);
             this.panel1.TabIndex = 1;
             // 
             // dayInfoPanel
@@ -211,12 +208,13 @@
             // 
             // adminOptions
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.BackgroundImage = global::Tuto.Properties.Resources.Pantalla_Background;
-            this.ClientSize = new System.Drawing.Size(518, 904);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(584, 949);
             this.Controls.Add(this.panel2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "adminOptions";
             this.Text = "Home";
             this.Load += new System.EventHandler(this.Home_Load);

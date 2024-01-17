@@ -97,11 +97,23 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
-    <Compile Include="administrativeMenu.cs">
+    <Compile Include="Becas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="administrativeMenu.Designer.cs">
-      <DependentUpon>administrativeMenu.cs</DependentUpon>
+    <Compile Include="Becas.Designer.cs">
+      <DependentUpon>Becas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalendarWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalendarWindow.Designer.cs">
+      <DependentUpon>CalendarWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="movility_template.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="movility_template.Designer.cs">
+      <DependentUpon>movility_template.cs</DependentUpon>
     </Compile>
     <Compile Include="Locations.cs">
       <SubType>Form</SubType>
@@ -175,8 +187,14 @@
       <DependentUpon>Form2.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="administrativeMenu.resx">
-      <DependentUpon>administrativeMenu.cs</DependentUpon>
+    <EmbeddedResource Include="Becas.resx">
+      <DependentUpon>Becas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalendarWindow.resx">
+      <DependentUpon>CalendarWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="movility_template.resx">
+      <DependentUpon>movility_template.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Locations.resx">
       <DependentUpon>Locations.cs</DependentUpon>

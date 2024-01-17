@@ -30,11 +30,15 @@
         {
             this.dayLabel = new System.Windows.Forms.Label();
             this.hourLabel = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelside = new System.Windows.Forms.FlowLayoutPanel();
+            this.opt1movbutton = new System.Windows.Forms.Button();
+            this.opt2movbutton = new System.Windows.Forms.Button();
+            this.opt3movbutton = new System.Windows.Forms.Button();
+            this.mainpanel = new System.Windows.Forms.Panel();
+            this.paneltitle = new System.Windows.Forms.Panel();
+            this.labeltitle = new System.Windows.Forms.Label();
+            this.panelside.SuspendLayout();
+            this.paneltitle.SuspendLayout();
             this.SuspendLayout();
             // 
             // dayLabel
@@ -56,76 +60,139 @@
             this.hourLabel.TabIndex = 1;
             this.hourLabel.Text = "hour";
             // 
-            // tableLayoutPanel1
+            // panelside
             // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 1, 2);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 42);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 645);
-            this.tableLayoutPanel1.TabIndex = 3;
+            this.panelside.AutoSize = true;
+            this.panelside.BackColor = System.Drawing.Color.Transparent;
+            this.panelside.Controls.Add(this.opt1movbutton);
+            this.panelside.Controls.Add(this.opt2movbutton);
+            this.panelside.Controls.Add(this.opt3movbutton);
+            this.panelside.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelside.Font = new System.Drawing.Font("Yu Gothic UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelside.ForeColor = System.Drawing.Color.Silver;
+            this.panelside.Location = new System.Drawing.Point(0, 142);
+            this.panelside.Name = "panelside";
+            this.panelside.Size = new System.Drawing.Size(465, 545);
+            this.panelside.TabIndex = 3;
             // 
-            // pictureBox1
+            // opt1movbutton
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = global::Tuto.Properties.Resources.map_europe;
-            this.pictureBox1.Location = new System.Drawing.Point(83, 99);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(634, 381);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.opt1movbutton.AutoSize = true;
+            this.opt1movbutton.Cursor = System.Windows.Forms.Cursors.AppStarting;
+            this.opt1movbutton.FlatAppearance.BorderSize = 0;
+            this.opt1movbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.opt1movbutton.Font = new System.Drawing.Font("Yu Gothic UI", 63.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.opt1movbutton.ForeColor = System.Drawing.Color.Black;
+            this.opt1movbutton.Location = new System.Drawing.Point(3, 3);
+            this.opt1movbutton.Name = "opt1movbutton";
+            this.opt1movbutton.Padding = new System.Windows.Forms.Padding(10);
+            this.opt1movbutton.Size = new System.Drawing.Size(444, 143);
+            this.opt1movbutton.TabIndex = 0;
+            this.opt1movbutton.Text = "AUSTRIA";
+            this.opt1movbutton.UseVisualStyleBackColor = true;
+            this.opt1movbutton.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label1
+            // opt2movbutton
             // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Location = new System.Drawing.Point(83, 483);
-            this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(15);
-            this.label1.Size = new System.Drawing.Size(634, 96);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.opt2movbutton.AutoSize = true;
+            this.opt2movbutton.Cursor = System.Windows.Forms.Cursors.AppStarting;
+            this.opt2movbutton.FlatAppearance.BorderSize = 0;
+            this.opt2movbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.opt2movbutton.Font = new System.Drawing.Font("Yu Gothic UI", 63.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.opt2movbutton.ForeColor = System.Drawing.Color.Black;
+            this.opt2movbutton.Location = new System.Drawing.Point(3, 152);
+            this.opt2movbutton.Name = "opt2movbutton";
+            this.opt2movbutton.Padding = new System.Windows.Forms.Padding(10);
+            this.opt2movbutton.Size = new System.Drawing.Size(459, 143);
+            this.opt2movbutton.TabIndex = 0;
+            this.opt2movbutton.Text = "LITUANIA";
+            this.opt2movbutton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.opt2movbutton.UseVisualStyleBackColor = true;
+            this.opt2movbutton.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // opt3movbutton
+            // 
+            this.opt3movbutton.AutoSize = true;
+            this.opt3movbutton.Cursor = System.Windows.Forms.Cursors.AppStarting;
+            this.opt3movbutton.FlatAppearance.BorderSize = 0;
+            this.opt3movbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.opt3movbutton.Font = new System.Drawing.Font("Yu Gothic UI", 63.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.opt3movbutton.ForeColor = System.Drawing.Color.Black;
+            this.opt3movbutton.Location = new System.Drawing.Point(3, 301);
+            this.opt3movbutton.Name = "opt3movbutton";
+            this.opt3movbutton.Padding = new System.Windows.Forms.Padding(10);
+            this.opt3movbutton.Size = new System.Drawing.Size(454, 143);
+            this.opt3movbutton.TabIndex = 0;
+            this.opt3movbutton.Text = "POLONIA";
+            this.opt3movbutton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.opt3movbutton.UseVisualStyleBackColor = true;
+            this.opt3movbutton.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // mainpanel
+            // 
+            this.mainpanel.BackColor = System.Drawing.Color.White;
+            this.mainpanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainpanel.Location = new System.Drawing.Point(465, 142);
+            this.mainpanel.Name = "mainpanel";
+            this.mainpanel.Size = new System.Drawing.Size(335, 545);
+            this.mainpanel.TabIndex = 4;
+            // 
+            // paneltitle
+            // 
+            this.paneltitle.BackColor = System.Drawing.Color.Transparent;
+            this.paneltitle.Controls.Add(this.labeltitle);
+            this.paneltitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.paneltitle.Font = new System.Drawing.Font("Yu Gothic UI", 63.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.paneltitle.ForeColor = System.Drawing.Color.White;
+            this.paneltitle.Location = new System.Drawing.Point(0, 42);
+            this.paneltitle.Name = "paneltitle";
+            this.paneltitle.Size = new System.Drawing.Size(800, 100);
+            this.paneltitle.TabIndex = 5;
+            // 
+            // labeltitle
+            // 
+            this.labeltitle.AutoSize = true;
+            this.labeltitle.Dock = System.Windows.Forms.DockStyle.Right;
+            this.labeltitle.Location = new System.Drawing.Point(379, 0);
+            this.labeltitle.Name = "labeltitle";
+            this.labeltitle.Size = new System.Drawing.Size(421, 113);
+            this.labeltitle.TabIndex = 0;
+            this.labeltitle.Text = "ERASMUS";
+            this.labeltitle.Click += new System.EventHandler(this.labeltitle_Click);
             // 
             // offersExchange
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Tuto.Properties.Resources.Pantalla_Background;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(800, 687);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.mainpanel);
+            this.Controls.Add(this.panelside);
+            this.Controls.Add(this.paneltitle);
+            this.DoubleBuffered = true;
             this.Name = "offersExchange";
             this.Text = "Form4";
             this.Load += new System.EventHandler(this.Form4_Load_1);
-            this.Controls.SetChildIndex(this.tableLayoutPanel1, 0);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Controls.SetChildIndex(this.paneltitle, 0);
+            this.Controls.SetChildIndex(this.panelside, 0);
+            this.Controls.SetChildIndex(this.mainpanel, 0);
+            this.panelside.ResumeLayout(false);
+            this.panelside.PerformLayout();
+            this.paneltitle.ResumeLayout(false);
+            this.paneltitle.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label dayLabel;
         private System.Windows.Forms.Label hourLabel;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.FlowLayoutPanel panelside;
+        private System.Windows.Forms.Panel mainpanel;
+        private System.Windows.Forms.Button opt2movbutton;
+        private System.Windows.Forms.Button opt1movbutton;
+        private System.Windows.Forms.Button opt3movbutton;
+        private System.Windows.Forms.Panel paneltitle;
+        private System.Windows.Forms.Label labeltitle;
     }
 }

@@ -284,6 +284,7 @@ namespace Tuto
 
         private void panel5_Click(object sender, EventArgs e)
         {
+            this.Visible = false;
             adminOptions homeWindow = new adminOptions();
             homeWindow.Show();
             this.Hide();

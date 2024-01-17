@@ -55,7 +55,7 @@ namespace Tuto
             {
                 this.label1.Text = "To log in you need your personal UGR QR code. \r\nYou can find it in your UGR App profile!\r\n";
                 this.label3.Text = "Scan your QR code here!";
-                this.label3.Text = "To go back use the page back gesture";
+                this.label2.Text = "To go back use the page back gesture";
 
 
             }
@@ -119,7 +119,9 @@ namespace Tuto
                         captureDevice.Stop();
                     }
 
+           
                     NewHome.userLogged = result.ToString().Split('@')[0];
+                    label3.Text = NewHome.userLogged;
                     NewSchedule schedule = new NewSchedule();
                     schedule.Show();
                     this.Hide();

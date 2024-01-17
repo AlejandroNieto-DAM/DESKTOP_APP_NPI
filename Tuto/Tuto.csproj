@@ -115,6 +115,18 @@
     <Compile Include="movility_template.Designer.cs">
       <DependentUpon>movility_template.cs</DependentUpon>
     </Compile>
+    <Compile Include="Locations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Locations.Designer.cs">
+      <DependentUpon>Locations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MostrarImagen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MostrarImagen.Designer.cs">
+      <DependentUpon>MostrarImagen.cs</DependentUpon>
+    </Compile>
     <Compile Include="offersExchange.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +195,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="movility_template.resx">
       <DependentUpon>movility_template.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Locations.resx">
+      <DependentUpon>Locations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MostrarImagen.resx">
+      <DependentUpon>MostrarImagen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="offersExchange.resx">
       <DependentUpon>offersExchange.cs</DependentUpon>
@@ -274,6 +292,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapaPintado1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapa_informacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapa_comedor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapa_clases.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapa_despachos.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

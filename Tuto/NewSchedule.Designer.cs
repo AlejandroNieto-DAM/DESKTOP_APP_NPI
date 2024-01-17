@@ -74,7 +74,7 @@
             this.panel1.Location = new System.Drawing.Point(30, 166);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 40, 3, 30);
             this.panel1.Name = "panel1";
-            this.panel1.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.panel1.Padding = new System.Windows.Forms.Padding(10);
             this.panel1.Size = new System.Drawing.Size(540, 599);
             this.panel1.TabIndex = 2;
             // 
@@ -87,7 +87,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(520, 47);
             this.label4.TabIndex = 9;
-            this.label4.Text = "For see the canteen menu do the pass page gesture";
+            this.label4.Text = "For coming back do the return page gesture";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel1
@@ -109,9 +109,9 @@
             this.tableLayoutPanel1.Controls.Add(this.label15, 1, 4);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(10, 166);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(30, 30, 30, 30);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(30);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(30, 30, 30, 30);
+            this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(30);
             this.tableLayoutPanel1.RowCount = 5;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -198,7 +198,7 @@
             this.label11.Font = new System.Drawing.Font("Yu Gothic UI", 20.75F, System.Drawing.FontStyle.Bold);
             this.label11.ForeColor = System.Drawing.Color.Snow;
             this.label11.Location = new System.Drawing.Point(117, 47);
-            this.label11.Margin = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.label11.Margin = new System.Windows.Forms.Padding(15);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(356, 31);
             this.label11.TabIndex = 5;
@@ -213,7 +213,7 @@
             this.label12.Font = new System.Drawing.Font("Yu Gothic UI", 20.75F, System.Drawing.FontStyle.Bold);
             this.label12.ForeColor = System.Drawing.Color.Snow;
             this.label12.Location = new System.Drawing.Point(117, 110);
-            this.label12.Margin = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.label12.Margin = new System.Windows.Forms.Padding(15);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(356, 31);
             this.label12.TabIndex = 6;
@@ -228,7 +228,7 @@
             this.label13.Font = new System.Drawing.Font("Yu Gothic UI", 20.75F, System.Drawing.FontStyle.Bold);
             this.label13.ForeColor = System.Drawing.Color.Snow;
             this.label13.Location = new System.Drawing.Point(117, 173);
-            this.label13.Margin = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.label13.Margin = new System.Windows.Forms.Padding(15);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(356, 31);
             this.label13.TabIndex = 7;
@@ -243,7 +243,7 @@
             this.label14.Font = new System.Drawing.Font("Yu Gothic UI", 20.75F, System.Drawing.FontStyle.Bold);
             this.label14.ForeColor = System.Drawing.Color.Snow;
             this.label14.Location = new System.Drawing.Point(117, 236);
-            this.label14.Margin = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.label14.Margin = new System.Windows.Forms.Padding(15);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(356, 31);
             this.label14.TabIndex = 8;
@@ -258,7 +258,7 @@
             this.label15.Font = new System.Drawing.Font("Yu Gothic UI", 20.75F, System.Drawing.FontStyle.Bold);
             this.label15.ForeColor = System.Drawing.Color.Snow;
             this.label15.Location = new System.Drawing.Point(117, 299);
-            this.label15.Margin = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.label15.Margin = new System.Windows.Forms.Padding(15);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(356, 32);
             this.label15.TabIndex = 9;
@@ -288,7 +288,6 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(520, 106);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Your next class  starts in :";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // NewSchedule

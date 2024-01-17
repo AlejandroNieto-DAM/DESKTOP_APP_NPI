@@ -107,6 +107,20 @@ namespace Tuto
             menuCom.Show();
             this.Hide();
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Locations menuCom = new Locations();
+            menuCom.Show();
+            this.Hide();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            MostrarImagen menuCom = new MostrarImagen();
+            menuCom.Show();
+            this.Hide();
+        }
     }
 
 

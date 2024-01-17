@@ -222,9 +222,19 @@ namespace Tuto
             this.panel4.BackColor = Color.FromArgb(99, 126, 118);
         }
 
+        private void label6_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
         private void panel5_MouseHover(object sender, EventArgs e)
         {
             this.panel5.BackColor = Color.FromArgb(99, 126, 118);
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
         private void panel5_MouseLeave(object sender, EventArgs e)

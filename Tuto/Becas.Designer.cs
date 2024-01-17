@@ -1,6 +1,6 @@
 ﻿namespace Tuto
 {
-    partial class administrativeMenu
+    partial class Becas
     {
         /// <summary>
         /// Required designer variable.
@@ -31,9 +31,9 @@
             this.dayLabel = new System.Windows.Forms.Label();
             this.hourLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.buttonOffers = new System.Windows.Forms.Button();
-            this.buttonCalendar = new System.Windows.Forms.Button();
-            this.buttonRequirements = new System.Windows.Forms.Button();
+            this.buttonUGR = new System.Windows.Forms.Button();
+            this.buttonMinisterio = new System.Windows.Forms.Button();
+            this.buttonAndalucia = new System.Windows.Forms.Button();
             this.labelTitle = new System.Windows.Forms.Label();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -64,9 +64,9 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel2.Controls.Add(this.buttonOffers, 1, 2);
-            this.tableLayoutPanel2.Controls.Add(this.buttonCalendar, 1, 4);
-            this.tableLayoutPanel2.Controls.Add(this.buttonRequirements, 1, 6);
+            this.tableLayoutPanel2.Controls.Add(this.buttonUGR, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.buttonMinisterio, 1, 4);
+            this.tableLayoutPanel2.Controls.Add(this.buttonAndalucia, 1, 6);
             this.tableLayoutPanel2.Controls.Add(this.labelTitle, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 42);
@@ -83,41 +83,41 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(345, 546);
             this.tableLayoutPanel2.TabIndex = 3;
             // 
-            // buttonOffers
+            // buttonUGR
             // 
-            this.buttonOffers.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonOffers.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.buttonOffers.Location = new System.Drawing.Point(37, 84);
-            this.buttonOffers.Name = "buttonOffers";
-            this.buttonOffers.Size = new System.Drawing.Size(270, 103);
-            this.buttonOffers.TabIndex = 0;
-            this.buttonOffers.Text = "Ofertas";
-            this.buttonOffers.UseVisualStyleBackColor = true;
-            this.buttonOffers.Click += new System.EventHandler(this.buttonOffers_Click_1);
+            this.buttonUGR.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonUGR.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.buttonUGR.Location = new System.Drawing.Point(37, 84);
+            this.buttonUGR.Name = "buttonUGR";
+            this.buttonUGR.Size = new System.Drawing.Size(270, 103);
+            this.buttonUGR.TabIndex = 0;
+            this.buttonUGR.Text = "Becas UGR";
+            this.buttonUGR.UseVisualStyleBackColor = true;
+            this.buttonUGR.Click += new System.EventHandler(this.buttonOffers_Click_1);
             // 
-            // buttonCalendar
+            // buttonMinisterio
             // 
-            this.buttonCalendar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonCalendar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.buttonCalendar.Location = new System.Drawing.Point(37, 220);
-            this.buttonCalendar.Name = "buttonCalendar";
-            this.buttonCalendar.Size = new System.Drawing.Size(270, 103);
-            this.buttonCalendar.TabIndex = 1;
-            this.buttonCalendar.Text = "Calendario";
-            this.buttonCalendar.UseVisualStyleBackColor = true;
-            this.buttonCalendar.Click += new System.EventHandler(this.buttonCalendar_Click);
+            this.buttonMinisterio.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonMinisterio.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.buttonMinisterio.Location = new System.Drawing.Point(37, 220);
+            this.buttonMinisterio.Name = "buttonMinisterio";
+            this.buttonMinisterio.Size = new System.Drawing.Size(270, 103);
+            this.buttonMinisterio.TabIndex = 1;
+            this.buttonMinisterio.Text = "Becas del Ministerio";
+            this.buttonMinisterio.UseVisualStyleBackColor = true;
+            this.buttonMinisterio.Click += new System.EventHandler(this.buttonCalendar_Click);
             // 
-            // buttonRequirements
+            // buttonAndalucia
             // 
-            this.buttonRequirements.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonRequirements.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.buttonRequirements.Location = new System.Drawing.Point(37, 356);
-            this.buttonRequirements.Name = "buttonRequirements";
-            this.buttonRequirements.Size = new System.Drawing.Size(270, 103);
-            this.buttonRequirements.TabIndex = 2;
-            this.buttonRequirements.Text = "Requisitos";
-            this.buttonRequirements.UseVisualStyleBackColor = true;
-            this.buttonRequirements.Click += new System.EventHandler(this.buttonRequirements_Click_1);
+            this.buttonAndalucia.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonAndalucia.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.buttonAndalucia.Location = new System.Drawing.Point(37, 356);
+            this.buttonAndalucia.Name = "buttonAndalucia";
+            this.buttonAndalucia.Size = new System.Drawing.Size(270, 103);
+            this.buttonAndalucia.TabIndex = 2;
+            this.buttonAndalucia.Text = "Becas Junta de Andalucía";
+            this.buttonAndalucia.UseVisualStyleBackColor = true;
+            this.buttonAndalucia.Click += new System.EventHandler(this.buttonRequirements_Click_1);
             // 
             // labelTitle
             // 
@@ -129,17 +129,17 @@
             this.labelTitle.Name = "labelTitle";
             this.labelTitle.Size = new System.Drawing.Size(270, 54);
             this.labelTitle.TabIndex = 3;
-            this.labelTitle.Text = "Trámites";
+            this.labelTitle.Text = "Becas";
             this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // administrativeMenu
+            // Becas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(345, 588);
             this.Controls.Add(this.tableLayoutPanel2);
             this.DoubleBuffered = true;
-            this.Name = "administrativeMenu";
+            this.Name = "Becas";
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);
             this.Controls.SetChildIndex(this.tableLayoutPanel2, 0);
@@ -153,9 +153,9 @@
         private System.Windows.Forms.Label dayLabel;
         private System.Windows.Forms.Label hourLabel;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Button buttonOffers;
-        private System.Windows.Forms.Button buttonCalendar;
-        private System.Windows.Forms.Button buttonRequirements;
+        private System.Windows.Forms.Button buttonUGR;
+        private System.Windows.Forms.Button buttonMinisterio;
+        private System.Windows.Forms.Button buttonAndalucia;
         private System.Windows.Forms.Label labelTitle;
     }
 }

@@ -63,9 +63,11 @@ namespace Tuto
                 if (control is Button)
                 {
                     Button boton = (Button)control;
-                    boton.Font = new Font("Arial", 16, FontStyle.Bold);
+                    boton.Font = new Font("Arial", 16 * 4, FontStyle.Bold);
                 }
             }
+
+            labelTitle.Font = new Font("Arial", 36 * 4, FontStyle.Bold);
         }
         
         private void time_Tick(object sender, EventArgs e)
@@ -186,19 +188,31 @@ namespace Tuto
         private void buttonMovNacional_Click(object sender, EventArgs e)
         {
             national = !national;
-            administrativeMenu nationalWindow = new administrativeMenu(true);
-            nationalWindow.Show();
+            offersExchange offers_window = new offersExchange(true);
+            offers_window.Show();
             this.Hide();
         }
 
         private void buttonMovInterna_Click(object sender, EventArgs e)
         {
-            administrativeMenu nationalWindow = new administrativeMenu(national);
-            nationalWindow.Show();
+            offersExchange offers_window = new offersExchange(national);
+            offers_window.Show();
             this.Hide();
         }
 
         private void tableLayoutPanel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Becas becas = new Becas();
+            becas.Show();
+            this.Hide();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
         {
 
         }

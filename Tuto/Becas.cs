@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace Tuto
 {
-    public partial class administrativeMenu : BasicFormLayout
+    public partial class Becas : BasicFormLayout
     {
         bool isNationalExchange;
-        public administrativeMenu(bool nationalExchange)
+        public Becas()
         {
             InitializeComponent();
-            isNationalExchange = nationalExchange;
             //tableLayoutPanel1.BackColor = Color.Transparent;
             //tableLayoutPanel2.BackColor = Color.Transparent;
             this.Size = FormSize;
+            ApplyCommonStyleButton();
 
         }
 
@@ -59,6 +59,20 @@ namespace Tuto
             CalendarWindow formCalendar = new CalendarWindow(this.isNationalExchange);
             formCalendar.Show();
             this.Hide();
+        }
+
+        private void ApplyCommonStyleButton()
+        {
+            // TODO: this is not working
+            // Iterar sobre todos los controles en el formulario
+            foreach (Control control in tableLayoutPanel2.Controls)
+            {
+                if (control is Button)
+                {
+                    Button boton = (Button)control;
+                    boton.Font = new Font("Arial", 16 * 4, FontStyle.Bold);
+                }
+            }
         }
     }
 }

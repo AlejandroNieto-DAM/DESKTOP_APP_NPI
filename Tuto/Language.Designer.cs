@@ -57,9 +57,8 @@
             this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 27.25F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(600, 137);
+            this.label1.Size = new System.Drawing.Size(600, 201);
             this.label1.TabIndex = 0;
             this.label1.Text = "For keeping with the process \r\nplease choose your language";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -82,7 +81,8 @@
             this.tableLayoutPanel1.Controls.Add(this.pictureBox9, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox2, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 137);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 201);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -90,17 +90,17 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(600, 600);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(600, 505);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(260, 20);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(20);
+            this.pictureBox3.Location = new System.Drawing.Point(255, 15);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(15);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox3.Size = new System.Drawing.Size(90, 71);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
@@ -110,10 +110,10 @@
             // 
             this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(400, 120);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(40, 0, 0, 40);
+            this.pictureBox4.Location = new System.Drawing.Point(390, 101);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(30, 0, 0, 30);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox4.Size = new System.Drawing.Size(90, 71);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
@@ -123,10 +123,10 @@
             // 
             this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(480, 260);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(0, 20, 40, 20);
+            this.pictureBox5.Location = new System.Drawing.Point(480, 217);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(0, 15, 30, 15);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox5.Size = new System.Drawing.Size(90, 71);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 4;
             this.pictureBox5.TabStop = false;
@@ -135,10 +135,10 @@
             // 
             this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(400, 400);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(40, 40, 0, 0);
+            this.pictureBox6.Location = new System.Drawing.Point(390, 333);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(30, 30, 0, 0);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox6.Size = new System.Drawing.Size(90, 71);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 5;
             this.pictureBox6.TabStop = false;
@@ -147,10 +147,10 @@
             // 
             this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(260, 500);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(20);
+            this.pictureBox7.Location = new System.Drawing.Point(255, 419);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(15);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox7.Size = new System.Drawing.Size(90, 71);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 6;
             this.pictureBox7.TabStop = false;
@@ -159,10 +159,10 @@
             // 
             this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(120, 400);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(0, 40, 40, 0);
+            this.pictureBox8.Location = new System.Drawing.Point(120, 333);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(0, 30, 30, 0);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox8.Size = new System.Drawing.Size(90, 71);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 7;
             this.pictureBox8.TabStop = false;
@@ -171,10 +171,10 @@
             // 
             this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(40, 260);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(40, 20, 0, 20);
+            this.pictureBox9.Location = new System.Drawing.Point(30, 217);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(30, 15, 0, 15);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox9.Size = new System.Drawing.Size(90, 71);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 8;
             this.pictureBox9.TabStop = false;
@@ -183,28 +183,30 @@
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(120, 120);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(0, 0, 40, 40);
+            this.pictureBox2.Location = new System.Drawing.Point(120, 101);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(0, 0, 30, 30);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox2.Size = new System.Drawing.Size(90, 71);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
             // 
             // Language
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 1120);
+            this.ClientSize = new System.Drawing.Size(600, 988);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "Language";
             this.Text = "Language";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Resize += new System.EventHandler(this.Language_Resize);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

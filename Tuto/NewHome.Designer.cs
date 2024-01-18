@@ -73,9 +73,8 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(900, 63);
+            this.panel1.Size = new System.Drawing.Size(600, 41);
             this.panel1.TabIndex = 0;
             // 
             // label2
@@ -83,10 +82,10 @@
             this.label2.Dock = System.Windows.Forms.DockStyle.Right;
             this.label2.Font = new System.Drawing.Font("Yu Gothic UI", 15.25F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(600, 0);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(400, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(150, 63);
+            this.label2.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.label2.Size = new System.Drawing.Size(100, 41);
             this.label2.TabIndex = 1;
             this.label2.Text = "11-02-2020";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -96,10 +95,9 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Right;
             this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 15.25F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(750, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(500, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(150, 63);
+            this.label1.Size = new System.Drawing.Size(100, 41);
             this.label1.TabIndex = 0;
             this.label1.Text = "13:45";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -110,35 +108,34 @@
             this.label3.Dock = System.Windows.Forms.DockStyle.Top;
             this.label3.Font = new System.Drawing.Font("Yu Gothic UI", 30.25F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(0, 63);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(0, 41);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(900, 195);
+            this.label3.Size = new System.Drawing.Size(600, 150);
             this.label3.TabIndex = 1;
             this.label3.Text = "Bienvenido! Interactua para comenzar";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel1.ColumnCount = 5;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16F));
             this.tableLayoutPanel1.Controls.Add(this.panel2, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel3, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel4, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.panel5, 3, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 258);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(45, 46, 45, 46);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 191);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(30, 30, 30, 30);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(900, 754);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(600, 490);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // panel2
@@ -147,11 +144,11 @@
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(111, 42);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 42, 3, 42);
+            this.panel2.Location = new System.Drawing.Point(98, 39);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 39, 2, 39);
             this.panel2.Name = "panel2";
-            this.panel2.Padding = new System.Windows.Forms.Padding(15, 15, 15, 15);
-            this.panel2.Size = new System.Drawing.Size(282, 293);
+            this.panel2.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.panel2.Size = new System.Drawing.Size(152, 167);
             this.panel2.TabIndex = 4;
             this.panel2.Click += new System.EventHandler(this.panel2_Click);
             this.panel2.MouseLeave += new System.EventHandler(this.panel2_MouseLeave);
@@ -161,12 +158,11 @@
             // 
             this.label5.Dock = System.Windows.Forms.DockStyle.Top;
             this.label5.Font = new System.Drawing.Font("Yu Gothic UI", 18.25F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(15, 189);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(10, 123);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(252, 71);
+            this.label5.Size = new System.Drawing.Size(132, 46);
             this.label5.TabIndex = 1;
-            this.label5.Text = "My personal\r\nHorario\r\n";
+            this.label5.Text = "Horario";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label5.Click += new System.EventHandler(this.panel2_Click);
             this.label5.MouseHover += new System.EventHandler(this.label5_MouseHover);
@@ -175,10 +171,9 @@
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(15, 15);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(10, 10);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(252, 174);
+            this.pictureBox1.Size = new System.Drawing.Size(132, 113);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -191,12 +186,13 @@
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(507, 42);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 42, 3, 42);
+            this.panel3.Location = new System.Drawing.Point(350, 39);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 39, 2, 39);
             this.panel3.Name = "panel3";
-            this.panel3.Padding = new System.Windows.Forms.Padding(15, 15, 15, 15);
-            this.panel3.Size = new System.Drawing.Size(282, 293);
+            this.panel3.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.panel3.Size = new System.Drawing.Size(152, 167);
             this.panel3.TabIndex = 5;
+            this.panel3.Click += new System.EventHandler(this.panel3_Click);
             this.panel3.MouseLeave += new System.EventHandler(this.panel3_MouseLeave);
             this.panel3.MouseHover += new System.EventHandler(this.panel3_MouseHover);
             // 
@@ -204,26 +200,25 @@
             // 
             this.label6.Dock = System.Windows.Forms.DockStyle.Top;
             this.label6.Font = new System.Drawing.Font("Yu Gothic UI", 18.25F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(15, 189);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(10, 123);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(252, 71);
+            this.label6.Size = new System.Drawing.Size(132, 46);
             this.label6.TabIndex = 2;
             this.label6.Text = "Canteen Menu";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label6.Click += new System.EventHandler(this.label6_Click_1);
+            this.label6.Click += new System.EventHandler(this.panel3_Click);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(15, 15);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox2.Location = new System.Drawing.Point(10, 10);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(252, 174);
+            this.pictureBox2.Size = new System.Drawing.Size(132, 113);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.panel3_Click);
             this.pictureBox2.MouseHover += new System.EventHandler(this.panel3_MouseHover);
             // 
             // panel4
@@ -232,11 +227,11 @@
             this.panel4.Controls.Add(this.label7);
             this.panel4.Controls.Add(this.pictureBox3);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(111, 419);
-            this.panel4.Margin = new System.Windows.Forms.Padding(3, 42, 3, 42);
+            this.panel4.Location = new System.Drawing.Point(98, 284);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 39, 2, 39);
             this.panel4.Name = "panel4";
-            this.panel4.Padding = new System.Windows.Forms.Padding(15, 15, 15, 15);
-            this.panel4.Size = new System.Drawing.Size(282, 293);
+            this.panel4.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.panel4.Size = new System.Drawing.Size(152, 167);
             this.panel4.TabIndex = 6;
             this.panel4.MouseLeave += new System.EventHandler(this.panel4_MouseLeave);
             this.panel4.MouseHover += new System.EventHandler(this.panel4_MouseHover);
@@ -245,10 +240,9 @@
             // 
             this.label7.Dock = System.Windows.Forms.DockStyle.Top;
             this.label7.Font = new System.Drawing.Font("Yu Gothic UI", 18.25F, System.Drawing.FontStyle.Bold);
-            this.label7.Location = new System.Drawing.Point(15, 186);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(10, 121);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(252, 71);
+            this.label7.Size = new System.Drawing.Size(132, 46);
             this.label7.TabIndex = 3;
             this.label7.Text = "Teacher Information";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -258,10 +252,9 @@
             // 
             this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(15, 15);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox3.Location = new System.Drawing.Point(10, 10);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(252, 171);
+            this.pictureBox3.Size = new System.Drawing.Size(132, 111);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
@@ -273,11 +266,11 @@
             this.panel5.Controls.Add(this.label8);
             this.panel5.Controls.Add(this.pictureBox4);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(507, 419);
-            this.panel5.Margin = new System.Windows.Forms.Padding(3, 42, 3, 42);
+            this.panel5.Location = new System.Drawing.Point(350, 284);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2, 39, 2, 39);
             this.panel5.Name = "panel5";
-            this.panel5.Padding = new System.Windows.Forms.Padding(15, 15, 15, 15);
-            this.panel5.Size = new System.Drawing.Size(282, 293);
+            this.panel5.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.panel5.Size = new System.Drawing.Size(152, 167);
             this.panel5.TabIndex = 7;
             this.panel5.Click += new System.EventHandler(this.panel5_Click);
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
@@ -288,26 +281,26 @@
             // 
             this.label8.Dock = System.Windows.Forms.DockStyle.Top;
             this.label8.Font = new System.Drawing.Font("Yu Gothic UI", 18.25F, System.Drawing.FontStyle.Bold);
-            this.label8.Location = new System.Drawing.Point(15, 186);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(10, 121);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(252, 71);
+            this.label8.Size = new System.Drawing.Size(132, 46);
             this.label8.TabIndex = 4;
             this.label8.Text = "Administrative petitions";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label8.Click += new System.EventHandler(this.panel5_Click);
             this.label8.MouseHover += new System.EventHandler(this.label8_MouseHover);
             // 
             // pictureBox4
             // 
             this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(15, 15);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox4.Location = new System.Drawing.Point(10, 10);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(252, 171);
+            this.pictureBox4.Size = new System.Drawing.Size(132, 111);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 0;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.panel5_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -318,13 +311,13 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12F));
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 1012);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 37, 3, 3);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 681);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 24, 2, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.Padding = new System.Windows.Forms.Padding(0, 37, 0, 0);
+            this.tableLayoutPanel2.Padding = new System.Windows.Forms.Padding(0, 24, 0, 0);
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(900, 234);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(600, 152);
             this.tableLayoutPanel2.TabIndex = 3;
             // 
             // tableLayoutPanel3
@@ -336,14 +329,15 @@
             this.tableLayoutPanel3.Controls.Add(this.pictureBox5, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.label4, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(112, 42);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(97, 34);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(25, 10, 25, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.Padding = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.tableLayoutPanel3.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(676, 187);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(406, 115);
             this.tableLayoutPanel3.TabIndex = 0;
+            this.tableLayoutPanel3.Click += new System.EventHandler(this.tableLayoutPanel3_Click);
             this.tableLayoutPanel3.MouseLeave += new System.EventHandler(this.tableLayoutPanel3_MouseLeave);
             this.tableLayoutPanel3.MouseHover += new System.EventHandler(this.tableLayoutPanel3_MouseHover);
             // 
@@ -351,25 +345,27 @@
             // 
             this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(18, 18);
+            this.pictureBox5.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(317, 151);
+            this.pictureBox5.Size = new System.Drawing.Size(189, 91);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.tableLayoutPanel3_Click);
             this.pictureBox5.MouseHover += new System.EventHandler(this.pictureBox5_MouseHover);
             // 
             // label4
             // 
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label4.Font = new System.Drawing.Font("Yu Gothic UI", 18.25F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(342, 15);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(206, 10);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(315, 157);
+            this.label4.Size = new System.Drawing.Size(187, 95);
             this.label4.TabIndex = 1;
             this.label4.Text = "Locations";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label4.Click += new System.EventHandler(this.tableLayoutPanel3_Click);
             this.label4.MouseHover += new System.EventHandler(this.label4_MouseHover);
             // 
             // label9
@@ -386,18 +382,19 @@
             // 
             // NewHome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(900, 1100);
+            this.ClientSize = new System.Drawing.Size(600, 988);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "NewHome";
             this.Text = "NewHome";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

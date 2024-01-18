@@ -49,8 +49,9 @@
             this.label1.Padding = new System.Windows.Forms.Padding(0, 60, 0, 60);
             this.label1.Size = new System.Drawing.Size(540, 233);
             this.label1.TabIndex = 1;
-            this.label1.Text = "La localización seleccionada se encuentra en:";
+            this.label1.Text = "DESPACHOS PROFESORES";
             this.label1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel1
             // 
@@ -65,15 +66,16 @@
             this.panel1.Padding = new System.Windows.Forms.Padding(10);
             this.panel1.Size = new System.Drawing.Size(540, 675);
             this.panel1.TabIndex = 2;
+            this.panel1.Resize += new System.EventHandler(this.panel1_Resize);
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Snow;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::Tuto.Properties.Resources.mapa_despachos;
-            this.pictureBox1.Location = new System.Drawing.Point(10, 20);
+            this.pictureBox1.Location = new System.Drawing.Point(10, 132);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(520, 568);
+            this.pictureBox1.Size = new System.Drawing.Size(520, 456);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
@@ -94,12 +96,14 @@
             // 
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label2.Font = new System.Drawing.Font("Yu Gothic UI", 20.75F, System.Drawing.FontStyle.Bold);
+            this.label2.Font = new System.Drawing.Font("Yu Gothic UI", 16.75F);
             this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label2.Location = new System.Drawing.Point(10, 10);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(520, 10);
+            this.label2.Size = new System.Drawing.Size(520, 122);
             this.label2.TabIndex = 4;
+            this.label2.Text = "A partir de la ubicación en la que se encuentra, mira a la derecha y suba por las" +
+    " escaleras o ascensor que puede visualiizar";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MostrarImagen
@@ -113,10 +117,11 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MostrarImagen";
             this.Padding = new System.Windows.Forms.Padding(30, 0, 30, 0);
             this.Text = "s";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.NewSchedule_Load);
             this.Resize += new System.EventHandler(this.NewSchedule_Resize);
             this.panel1.ResumeLayout(false);

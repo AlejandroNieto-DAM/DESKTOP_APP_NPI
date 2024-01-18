@@ -59,6 +59,11 @@ namespace Tuto
 
             this.tableLayoutPanel1.Height = this.tableLayoutPanel1.Height * NewHome.ScreenHeight / NewHome.FormHeight;
 
+            this.tableLayoutPanel3.Height = this.tableLayoutPanel3.Height * NewHome.ScreenHeight / NewHome.FormHeight;
+            this.tableLayoutPanel3.Width = this.tableLayoutPanel3.Width * ScreenWidth / FormWidth;
+            this.tableLayoutPanel3.Margin = new Padding(this.tableLayoutPanel3.Margin.Left * ScreenWidth / FormWidth, this.tableLayoutPanel3.Margin.Top * ScreenHeight / FormHeight, this.tableLayoutPanel3.Margin.Right * ScreenWidth / FormWidth, this.tableLayoutPanel3.Margin.Bottom * ScreenHeight / FormHeight);
+            this.tableLayoutPanel3.Padding = new Padding(this.tableLayoutPanel3.Padding.Left * ScreenWidth / FormWidth, this.tableLayoutPanel3.Padding.Top * ScreenHeight / FormHeight, this.tableLayoutPanel3.Padding.Right * ScreenWidth / FormWidth, this.tableLayoutPanel3.Padding.Bottom * ScreenHeight / FormHeight);
+
 
             this.panel2.Height =  this.panel2.Height * NewHome.ScreenHeight / NewHome.FormHeight;
             this.panel2.Width =  this.panel2.Width * ScreenWidth / FormWidth;

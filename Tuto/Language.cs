@@ -78,26 +78,54 @@ namespace Tuto
 
             this.tableLayoutPanel1.Height = this.tableLayoutPanel1.Height * NewHome.ScreenHeight / NewHome.FormHeight;
 
-            /*
-            this.panel1.Height = this.panel1.Height * NewHome.ScreenHeight / NewHome.FormHeight;
-            this.panel1.Width = this.panel1.Width * NewHome.ScreenWidth / NewHome.FormWidth;
-            this.panel1.Margin = new Padding(this.panel1.Margin.Left * NewHome.ScreenWidth / NewHome.FormWidth, this.panel1.Margin.Top * NewHome.ScreenHeight / NewHome.FormHeight, this.panel1.Margin.Right * NewHome.ScreenWidth / NewHome.FormWidth, this.panel1.Margin.Bottom * NewHome.ScreenHeight / NewHome.FormHeight);
-            this.panel1.Padding = new Padding(this.panel1.Padding.Left * NewHome.ScreenWidth / NewHome.FormWidth, this.panel1.Padding.Top * NewHome.ScreenHeight / NewHome.FormHeight, this.panel1.Padding.Right * NewHome.ScreenWidth / NewHome.FormWidth, this.panel1.Padding.Bottom * NewHome.ScreenHeight / NewHome.FormHeight);
-            this.pictureBox1.Height = this.pictureBox1.Height * NewHome.ScreenHeight / NewHome.FormHeight;
-            
-
-            this.panel2.Height = this.panel2.Height * NewHome.ScreenHeight / NewHome.FormHeight;
-            this.panel2.Width = this.panel2.Width * NewHome.ScreenWidth / NewHome.FormWidth;
-            this.panel2.Margin = new Padding(this.panel2.Margin.Left * NewHome.ScreenWidth / NewHome.FormWidth, this.panel2.Margin.Top * NewHome.ScreenHeight / NewHome.FormHeight, this.panel2.Margin.Right * NewHome.ScreenWidth / NewHome.FormWidth, this.panel2.Margin.Bottom * NewHome.ScreenHeight / NewHome.FormHeight);
-            this.panel2.Padding = new Padding(this.panel2.Padding.Left * NewHome.ScreenWidth / NewHome.FormWidth, this.panel2.Padding.Top * NewHome.ScreenHeight / NewHome.FormHeight, this.panel2.Padding.Right * NewHome.ScreenWidth / NewHome.FormWidth, this.panel2.Padding.Bottom * NewHome.ScreenHeight / NewHome.FormHeight);
             this.pictureBox2.Height = this.pictureBox2.Height * NewHome.ScreenHeight / NewHome.FormHeight;
-          
-            
+            this.pictureBox2.Width = this.pictureBox2.Width * NewHome.ScreenWidth / NewHome.FormWidth;
+            this.pictureBox2.Margin = new Padding(this.pictureBox2.Margin.Left * NewHome.ScreenWidth / NewHome.FormWidth, this.pictureBox2.Margin.Top * NewHome.ScreenHeight / NewHome.FormHeight, this.pictureBox2.Margin.Right * NewHome.ScreenWidth / NewHome.FormWidth, this.pictureBox2.Margin.Bottom * NewHome.ScreenHeight / NewHome.FormHeight);
+            this.pictureBox2.Padding = new Padding(this.pictureBox2.Padding.Left * NewHome.ScreenWidth / NewHome.FormWidth, this.pictureBox2.Padding.Top * NewHome.ScreenHeight / NewHome.FormHeight, this.pictureBox2.Padding.Right * NewHome.ScreenWidth / NewHome.FormWidth, this.pictureBox2.Padding.Bottom * NewHome.ScreenHeight / NewHome.FormHeight);
 
-            this.panel1.Region = Region.FromHrgn(NewHome.CreateRoundRectRgn(0, 0, panel2.Width,
-            panel1.Height, 20, 20));
-            this.panel2.Region = Region.FromHrgn(NewHome.CreateRoundRectRgn(0, 0, panel2.Width,
-            panel2.Height, 20, 20));*/
+            this.pictureBox3.Height = this.pictureBox3.Height * NewHome.ScreenHeight / NewHome.FormHeight;
+            this.pictureBox3.Width = this.pictureBox3.Width * NewHome.ScreenWidth / NewHome.FormWidth;
+            this.pictureBox3.Margin = new Padding(this.pictureBox3.Margin.Left * NewHome.ScreenWidth / NewHome.FormWidth, this.pictureBox3.Margin.Top * NewHome.ScreenHeight / NewHome.FormHeight, this.pictureBox3.Margin.Right * NewHome.ScreenWidth / NewHome.FormWidth, this.pictureBox3.Margin.Bottom * NewHome.ScreenHeight / NewHome.FormHeight);
+            this.pictureBox3.Padding = new Padding(this.pictureBox3.Padding.Left * NewHome.ScreenWidth / NewHome.FormWidth, this.pictureBox3.Padding.Top * NewHome.ScreenHeight / NewHome.FormHeight, this.pictureBox3.Padding.Right * NewHome.ScreenWidth / NewHome.FormWidth, this.pictureBox3.Padding.Bottom * NewHome.ScreenHeight / NewHome.FormHeight);
+
+
+            // PictureBox4
+            this.pictureBox4.Height = this.pictureBox4.Height * NewHome.ScreenHeight / NewHome.FormHeight;
+            this.pictureBox4.Width = this.pictureBox4.Width * NewHome.ScreenWidth / NewHome.FormWidth;
+            this.pictureBox4.Margin = new Padding(this.pictureBox4.Margin.Left * NewHome.ScreenWidth / NewHome.FormWidth, this.pictureBox4.Margin.Top * NewHome.ScreenHeight / NewHome.FormHeight, this.pictureBox4.Margin.Right * NewHome.ScreenWidth / NewHome.FormWidth, this.pictureBox4.Margin.Bottom * NewHome.ScreenHeight / NewHome.FormHeight);
+            this.pictureBox4.Padding = new Padding(this.pictureBox4.Padding.Left * NewHome.ScreenWidth / NewHome.FormWidth, this.pictureBox4.Padding.Top * NewHome.ScreenHeight / NewHome.FormHeight, this.pictureBox4.Padding.Right * NewHome.ScreenWidth / NewHome.FormWidth, this.pictureBox4.Padding.Bottom * NewHome.ScreenHeight / NewHome.FormHeight);
+
+            // PictureBox5
+            this.pictureBox5.Height = this.pictureBox5.Height * NewHome.ScreenHeight / NewHome.FormHeight;
+            this.pictureBox5.Width = this.pictureBox5.Width * NewHome.ScreenWidth / NewHome.FormWidth;
+            this.pictureBox5.Margin = new Padding(this.pictureBox5.Margin.Left * NewHome.ScreenWidth / NewHome.FormWidth, this.pictureBox5.Margin.Top * NewHome.ScreenHeight / NewHome.FormHeight, this.pictureBox5.Margin.Right * NewHome.ScreenWidth / NewHome.FormWidth, this.pictureBox5.Margin.Bottom * NewHome.ScreenHeight / NewHome.FormHeight);
+            this.pictureBox5.Padding = new Padding(this.pictureBox5.Padding.Left * NewHome.ScreenWidth / NewHome.FormWidth, this.pictureBox5.Padding.Top * NewHome.ScreenHeight / NewHome.FormHeight, this.pictureBox5.Padding.Right * NewHome.ScreenWidth / NewHome.FormWidth, this.pictureBox5.Padding.Bottom * NewHome.ScreenHeight / NewHome.FormHeight);
+
+            // PictureBox6
+            this.pictureBox6.Height = this.pictureBox6.Height * NewHome.ScreenHeight / NewHome.FormHeight;
+            this.pictureBox6.Width = this.pictureBox6.Width * NewHome.ScreenWidth / NewHome.FormWidth;
+            this.pictureBox6.Margin = new Padding(this.pictureBox6.Margin.Left * NewHome.ScreenWidth / NewHome.FormWidth, this.pictureBox6.Margin.Top * NewHome.ScreenHeight / NewHome.FormHeight, this.pictureBox6.Margin.Right * NewHome.ScreenWidth / NewHome.FormWidth, this.pictureBox6.Margin.Bottom * NewHome.ScreenHeight / NewHome.FormHeight);
+            this.pictureBox6.Padding = new Padding(this.pictureBox6.Padding.Left * NewHome.ScreenWidth / NewHome.FormWidth, this.pictureBox6.Padding.Top * NewHome.ScreenHeight / NewHome.FormHeight, this.pictureBox6.Padding.Right * NewHome.ScreenWidth / NewHome.FormWidth, this.pictureBox6.Padding.Bottom * NewHome.ScreenHeight / NewHome.FormHeight);
+
+            // PictureBox7
+            this.pictureBox7.Height = this.pictureBox7.Height * NewHome.ScreenHeight / NewHome.FormHeight;
+            this.pictureBox7.Width = this.pictureBox7.Width * NewHome.ScreenWidth / NewHome.FormWidth;
+            this.pictureBox7.Margin = new Padding(this.pictureBox7.Margin.Left * NewHome.ScreenWidth / NewHome.FormWidth, this.pictureBox7.Margin.Top * NewHome.ScreenHeight / NewHome.FormHeight, this.pictureBox7.Margin.Right * NewHome.ScreenWidth / NewHome.FormWidth, this.pictureBox7.Margin.Bottom * NewHome.ScreenHeight / NewHome.FormHeight);
+            this.pictureBox7.Padding = new Padding(this.pictureBox7.Padding.Left * NewHome.ScreenWidth / NewHome.FormWidth, this.pictureBox7.Padding.Top * NewHome.ScreenHeight / NewHome.FormHeight, this.pictureBox7.Padding.Right * NewHome.ScreenWidth / NewHome.FormWidth, this.pictureBox7.Padding.Bottom * NewHome.ScreenHeight / NewHome.FormHeight);
+
+            // PictureBox8
+            this.pictureBox8.Height = this.pictureBox8.Height * NewHome.ScreenHeight / NewHome.FormHeight;
+            this.pictureBox8.Width = this.pictureBox8.Width * NewHome.ScreenWidth / NewHome.FormWidth;
+            this.pictureBox8.Margin = new Padding(this.pictureBox8.Margin.Left * NewHome.ScreenWidth / NewHome.FormWidth, this.pictureBox8.Margin.Top * NewHome.ScreenHeight / NewHome.FormHeight, this.pictureBox8.Margin.Right * NewHome.ScreenWidth / NewHome.FormWidth, this.pictureBox8.Margin.Bottom * NewHome.ScreenHeight / NewHome.FormHeight);
+            this.pictureBox8.Padding = new Padding(this.pictureBox8.Padding.Left * NewHome.ScreenWidth / NewHome.FormWidth, this.pictureBox8.Padding.Top * NewHome.ScreenHeight / NewHome.FormHeight, this.pictureBox8.Padding.Right * NewHome.ScreenWidth / NewHome.FormWidth, this.pictureBox8.Padding.Bottom * NewHome.ScreenHeight / NewHome.FormHeight);
+
+            // PictureBox9
+            this.pictureBox9.Height = this.pictureBox9.Height * NewHome.ScreenHeight / NewHome.FormHeight;
+            this.pictureBox9.Width = this.pictureBox9.Width * NewHome.ScreenWidth / NewHome.FormWidth;
+            this.pictureBox9.Margin = new Padding(this.pictureBox9.Margin.Left * NewHome.ScreenWidth / NewHome.FormWidth, this.pictureBox9.Margin.Top * NewHome.ScreenHeight / NewHome.FormHeight, this.pictureBox9.Margin.Right * NewHome.ScreenWidth / NewHome.FormWidth, this.pictureBox9.Margin.Bottom * NewHome.ScreenHeight / NewHome.FormHeight);
+            this.pictureBox9.Padding = new Padding(this.pictureBox9.Padding.Left * NewHome.ScreenWidth / NewHome.FormWidth, this.pictureBox9.Padding.Top * NewHome.ScreenHeight / NewHome.FormHeight, this.pictureBox9.Padding.Right * NewHome.ScreenWidth / NewHome.FormWidth, this.pictureBox9.Padding.Bottom * NewHome.ScreenHeight / NewHome.FormHeight);
+
+
         }
 
         private void panel1_MouseHover(object sender, EventArgs e)

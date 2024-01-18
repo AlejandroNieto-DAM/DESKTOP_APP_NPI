@@ -109,6 +109,12 @@
     <Compile Include="CalendarWindow.Designer.cs">
       <DependentUpon>CalendarWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="keyboard_screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="keyboard_screen.Designer.cs">
+      <DependentUpon>keyboard_screen.cs</DependentUpon>
+    </Compile>
     <Compile Include="movility_template.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +138,12 @@
     </Compile>
     <Compile Include="offersExchange.Designer.cs">
       <DependentUpon>offersExchange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="professorMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="professorMain.Designer.cs">
+      <DependentUpon>professorMain.cs</DependentUpon>
     </Compile>
     <Compile Include="RequirementsMov.cs">
       <SubType>Form</SubType>
@@ -193,6 +205,9 @@
     <EmbeddedResource Include="CalendarWindow.resx">
       <DependentUpon>CalendarWindow.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="keyboard_screen.resx">
+      <DependentUpon>keyboard_screen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="movility_template.resx">
       <DependentUpon>movility_template.cs</DependentUpon>
     </EmbeddedResource>
@@ -204,6 +219,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="offersExchange.resx">
       <DependentUpon>offersExchange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="professorMain.resx">
+      <DependentUpon>professorMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RequirementsMov.resx">
       <DependentUpon>RequirementsMov.cs</DependentUpon>

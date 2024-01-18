@@ -70,7 +70,7 @@ namespace Tuto
             this.dayInfoPanel.Name = "dayInfoPanel";
             this.dayInfoPanel.RowCount = 1;
             this.dayInfoPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.dayInfoPanel.Size = new System.Drawing.Size(506, 42);
+            this.dayInfoPanel.Size = new System.Drawing.Size(540, 42);
             this.dayInfoPanel.TabIndex = 2;
             this.dayInfoPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.dayInfoPanel_Paint);
             // 
@@ -79,7 +79,7 @@ namespace Tuto
             this.dayLabel.AutoSize = true;
             this.dayLabel.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dayLabel.ForeColor = System.Drawing.Color.White;
-            this.dayLabel.Location = new System.Drawing.Point(356, 0);
+            this.dayLabel.Location = new System.Drawing.Point(380, 0);
             this.dayLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.dayLabel.Name = "dayLabel";
             this.dayLabel.Size = new System.Drawing.Size(44, 22);
@@ -91,7 +91,7 @@ namespace Tuto
             this.hourLabel.AutoSize = true;
             this.hourLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hourLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.hourLabel.Location = new System.Drawing.Point(431, 0);
+            this.hourLabel.Location = new System.Drawing.Point(461, 0);
             this.hourLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.hourLabel.Name = "hourLabel";
             this.hourLabel.Size = new System.Drawing.Size(53, 24);
@@ -102,7 +102,7 @@ namespace Tuto
             // 
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(506, 481);
+            this.ClientSize = new System.Drawing.Size(540, 960);
             this.Controls.Add(this.dayInfoPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "BasicFormLayout";

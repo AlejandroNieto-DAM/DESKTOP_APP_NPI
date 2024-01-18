@@ -121,6 +121,13 @@ namespace Tuto
             menuCom.Show();
             this.Hide();
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            professorMain profesores = new professorMain();
+            profesores.Show();
+            this.Hide();
+        }
     }
 
 

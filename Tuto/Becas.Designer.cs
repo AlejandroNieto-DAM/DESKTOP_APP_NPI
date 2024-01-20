@@ -69,7 +69,8 @@
             this.tableLayoutPanel2.Controls.Add(this.buttonAndalucia, 1, 6);
             this.tableLayoutPanel2.Controls.Add(this.labelTitle, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 42);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 49);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 8;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
@@ -80,16 +81,17 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(345, 546);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(518, 856);
             this.tableLayoutPanel2.TabIndex = 3;
             // 
             // buttonUGR
             // 
             this.buttonUGR.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonUGR.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.buttonUGR.Location = new System.Drawing.Point(37, 84);
+            this.buttonUGR.Location = new System.Drawing.Point(55, 132);
+            this.buttonUGR.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonUGR.Name = "buttonUGR";
-            this.buttonUGR.Size = new System.Drawing.Size(270, 103);
+            this.buttonUGR.Size = new System.Drawing.Size(406, 161);
             this.buttonUGR.TabIndex = 0;
             this.buttonUGR.Text = "Becas UGR";
             this.buttonUGR.UseVisualStyleBackColor = true;
@@ -99,9 +101,10 @@
             // 
             this.buttonMinisterio.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonMinisterio.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.buttonMinisterio.Location = new System.Drawing.Point(37, 220);
+            this.buttonMinisterio.Location = new System.Drawing.Point(55, 345);
+            this.buttonMinisterio.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonMinisterio.Name = "buttonMinisterio";
-            this.buttonMinisterio.Size = new System.Drawing.Size(270, 103);
+            this.buttonMinisterio.Size = new System.Drawing.Size(406, 161);
             this.buttonMinisterio.TabIndex = 1;
             this.buttonMinisterio.Text = "Becas del Ministerio";
             this.buttonMinisterio.UseVisualStyleBackColor = true;
@@ -111,9 +114,10 @@
             // 
             this.buttonAndalucia.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonAndalucia.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.buttonAndalucia.Location = new System.Drawing.Point(37, 356);
+            this.buttonAndalucia.Location = new System.Drawing.Point(55, 558);
+            this.buttonAndalucia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonAndalucia.Name = "buttonAndalucia";
-            this.buttonAndalucia.Size = new System.Drawing.Size(270, 103);
+            this.buttonAndalucia.Size = new System.Drawing.Size(406, 161);
             this.buttonAndalucia.TabIndex = 2;
             this.buttonAndalucia.Text = "Becas Junta de Andalucía";
             this.buttonAndalucia.UseVisualStyleBackColor = true;
@@ -125,20 +129,22 @@
             this.labelTitle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelTitle.Font = new System.Drawing.Font("Yu Gothic UI", 32.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitle.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelTitle.Location = new System.Drawing.Point(37, 0);
+            this.labelTitle.Location = new System.Drawing.Point(55, 0);
+            this.labelTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(270, 54);
+            this.labelTitle.Size = new System.Drawing.Size(406, 85);
             this.labelTitle.TabIndex = 3;
             this.labelTitle.Text = "Becas";
             this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Becas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(345, 588);
+            this.ClientSize = new System.Drawing.Size(518, 905);
             this.Controls.Add(this.tableLayoutPanel2);
             this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Becas";
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);

@@ -74,7 +74,7 @@ namespace Tuto
 
             this.label1.Height = this.label1.Height * NewHome.ScreenHeight / NewHome.FormHeight;
             this.label1.Width = this.label1.Width * NewHome.ScreenWidth / NewHome.FormWidth;
-            this.label1.Font = new Font("Yu Gothic UI", this.label1.Font.Size + (NewHome.ScreenHeight / NewHome.FormHeight), FontStyle.Bold);
+            this.label1.Font = new Font("Yu Gothic UI", this.label1.Font.Size * (NewHome.ScreenHeight / NewHome.FormHeight), FontStyle.Bold);
 
             this.tableLayoutPanel1.Height = this.tableLayoutPanel1.Height * NewHome.ScreenHeight / NewHome.FormHeight;
 
@@ -125,7 +125,14 @@ namespace Tuto
             this.pictureBox9.Margin = new Padding(this.pictureBox9.Margin.Left * NewHome.ScreenWidth / NewHome.FormWidth, this.pictureBox9.Margin.Top * NewHome.ScreenHeight / NewHome.FormHeight, this.pictureBox9.Margin.Right * NewHome.ScreenWidth / NewHome.FormWidth, this.pictureBox9.Margin.Bottom * NewHome.ScreenHeight / NewHome.FormHeight);
             this.pictureBox9.Padding = new Padding(this.pictureBox9.Padding.Left * NewHome.ScreenWidth / NewHome.FormWidth, this.pictureBox9.Padding.Top * NewHome.ScreenHeight / NewHome.FormHeight, this.pictureBox9.Padding.Right * NewHome.ScreenWidth / NewHome.FormWidth, this.pictureBox9.Padding.Bottom * NewHome.ScreenHeight / NewHome.FormHeight);
 
+            this.pictureBox1.Height = this.pictureBox1.Height * NewHome.ScreenHeight / NewHome.FormHeight;
+            this.pictureBox1.Width = this.pictureBox1.Width * NewHome.ScreenWidth / NewHome.FormWidth;
+            this.pictureBox1.Margin = new Padding(this.pictureBox1.Margin.Left * NewHome.ScreenWidth / NewHome.FormWidth, this.pictureBox1.Margin.Top * NewHome.ScreenHeight / NewHome.FormHeight, this.pictureBox1.Margin.Right * NewHome.ScreenWidth / NewHome.FormWidth, this.pictureBox1.Margin.Bottom * NewHome.ScreenHeight / NewHome.FormHeight);
+            this.pictureBox1.Padding = new Padding(this.pictureBox1.Padding.Left * NewHome.ScreenWidth / NewHome.FormWidth, this.pictureBox1.Padding.Top * NewHome.ScreenHeight / NewHome.FormHeight, this.pictureBox1.Padding.Right * NewHome.ScreenWidth / NewHome.FormWidth, this.pictureBox1.Padding.Bottom * NewHome.ScreenHeight / NewHome.FormHeight);
 
+            this.label2.Height = this.label2.Height * NewHome.ScreenHeight / NewHome.FormHeight;
+            this.label2.Width = this.label2.Width * NewHome.ScreenWidth / NewHome.FormWidth;
+         
         }
 
         private void panel1_MouseHover(object sender, EventArgs e)

@@ -32,6 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
+            this.label200 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -53,41 +54,50 @@
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 27.25F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 35.25F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(50, 0);
+            this.label1.Location = new System.Drawing.Point(180, 0);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 60);
-            this.label1.Size = new System.Drawing.Size(500, 192);
+            this.label1.Size = new System.Drawing.Size(240, 185);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Bienvenido! NOMBRE";
+            this.label1.Text = "Este es tu horario NOMBRE";
             this.label1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Snow;
             this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label200);
             this.panel1.Controls.Add(this.tableLayoutPanel1);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(50, 192);
+            this.panel1.Location = new System.Drawing.Point(180, 185);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 60, 3, 60);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(500, 678);
+            this.panel1.Size = new System.Drawing.Size(240, 678);
             this.panel1.TabIndex = 2;
             // 
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(204)))), ((int)(((byte)(69)))));
-            this.label4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label4.Font = new System.Drawing.Font("Yu Gothic UI", 17.75F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(0, 542);
+            this.label4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label4.Font = new System.Drawing.Font("Yu Gothic UI", 20.75F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(0, 573);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(500, 57);
-            this.label4.TabIndex = 9;
+            this.label4.Size = new System.Drawing.Size(240, 85);
+            this.label4.TabIndex = 8;
             this.label4.Text = "For coming back do the return page gesture";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label200
+            // 
+            this.label200.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label200.Location = new System.Drawing.Point(0, 658);
+            this.label200.Name = "label200";
+            this.label200.Size = new System.Drawing.Size(240, 20);
+            this.label200.TabIndex = 7;
             // 
             // tableLayoutPanel1
             // 
@@ -108,7 +118,7 @@
             this.tableLayoutPanel1.Controls.Add(this.label15, 1, 4);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 117);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(30);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(50);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(30);
             this.tableLayoutPanel1.RowCount = 5;
@@ -117,7 +127,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(500, 425);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(240, 425);
             this.tableLayoutPanel1.TabIndex = 6;
             // 
             // label6
@@ -268,11 +278,11 @@
             // 
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
             this.label3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label3.Font = new System.Drawing.Font("Yu Gothic UI", 25.25F, System.Drawing.FontStyle.Bold);
+            this.label3.Font = new System.Drawing.Font("Yu Gothic UI", 29.25F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.Snow;
             this.label3.Location = new System.Drawing.Point(0, 67);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(500, 50);
+            this.label3.Size = new System.Drawing.Size(240, 50);
             this.label3.TabIndex = 5;
             this.label3.Text = "TODAY";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -285,7 +295,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(500, 67);
+            this.label2.Size = new System.Drawing.Size(240, 67);
             this.label2.TabIndex = 4;
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -302,7 +312,7 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "NewSchedule";
-            this.Padding = new System.Windows.Forms.Padding(50, 0, 50, 0);
+            this.Padding = new System.Windows.Forms.Padding(180, 0, 180, 0);
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.NewSchedule_Load);
             this.Resize += new System.EventHandler(this.NewSchedule_Resize);
@@ -319,7 +329,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
@@ -330,5 +339,7 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label200;
     }
 }

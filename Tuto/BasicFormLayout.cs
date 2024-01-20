@@ -15,6 +15,10 @@ namespace Tuto
         private Label hourLabel;
         private Timer timer;
 
+        protected int multiplier_size = 1;
+        protected float textFontSize = 16;
+        protected float titleFontSize = 36;
+
         public string Language { get; set; }
         //public Image BackgroundImageBasic { get; set; }
         public Color BackgroundColor { get; set; }
@@ -77,24 +81,24 @@ namespace Tuto
             // dayLabel
             // 
             this.dayLabel.AutoSize = true;
-            this.dayLabel.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dayLabel.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dayLabel.ForeColor = System.Drawing.Color.White;
             this.dayLabel.Location = new System.Drawing.Point(380, 0);
             this.dayLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.dayLabel.Name = "dayLabel";
-            this.dayLabel.Size = new System.Drawing.Size(44, 22);
+            this.dayLabel.Size = new System.Drawing.Size(48, 30);
             this.dayLabel.TabIndex = 0;
             this.dayLabel.Text = "day";
             // 
             // hourLabel
             // 
             this.hourLabel.AutoSize = true;
-            this.hourLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hourLabel.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hourLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.hourLabel.Location = new System.Drawing.Point(461, 0);
             this.hourLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.hourLabel.Name = "hourLabel";
-            this.hourLabel.Size = new System.Drawing.Size(53, 24);
+            this.hourLabel.Size = new System.Drawing.Size(58, 30);
             this.hourLabel.TabIndex = 1;
             this.hourLabel.Text = "hour";
             // 

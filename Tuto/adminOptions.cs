@@ -63,11 +63,10 @@ namespace Tuto
                 if (control is Button)
                 {
                     Button boton = (Button)control;
-                    boton.Font = new Font("Arial", 16 * 4, FontStyle.Bold);
+                    boton.Font = new Font("Arial", textFontSize * multiplier_size, FontStyle.Bold);
                 }
             }
-
-            labelTitle.Font = new Font("Arial", 36 * 4, FontStyle.Bold);
+            labelTitle.Font = new Font("Arial", titleFontSize * multiplier_size, FontStyle.Bold);
         }
         
         private void time_Tick(object sender, EventArgs e)

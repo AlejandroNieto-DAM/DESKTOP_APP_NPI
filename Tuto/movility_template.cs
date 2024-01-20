@@ -12,6 +12,8 @@ namespace Tuto
 {
     public partial class movility_template : Form
     {
+        int multiplier = 1;
+        int textFontSize = 16;
         string nameUniversity;
         string number_plazas;
         string duracion;
@@ -55,7 +57,7 @@ namespace Tuto
                 if (control is Label)
                 {
                     Label label = (Label)control;  // Corrected the variable name
-                    label.Font = new Font("Yu Gothic UI", 16 * 4, FontStyle.Regular);
+                    label.Font = new Font("Yu Gothic UI", multiplier * textFontSize, FontStyle.Regular);
                     label.ForeColor = Color.White;
                 }
             }

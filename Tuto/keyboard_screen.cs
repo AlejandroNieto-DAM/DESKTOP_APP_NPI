@@ -276,6 +276,13 @@ namespace Tuto
             name2search += letterPressed;
             updateName();
         }
+
+        private void buttonSpace_Click(object sender, EventArgs e)
+        {
+            letterPressed = " ";
+            name2search += letterPressed;
+            updateName();
+        }
     }
 }
 

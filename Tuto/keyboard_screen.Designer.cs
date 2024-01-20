@@ -236,6 +236,7 @@
             this.buttonSpace.TabIndex = 11;
             this.buttonSpace.Text = "ESPACIO";
             this.buttonSpace.UseVisualStyleBackColor = true;
+            this.buttonSpace.Click += new System.EventHandler(this.buttonSpace_Click);
             // 
             // buttonK
             // 

@@ -288,6 +288,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\national_requirements.csv" />
+    <None Include="Resources\professors.csv" />
     <None Include="Resources\QR_icon.png" />
   </ItemGroup>
   <ItemGroup>

@@ -130,7 +130,7 @@
             this.tableLayoutPanel1.Controls.Add(this.panel5, 3, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 191);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(30, 30, 30, 30);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(30);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -147,7 +147,7 @@
             this.panel2.Location = new System.Drawing.Point(98, 39);
             this.panel2.Margin = new System.Windows.Forms.Padding(2, 39, 2, 39);
             this.panel2.Name = "panel2";
-            this.panel2.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.panel2.Padding = new System.Windows.Forms.Padding(10);
             this.panel2.Size = new System.Drawing.Size(152, 167);
             this.panel2.TabIndex = 4;
             this.panel2.Click += new System.EventHandler(this.panel2_Click);
@@ -189,7 +189,7 @@
             this.panel3.Location = new System.Drawing.Point(350, 39);
             this.panel3.Margin = new System.Windows.Forms.Padding(2, 39, 2, 39);
             this.panel3.Name = "panel3";
-            this.panel3.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.panel3.Padding = new System.Windows.Forms.Padding(10);
             this.panel3.Size = new System.Drawing.Size(152, 167);
             this.panel3.TabIndex = 5;
             this.panel3.Click += new System.EventHandler(this.panel3_Click);
@@ -230,7 +230,7 @@
             this.panel4.Location = new System.Drawing.Point(98, 284);
             this.panel4.Margin = new System.Windows.Forms.Padding(2, 39, 2, 39);
             this.panel4.Name = "panel4";
-            this.panel4.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.panel4.Padding = new System.Windows.Forms.Padding(10);
             this.panel4.Size = new System.Drawing.Size(152, 167);
             this.panel4.TabIndex = 6;
             this.panel4.MouseLeave += new System.EventHandler(this.panel4_MouseLeave);
@@ -269,11 +269,10 @@
             this.panel5.Location = new System.Drawing.Point(350, 284);
             this.panel5.Margin = new System.Windows.Forms.Padding(2, 39, 2, 39);
             this.panel5.Name = "panel5";
-            this.panel5.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.panel5.Padding = new System.Windows.Forms.Padding(10);
             this.panel5.Size = new System.Drawing.Size(152, 167);
             this.panel5.TabIndex = 7;
             this.panel5.Click += new System.EventHandler(this.panel5_Click);
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             this.panel5.MouseLeave += new System.EventHandler(this.panel5_MouseLeave);
             this.panel5.MouseHover += new System.EventHandler(this.panel5_MouseHover);
             // 
@@ -332,7 +331,7 @@
             this.tableLayoutPanel3.Location = new System.Drawing.Point(97, 34);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(25, 10, 25, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.tableLayoutPanel3.Padding = new System.Windows.Forms.Padding(10);
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(406, 115);
@@ -346,7 +345,7 @@
             this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(189, 91);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -394,7 +393,7 @@
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "NewHome";
             this.Text = "NewHome";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

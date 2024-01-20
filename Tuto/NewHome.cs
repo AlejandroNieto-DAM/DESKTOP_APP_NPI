@@ -317,6 +317,13 @@ namespace Tuto
             mc.Show();
         }
 
+        private void panel4_Click(object sender, EventArgs e)
+        {
+            professorMain professor = new professorMain();
+            professor.Show();
+            this.Hide();
+        }
+
         private void label6_Click(object sender, EventArgs e)
         {
 

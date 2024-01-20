@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -21,6 +22,8 @@ namespace Tuto
         {
             InitializeComponent();
 
+            Language.lastForm = this;
+            Language.className = "Locations";
 
 
             int ScreenWidth = NewHome.ScreenWidth;
@@ -28,7 +31,7 @@ namespace Tuto
             int ScreenHeight = NewHome.ScreenHeight;
             int FormHeight = NewHome.FormHeight;
 
-            if (Language.SelectedLanguage == 1)
+           /* if (Language.SelectedLanguage == 1)
             {
                 this.label3.Text = "Bienvenido! Escoge una opción entre las siguientes";
                 this.label5.Text = "Mi horario personal";
@@ -47,7 +50,7 @@ namespace Tuto
                 this.label8.Text = "Administrative petitions";
                 this.label4.Text = "Locations";
                 this.label9.Text = "To go back use the page back gesture";
-            }
+            }*/
 
 
             this.label1.Height = this.label1.Height * ScreenHeight / FormHeight;
@@ -263,7 +266,7 @@ namespace Tuto
 
         private void pictureBox5_MouseHover(object sender, EventArgs e)
         {
-            this.tableLayoutPanel3.BackColor = Color.FromArgb(99, 126, 118); ;
+
         }
 
         private void label4_MouseHover(object sender, EventArgs e)
@@ -334,6 +337,14 @@ namespace Tuto
             MostrarImagen horarioV = new MostrarImagen();
             horarioV.Show();
             this.Hide();
+        }
+
+        public void close_Form()
+        {
+            this.Hide();
+            NewHome nh = new NewHome();
+            nh.Show();
+           
         }
     }
 }

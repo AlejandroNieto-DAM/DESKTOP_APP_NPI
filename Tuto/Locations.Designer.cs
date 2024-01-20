@@ -166,7 +166,7 @@
             this.label5.Text = "Despacho";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label5.Click += new System.EventHandler(this.panel2_Click);
-            this.label5.MouseHover += new System.EventHandler(this.label5_MouseHover);
+            this.label5.MouseHover += new System.EventHandler(this.panel2_MouseHover);
             // 
             // pictureBox1
             // 
@@ -179,7 +179,7 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.panel2_Click);
-            this.pictureBox1.MouseHover += new System.EventHandler(this.pictureBox1_MouseHover);
+            this.pictureBox1.MouseHover += new System.EventHandler(this.panel2_MouseHover);
             // 
             // panel3
             // 
@@ -208,6 +208,7 @@
             this.label6.Text = "Laboratorios";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label6.Click += new System.EventHandler(this.panel3_Click);
+            this.label6.MouseHover += new System.EventHandler(this.panel3_MouseHover);
             // 
             // pictureBox2
             // 
@@ -249,7 +250,7 @@
             this.label7.Text = "Clases";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label7.Click += new System.EventHandler(this.panel4_Click);
-            this.label7.MouseHover += new System.EventHandler(this.label7_MouseHover);
+            this.label7.MouseHover += new System.EventHandler(this.panel4_MouseHover);
             // 
             // pictureBox3
             // 
@@ -262,7 +263,7 @@
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.panel4_Click);
-            this.pictureBox3.MouseHover += new System.EventHandler(this.pictureBox3_MouseHover);
+            this.pictureBox3.MouseHover += new System.EventHandler(this.panel4_MouseHover);
             // 
             // panel5
             // 
@@ -290,8 +291,8 @@
             this.label8.TabIndex = 4;
             this.label8.Text = "Comedor";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label8.Click += new System.EventHandler(this.panel4_Click);
-            this.label8.MouseHover += new System.EventHandler(this.label8_MouseHover);
+            this.label8.Click += new System.EventHandler(this.panel5_Click);
+            this.label8.MouseHover += new System.EventHandler(this.panel5_MouseHover);
             // 
             // pictureBox4
             // 
@@ -303,7 +304,8 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 0;
             this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.panel4_Click);
+            this.pictureBox4.Click += new System.EventHandler(this.panel5_Click);
+            this.pictureBox4.MouseHover += new System.EventHandler(this.panel5_MouseHover);
             // 
             // tableLayoutPanel2
             // 
@@ -356,7 +358,7 @@
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
             this.pictureBox5.Click += new System.EventHandler(this.tableLayoutPanel3_Click);
-            this.pictureBox5.MouseHover += new System.EventHandler(this.pictureBox5_MouseHover);
+            this.pictureBox5.MouseHover += new System.EventHandler(this.tableLayoutPanel3_MouseHover);
             // 
             // label4
             // 
@@ -369,7 +371,7 @@
             this.label4.Text = "Mas ayuda.";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label4.Click += new System.EventHandler(this.tableLayoutPanel3_Click);
-            this.label4.MouseHover += new System.EventHandler(this.label4_MouseHover);
+            this.label4.MouseHover += new System.EventHandler(this.tableLayoutPanel3_MouseHover);
             // 
             // label9
             // 

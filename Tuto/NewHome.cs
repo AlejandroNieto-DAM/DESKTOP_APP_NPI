@@ -15,8 +15,10 @@ namespace Tuto
     {
 
         public static String userLogged = "";
-        public static int ScreenHeight = 4096, ScreenWidth = 2160, FormHeight = 988, FormWidth = 600;
-        
+        public static Form father;
+        //public static int ScreenHeight = 4096, ScreenWidth = 2160, FormHeight = 988, FormWidth = 600;
+        //public static int ScreenHeight = 2500, ScreenWidth = 1400, FormHeight = 988, FormWidth = 600;
+        public static int ScreenHeight = 988, ScreenWidth = 600, FormHeight = 988, FormWidth = 600;
 
         [DllImport("user32.dll")]
         public static extern bool AnimateWindow(IntPtr hwnd, int dwTime, int dwFlags);
@@ -43,6 +45,8 @@ namespace Tuto
         {
             InitializeComponent();
 
+            Language.lastForm = this;
+            Language.className = "NewHome";
             
             
             if (Language.SelectedLanguage == 1)
@@ -96,7 +100,7 @@ namespace Tuto
             this.pictureBox1.Width = this.pictureBox1.Width * ScreenWidth / FormWidth;
             this.label5.Height = this.label5.Height * ScreenHeight / FormHeight;
             this.label5.Width = this.label5.Width * ScreenWidth / FormWidth;
-            this.label5.Font = new Font("Yu Gothic UI", this.label5.Font.Size * (ScreenHeight / FormHeight), FontStyle.Bold);
+            this.label5.Font = new Font("Yu Gothic UI", this.label5.Font.Size * (ScreenHeight / FormHeight));
 
 
             this.panel3.Height = this.panel3.Height * ScreenHeight / FormHeight;
@@ -107,7 +111,7 @@ namespace Tuto
             this.pictureBox2.Width = this.pictureBox2.Width * ScreenWidth / FormWidth;
             this.label6.Height = this.label6.Height * ScreenHeight / FormHeight;
             this.label6.Width = this.label6.Width * ScreenWidth / FormWidth;
-            this.label6.Font = new Font("Yu Gothic UI", this.label6.Font.Size * (ScreenHeight / FormHeight), FontStyle.Bold);
+            this.label6.Font = new Font("Yu Gothic UI", this.label6.Font.Size * (ScreenHeight / FormHeight));
 
             this.panel4.Height = this.panel4.Height * ScreenHeight / FormHeight;
             this.panel4.Width = this.panel4.Width * ScreenWidth / FormWidth;
@@ -117,7 +121,7 @@ namespace Tuto
             this.pictureBox3.Width = this.pictureBox3.Width * ScreenWidth / FormWidth;
             this.label7.Height = this.label7.Height * ScreenHeight / FormHeight;
             this.label7.Width = this.label7.Width * ScreenWidth / FormWidth;
-            this.label7.Font = new Font("Yu Gothic UI", this.label7.Font.Size * (ScreenHeight / FormHeight), FontStyle.Bold);
+            this.label7.Font = new Font("Yu Gothic UI", this.label7.Font.Size * (ScreenHeight / FormHeight));
 
             this.panel5.Height = this.panel5.Height * ScreenHeight / FormHeight;
             this.panel5.Width = this.panel5.Width * ScreenWidth / FormWidth;
@@ -127,7 +131,7 @@ namespace Tuto
             this.pictureBox4.Width = this.pictureBox4.Width * ScreenWidth / FormWidth;
             this.label8.Height = this.label8.Height * ScreenHeight / FormHeight;
             this.label8.Width = this.label8.Width * ScreenWidth / FormWidth;
-            this.label8.Font = new Font("Yu Gothic UI", this.label8.Font.Size * (ScreenHeight / FormHeight), FontStyle.Bold);
+            this.label8.Font = new Font("Yu Gothic UI", this.label8.Font.Size * (ScreenHeight / FormHeight));
 
 
             this.tableLayoutPanel2.Height = this.tableLayoutPanel2.Height * ScreenHeight / FormHeight;
@@ -138,7 +142,7 @@ namespace Tuto
             this.pictureBox5.Width = this.pictureBox5.Width * ScreenWidth / FormWidth;
             this.label4.Height = this.label4.Height * ScreenHeight / FormHeight;
             this.label4.Width = this.label4.Width * ScreenWidth / FormWidth;
-            this.label4.Font = new Font("Yu Gothic UI", this.label4.Font.Size * (ScreenHeight / FormHeight), FontStyle.Bold);
+            this.label4.Font = new Font("Yu Gothic UI", this.label4.Font.Size * (ScreenHeight / FormHeight));
 
         
             this.label9.Height = this.label9.Height * ScreenHeight / FormHeight;
@@ -204,15 +208,7 @@ namespace Tuto
             this.panel2.BackColor = Color.Snow;
         }
 
-        private void pictureBox1_MouseHover(object sender, EventArgs e)
-        {
-            this.panel2.BackColor = Color.FromArgb(99, 126, 118);
-        }
-
-        private void label5_MouseHover(object sender, EventArgs e)
-        {
-            this.panel2.BackColor = Color.FromArgb(99, 126, 118);
-        }
+       
 
         private void panel4_MouseHover(object sender, EventArgs e)
         {
@@ -261,12 +257,23 @@ namespace Tuto
 
         private void panel2_Click(object sender, EventArgs e)
         {
-            Language.FormStates = 2;
-            this.Visible = false;
-            Form2 qrForm;
-            qrForm = new Form2();
-            qrForm.Show();
-            Language.actualForm = qrForm;
+  
+            if(NewHome.userLogged == "")
+            {
+                Form2 qrForm;
+                qrForm = new Form2();
+                qrForm.Show();
+            } else
+            {
+                NewSchedule qrForm;
+                qrForm = new NewSchedule();
+                qrForm.Show();
+            }
+            
+
+
+
+
 
 
         }
@@ -316,6 +323,7 @@ namespace Tuto
             Locations qrForm;
             qrForm = new Locations();
             qrForm.Show();
+            this.Hide();
         }
 
 
@@ -348,6 +356,24 @@ namespace Tuto
         public void printGesture()
         {
             //this.label1.Text = "A" + Language.FormStates;
+
+        }
+
+        public void close_Form()
+        {
+            Language newForm = new Language();
+            newForm.Show();
+            //NewHome.userLogged = "";
+            //Language.lastForm = null;
+            //this.label1.Text = this.label1.Text + "gesto";
+            this.Hide();
+            //father.Visible = true;
+            //father.Show();
+            
+            
+            
+
+
 
         }
     }

@@ -7,17 +7,26 @@ using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Leap;
 
+
 namespace Tuto
 {
+
+    public interface ICerrarForm
+    {
+        void cerrar();
+    }
     public partial class Language : Form, ILeapEventDelegate
     {
         public static int SelectedLanguage = -1;
         public static int FormStates = 0;
-        public static Form actualForm;
+        public static Form lastForm;
+        public static String className = "";
+        private int chage = 0;
         NewHome home;
 
         private Controller controller;
@@ -28,7 +37,8 @@ namespace Tuto
         private int waitUntilMoveCursor;
         private float current_radio = 99999;
         private int last_finger_count = 0;
-
+        private int last_hands_count = 0;
+        private bool gestoYaManejado = false;
 
         [DllImport("user32.dll")]
         static extern void mouse_event(int dwFlags, int dx, int dy,
@@ -58,7 +68,7 @@ namespace Tuto
         {
             InitializeComponent();
 
-            Language.actualForm = this;
+            Language.lastForm = null;
 
             
 
@@ -158,10 +168,9 @@ namespace Tuto
         private void panel1_Click(object sender, EventArgs e)
         {
             Language.SelectedLanguage = 1;
-            Language.FormStates = 1;
             NewHome home = new NewHome();
             home.Show();
-            Language.actualForm = home;
+            Language.lastForm = this;
             this.Visible = false;
             home.Visible = true;
         }
@@ -169,10 +178,9 @@ namespace Tuto
         private void panel2_Click(object sender, EventArgs e)
         {
             Language.SelectedLanguage = 2;
-            Language.FormStates = 1;
             NewHome home = new NewHome();
             home.Show();
-            Language.actualForm = home;
+            Language.lastForm = this;
             this.Visible = false;
             home.Visible = true;
         }
@@ -215,6 +223,9 @@ namespace Tuto
         private void detectGesture(Leap.Frame frame)
         {
 
+
+            
+
             Hand my_hand = frame.Hands[0];
 
             currentTime = frame.Timestamp;
@@ -222,10 +233,36 @@ namespace Tuto
             float new_radio = my_hand.SphereRadius;
 
 
+            if (timeChange > 10000)
+            {
+
+
+                if (last_hands_count > 0 && frame.Hands.Count > 0 && last_finger_count == 0 && frame.Fingers.Count > 0)
+                {
+                    Language.LeftClick(Cursor.Position.X, Cursor.Position.Y);
+                    gestoYaManejado = true;
+                }
+
+                last_finger_count = frame.Fingers.Count;
+                last_hands_count = frame.Hands.Count();
+
+
+            }
+
+            movingMouse(frame, this.controller);
+
+
+            previousTime = currentTime;
+
             GestureList gestures = frame.Gestures();
             for (int i = 0; i < gestures.Count(); i++)
             {
                 Gesture gesture = gestures[i];
+
+                if (!gestoYaManejado)
+                {
+
+                
                 switch (gesture.Type)
                 {
                     case Gesture.GestureType.TYPEKEYTAP:
@@ -233,51 +270,71 @@ namespace Tuto
                         break;
                     case Gesture.GestureType.TYPESWIPE:
 
-                        if (Language.FormStates == 2)
+                        if (Language.lastForm != null)
                         {
 
-                            Language.FormStates = 1;
-                            NewHome home = new NewHome();
-                            home.Show();
-                            Language.actualForm = home;
-                            this.Visible = false;
-                            home.Visible = true;
+                            switch (Language.className)
+                            {
+                                case "NewHome":
+                                    NewHome nh = (NewHome)Language.lastForm;
+
+                                    nh.close_Form();
+                                    break;
+                                case "Locations":
+                                    Locations lc = (Locations)Language.lastForm;
+
+                                    lc.close_Form();
+                                    break;
+                                case "MostrarImagen":
+                                    MostrarImagen mi = (MostrarImagen)Language.lastForm;
+
+                                    mi.close_Form();
+                                    break;
+                                case "Form2":
+                                    Form2 qr = (Form2)Language.lastForm;
+
+                                    qr.close_Form();
+                                    break;
+                                case "NewSchedule":
+                                    NewSchedule ns = (NewSchedule)Language.lastForm;
+
+                                    ns.close_Form();
+                                    break;
+                            }
+
+
+
 
                         }
-                        else if (Language.FormStates == 1)
-                        {
 
-                            this.Visible = true;
-                            actualForm.Visible = false;
-                            actualForm = this;
-                            Language.FormStates = 0;
+                        gestoYaManejado = true;
 
+                        
 
-
-                        }
-
-                        home.printGesture();
+                        //this.label1.Text = this.label1.Text + "Cirlce";
                         break;
+
+
                 }
+
+                }
+
+
             }
 
 
-
-            if (timeChange > 1000000)
+            if (gestoYaManejado)
             {
-
-                
-                if (frame.Hands.Count > 0 && last_finger_count == 0 && frame.Fingers.Count > 0)
+                // Inicia un temporizador para restablecer la bandera después de un período de tiempo
+                System.Threading.Timer resetTimer = new System.Threading.Timer((state) =>
                 {
-                    Language.LeftClick(Cursor.Position.X, Cursor.Position.Y);
-                }
-
-                last_finger_count = frame.Fingers.Count;
-
-
+                    gestoYaManejado = false;
+                }, null, 1000, Timeout.Infinite);
             }
 
-            movingMouse(frame, this.controller);
+            
+
+
 
 
         }
@@ -286,16 +343,16 @@ namespace Tuto
         {
             this.controller.EnableGesture(Gesture.GestureType.TYPEKEYTAP);
             this.controller.EnableGesture(Gesture.GestureType.TYPESWIPE);
+
+            this.controller.EnableGesture(Gesture.GestureType.TYPECIRCLE);
         }
 
         private void movingMouse(Leap.Frame frame, Controller controlador)
         {
             Hand my_hand = frame.Hands[0];
 
-            currentTime = frame.Timestamp;
-            timeChange = currentTime - previousTime;
 
-            if (timeChange > 100000)
+            if (timeChange > 1000)
             {
 
                 if (frame.Hands.Count > 0)
@@ -308,16 +365,16 @@ namespace Tuto
                     if (xScreenIntersect.ToString() != "NaN")
                     {
                         var x = (int)(xScreenIntersect * System.Windows.Forms.Screen.PrimaryScreen.Bounds.Width) / 100;
-                        
-                        var y = (int)(System.Windows.Forms.Screen.PrimaryScreen.Bounds.Height - (yScreenIntersect * System.Windows.Forms.Screen.PrimaryScreen.Bounds.Height) / 100) + NewHome.ScreenHeight/2;
+
+                        var y = (int)(System.Windows.Forms.Screen.PrimaryScreen.Bounds.Height - (yScreenIntersect * System.Windows.Forms.Screen.PrimaryScreen.Bounds.Height) / 100) + NewHome.ScreenHeight / 2;
 
                         MouseCursor.MoveCursor(x, y);
 
                     }
-                    
+
                 }
             }
-           
+
         }
 
         public Cursor CreateCursor(Bitmap bitmap, Size size)
@@ -334,23 +391,22 @@ namespace Tuto
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             Language.SelectedLanguage = 1;
-            Language.FormStates = 1;
             NewHome home = new NewHome();
+            NewHome.father = this;
+
             home.Show();
-            Language.actualForm = home;
-            this.Visible = false;
-            home.Visible = true;
+            this.Hide();
+            //this.Visible = false;
+            //home.Visible = true;
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             Language.SelectedLanguage = 2;
-            Language.FormStates = 1;
             NewHome home = new NewHome();
+            NewHome.father = this;
             home.Show();
-            Language.actualForm = home;
-            this.Visible = false;
-            home.Visible = true;
+            this.Hide();
         }
     }
 

@@ -19,6 +19,8 @@ namespace Tuto
         public MostrarImagen()
         {
             InitializeComponent();
+            Language.lastForm = this;
+            Language.className = "MostrarImagen";
 
             label1.Width = label1.Width * NewHome.ScreenWidth / NewHome.FormWidth;
             label1.Height = label1.Height * NewHome.ScreenHeight / NewHome.FormHeight;
@@ -35,27 +37,36 @@ namespace Tuto
 
             if (optionSelected == 1)
             {
-                pictureBox1.Image = Properties.Resources.mapa_despachos;
+                label2.Text = "Gira a la derecha y sube las escaleras para subir la 3ra planta. Una vez llegado a la tercera planta verá dos pasillos, uno a la izquierda, otro a la derecha. Consulte" +
+                    "en la puerta el nombre del profesor/a que desea visitar.";
+                pictureBox1.Image = Properties.Resources.mapa_despachos_1;
             }
 
             if (optionSelected == 2)
             {
-                pictureBox1.Image = Properties.Resources.mapa_clases;
+                label2.Text = "Mira a la derecha y salga por la puerta hacia el exterior. Continúe el camino hacia el siguiente edificio. Una vez dentro gire a la derecha y suba por las escaleras. En la primera planta" +
+                    "encontrará las clases 1.X, en la segunda las clases 2.X y en la tercera las 3.X.";
+                pictureBox1.Image = Properties.Resources.mapa_clases_1;
             }
 
             if (optionSelected == 3)
             {
-                pictureBox1.Image = Properties.Resources.mapa_clases;
+                label2.Text = "Mira a la derecha y salga por la puerta hacia el exterior. Continúe el camino hacia el siguiente edificio. Una vez dentro a la izquierda y a la derecha encontrará las clases 0.X no suba las escaleras" +
+                    "o el ascensor.";
+                pictureBox1.Image = Properties.Resources.mapa_clases_1;
             }
 
             if (optionSelected == 4)
             {
-                pictureBox1.Image = Properties.Resources.mapa_comedor;
+                label2.Text = "Gira a la derecha y antes de salir por la puerta que da al exterior baje por las escaleras que bajan a la planta inferior. Justo al bajar verá la cafetería y a la derecha el comerdor.";
+                pictureBox1.Image = Properties.Resources.mapa_comedor_1;
             }
 
             if (optionSelected == 5)
             {
-                pictureBox1.Image = Properties.Resources.mapa_informacion;
+                label2.Text = "A la izquierda puede ver un punto donde pedir ayuda. Si quiere ir al otro debido a que no hay gente debera salir por la puerta que ve a la derecha que da al exterior y continuar el camino hacia" +
+                    "el siguiente edificio. Una vez dentro justo a la izquierda lo encontrará.";
+                pictureBox1.Image = Properties.Resources.mapa_informacion_1;
             }
 
             int ScreenWidth = NewHome.ScreenWidth;
@@ -69,7 +80,7 @@ namespace Tuto
 
             //this.label2.Width = this.label2.Width * ScreenWidth / FormWidth;
             //this.label2.Margin = new Padding(this.label2.Margin.Left * ScreenWidth / FormWidth, this.label2.Margin.Top * ScreenHeight / FormHeight, this.label2.Margin.Right * ScreenWidth / FormWidth, this.label2.Margin.Bottom * ScreenHeight / FormHeight);
-            this.label2.Font = new Font("Yu Gothic UI", this.label2.Font.Size * (ScreenHeight / FormHeight), FontStyle.Bold);
+            this.label2.Font = new Font("Yu Gothic UI", this.label2.Font.Size * (ScreenHeight / FormHeight));
 
             //this.label4.Margin = new Padding(this.label4.Margin.Left * ScreenWidth / FormWidth, this.label4.Margin.Top * ScreenHeight / FormHeight, this.label4.Margin.Right * ScreenWidth / FormWidth, this.label4.Margin.Bottom * ScreenHeight / FormHeight);
             //this.label4.Padding = new Padding(this.label4.Padding.Left * ScreenWidth / FormWidth, this.label4.Padding.Top * ScreenHeight / FormHeight, this.label4.Padding.Right * ScreenWidth / FormWidth, this.label4.Padding.Bottom * ScreenHeight / FormHeight);
@@ -106,6 +117,13 @@ namespace Tuto
             this.panel1.Region = Region.FromHrgn(NewHome.CreateRoundRectRgn(0, 0, panel1.Width, panel1.Height, 20, 20));
             this.label4.Region = Region.FromHrgn(NewHome.CreateRoundRectRgn(0, 0, label4.Width, label4.Height, 20, 20));
 
+        }
+
+        public void close_Form()
+        {
+            this.Hide();
+            Locations nh = new Locations();
+            nh.Show();
         }
     }
 }

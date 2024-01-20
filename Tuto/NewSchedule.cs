@@ -18,6 +18,9 @@ namespace Tuto
         public NewSchedule()
         {
             InitializeComponent();
+            Language.lastForm = this;
+            Language.className = "NewSchedule";
+
 
             if (Language.SelectedLanguage == 1)
             {
@@ -251,6 +254,15 @@ namespace Tuto
 
             this.label4.Region = Region.FromHrgn(NewHome.CreateRoundRectRgn(0, 0, label4.Width,
             label4.Height, 20, 20));
+        }
+
+        public void close_Form()
+        {
+
+            this.Hide();
+            NewHome newForm = new NewHome();
+            newForm.Show();
+           
         }
     }
 }

@@ -327,5 +327,17 @@
   <ItemGroup>
     <None Include="Resources\mapa_despachos.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapa_clases_11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapa_comedor_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapa_despachos_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapa_informacion_1.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

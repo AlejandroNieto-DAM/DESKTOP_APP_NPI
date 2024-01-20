@@ -26,6 +26,7 @@ namespace Tuto
         public Form2()
         {
             InitializeComponent();
+            Language.lastForm = this;
 
 
             /*
@@ -153,6 +154,13 @@ namespace Tuto
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        public void close_Form()
+        {
+            this.Hide();
+            NewHome newForm = new NewHome();
+            newForm.Show();
         }
 
         private void closingForm()

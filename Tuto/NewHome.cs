@@ -16,18 +16,15 @@ namespace Tuto
 
         public static String userLogged = "";
         public static Form father;
-        //public static int ScreenHeight = 4096, ScreenWidth = 2160, FormHeight = 988, FormWidth = 600;
+        public static int ScreenHeight = 4096, ScreenWidth = 2160, FormHeight = 988, FormWidth = 600;
         //public static int ScreenHeight = 2500, ScreenWidth = 1400, FormHeight = 988, FormWidth = 600;
-        public static int ScreenHeight = 988, ScreenWidth = 600, FormHeight = 988, FormWidth = 600;
-
-        [DllImport("user32.dll")]
-        public static extern bool AnimateWindow(IntPtr hwnd, int dwTime, int dwFlags);
-        const int AW_ACTIVATE = 0X20000;
-        const int AW_SLIDE = 0X40000;
-        const int AW_HOR_POSITIVE = 0X1;
+        //public static int ScreenHeight = 988, ScreenWidth = 600, FormHeight = 988, FormWidth = 600;
 
     
 
+        /**
+         * Directivas usadas para redondear los bordes de los elementos
+         */
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 
         public static extern IntPtr CreateRoundRectRgn
@@ -41,6 +38,9 @@ namespace Tuto
         );
 
         
+        /**
+         * Constructor de la clase donde reescalamos todos los elementos y cambiamos el texto de los labels en base al idioma
+         */
         public NewHome()
         {
             InitializeComponent();
@@ -269,20 +269,14 @@ namespace Tuto
                 qrForm = new NewSchedule();
                 qrForm.Show();
             }
-            
-
-
-
-
-
 
         }
 
         private void NewHome_Load(object sender, EventArgs e)
         {
-            //AnimateWindow(this.Handle, 1000, AW_ACTIVATE | AW_SLIDE | AW_HOR_POSITIVE);
-        }
 
+
+        }
         private void tableLayoutPanel3_MouseLeave(object sender, EventArgs e)
         {
             this.tableLayoutPanel3.BackColor = Color.Snow;
@@ -332,6 +326,7 @@ namespace Tuto
         {
             MenuComedor mc = new MenuComedor();
             mc.Show();
+            this.Hide();
         }
 
         private void panel4_Click(object sender, EventArgs e)

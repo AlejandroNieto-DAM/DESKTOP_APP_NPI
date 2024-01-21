@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -40,6 +41,10 @@ namespace Tuto
         private int last_hands_count = 0;
         private bool gestoYaManejado = false;
 
+
+        /***
+         *  Flags y valores que usaremos para incorporar el movimiento del raton
+         */
         [DllImport("user32.dll")]
         static extern void mouse_event(int dwFlags, int dx, int dy,
                      int dwData, int dwExtraInfo);
@@ -64,18 +69,17 @@ namespace Tuto
             mouse_event((int)(MouseEventFlags.LEFTUP), 0, 0, 0, 0);
         }
 
+
+        /**
+         * Constructor de la ventana, iniciamos el controlador del Leap y
+         * reescalamos todos los elementos de la ventana en base a la escala de form actual
+         */
         public Language()
         {
             InitializeComponent();
 
             Language.lastForm = null;
-
-            
-
-            //var bitmap = (Bitmap)Image.FromFile(@"C:\Users\Alejandro\Downloads\si.png");
-            //this.Cursor = CreateCursor(bitmap, new Size(bitmap.Width, bitmap.Height));
-
-            //MouseCursor.MoveCursor(NewHome.ScreenWidth/2, NewHome.ScreenHeight/2);
+            Language.className = "Language";
 
             this.controller = new Controller();
             this.listener = new LeapEventListener(this);
@@ -193,6 +197,10 @@ namespace Tuto
             //panel2.Height, 20, 20));
         }
 
+        /**
+         * Este metodo estará ejecutandose siempre mirando el movimiento del leap
+         * para intentar encontrar si hemos hecho algun gesto
+         */
         delegate void LeapEventDelegate(string EventName);
         public void LeapEventNotification(string EventName)
         {
@@ -220,6 +228,10 @@ namespace Tuto
             }
         }
 
+        /***
+         * Metodo que maneja el movimiento de la mano y mira si hemos hecho el gesto de click el cual sera cerrar y abrir la mano
+         * y el movimiento del raton con la mano
+         */
         private void detectGesture(Leap.Frame frame)
         {
 
@@ -304,7 +316,8 @@ namespace Tuto
 
                                     ns.close_Form();
                                     break;
-                            }
+                              
+                                }
 
 
 
@@ -351,6 +364,9 @@ namespace Tuto
             this.controller.EnableGesture(Gesture.GestureType.TYPECIRCLE);
         }
 
+        /**
+         * Movemos el raton en base al movimiento que hagamos con la mano
+         */
         private void movingMouse(Leap.Frame frame, Controller controlador)
         {
             Hand my_hand = frame.Hands[0];
@@ -381,16 +397,6 @@ namespace Tuto
 
                 }
             }
-
-        }
-
-        private void CenterCursor()
-        {
-            // Calcular las coordenadas del centro de la pantalla
-            int centerX = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Width / 2;
-            int centerY = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Height / 2;
-
-            MouseCursor.MoveCursor(centerX, centerY);
 
         }
 

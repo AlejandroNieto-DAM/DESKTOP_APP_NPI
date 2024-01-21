@@ -66,6 +66,7 @@
             this.panel1.Padding = new System.Windows.Forms.Padding(10);
             this.panel1.Size = new System.Drawing.Size(240, 722);
             this.panel1.TabIndex = 2;
+            this.panel1.Resize += new System.EventHandler(this.panel1_Resize);
             // 
             // pictureBox1
             // 

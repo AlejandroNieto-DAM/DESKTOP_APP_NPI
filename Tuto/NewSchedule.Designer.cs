@@ -90,6 +90,7 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "For coming back do the return page gesture";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label200
             // 

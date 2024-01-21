@@ -26,7 +26,7 @@ namespace Tuto
             {
                 this.label1.Text = "Bienvenido! " + NewHome.userLogged;
                 this.label3.Text = "HOY";
-                this.label200.Text = "Para ir hacia atras haz el gesto de retornar pagina";
+                this.label4.Text = "Para ir hacia atras haz el gesto de retornar pagina";
                 
                 if  (NewHome.userLogged  == "Alejandro" || NewHome.userLogged == "Nieto")
                 {
@@ -73,7 +73,7 @@ namespace Tuto
             {
                 this.label1.Text = "Welcome! " + NewHome.userLogged;
                 this.label3.Text = "TODAY";
-                this.label200.Text = "For coming back do the return page gesture";
+                this.label4.Text = "For coming back do the return page gesture";
 
 
                 if (NewHome.userLogged == "Alejandro" || NewHome.userLogged == "Nieto")
@@ -262,6 +262,11 @@ namespace Tuto
             NewHome newForm = new NewHome();
             newForm.Show();
            
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

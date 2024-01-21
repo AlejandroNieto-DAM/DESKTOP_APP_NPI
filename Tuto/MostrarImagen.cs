@@ -70,6 +70,8 @@ namespace Tuto
                     pictureBox1.Image = Properties.Resources.mapa_informacion_1;
                 }
 
+                label4.Text = "Para más información accede desde la aplicación movil";
+
             } else if (Language.SelectedLanguage == 2) {
 
                 if (optionSelected == 1)
@@ -102,6 +104,8 @@ namespace Tuto
                     label2.Text = "On the left you can see a point where you can ask for help. If you want to go to the other one because there are no people, you should go out through the door that you see on the right that leads to the outside and continue the path towards the next building. Once inside, just to the left you will find it.";
                     pictureBox1.Image = Properties.Resources.mapa_informacion_1;
                 }
+
+                label4.Text = "For more information access from the mobile application";
 
             }
 

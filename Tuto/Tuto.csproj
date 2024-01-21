@@ -339,5 +339,53 @@
   <ItemGroup>
     <None Include="Resources\mapa_informacion_1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spanishrounded.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spanishrounded_bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\englishrounded_bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\englishrounded.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poland_bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poland.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sweden_bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sweden.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\netherlands_bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\netherlands.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\german_bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\german.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\italy_bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\italy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\france_bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\france.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

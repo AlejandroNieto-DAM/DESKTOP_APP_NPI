@@ -428,6 +428,86 @@ namespace Tuto
 
             this.Hide();
         }
+
+        private void pictureBox3_MouseHover(object sender, EventArgs e)
+        {
+            this.pictureBox3.Image = Properties.Resources.spanishrounded_bold; 
+        }
+
+        private void pictureBox3_MouseLeave(object sender, EventArgs e)
+        {
+            this.pictureBox3.Image = Properties.Resources.spanishrounded;
+        }
+
+        private void pictureBox4_MouseHover(object sender, EventArgs e)
+        {
+            this.pictureBox4.Image = Properties.Resources.englishrounded_bold;
+        }
+
+        private void pictureBox4_MouseLeave(object sender, EventArgs e)
+        {
+            this.pictureBox4.Image = Properties.Resources.englishrounded;
+        }
+
+        private void pictureBox5_MouseHover(object sender, EventArgs e)
+        {
+            this.pictureBox5.Image = Properties.Resources.poland_bold;
+        }
+
+        private void pictureBox5_MouseLeave(object sender, EventArgs e)
+        {
+            this.pictureBox5.Image = Properties.Resources.poland;
+        }
+
+        private void pictureBox6_MouseHover(object sender, EventArgs e)
+        {
+            this.pictureBox6.Image = Properties.Resources.sweden_bold;
+        }
+
+        private void pictureBox6_MouseLeave(object sender, EventArgs e)
+        {
+            this.pictureBox6.Image = Properties.Resources.sweden;
+        }
+
+        private void pictureBox7_MouseHover(object sender, EventArgs e)
+        {
+            this.pictureBox7.Image = Properties.Resources.netherlands_bold;
+        }
+
+        private void pictureBox7_MouseLeave(object sender, EventArgs e)
+        {
+            this.pictureBox7.Image = Properties.Resources.netherlands;
+        }
+
+        private void pictureBox8_MouseHover(object sender, EventArgs e)
+        {
+            this.pictureBox8.Image = Properties.Resources.german_bold;
+        }
+
+        private void pictureBox8_MouseLeave(object sender, EventArgs e)
+        {
+            this.pictureBox8.Image = Properties.Resources.german;
+        }
+
+        private void pictureBox9_MouseHover(object sender, EventArgs e)
+        {
+            this.pictureBox9.Image = Properties.Resources.italy_bold;
+        }
+
+        private void pictureBox9_MouseLeave(object sender, EventArgs e)
+        {
+            this.pictureBox9.Image = Properties.Resources.italy;
+        }
+
+        private void pictureBox2_MouseHover(object sender, EventArgs e)
+        {
+            this.pictureBox2.Image = Properties.Resources.france_bold;
+        }
+
+        private void pictureBox2_MouseLeave(object sender, EventArgs e)
+        {
+            this.pictureBox2.Image = Properties.Resources.france;
+        }
     }
 
     class MouseCursor

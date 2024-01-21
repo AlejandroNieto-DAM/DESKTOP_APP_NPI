@@ -16,9 +16,9 @@ namespace Tuto
 
         public static String userLogged = "";
         public static Form father;
-        public static int ScreenHeight = 4096, ScreenWidth = 2160, FormHeight = 988, FormWidth = 600;
+        //public static int ScreenHeight = 4096, ScreenWidth = 2160, FormHeight = 988, FormWidth = 600;
         //public static int ScreenHeight = 2500, ScreenWidth = 1400, FormHeight = 988, FormWidth = 600;
-        //public static int ScreenHeight = 988, ScreenWidth = 600, FormHeight = 988, FormWidth = 600;
+        public static int ScreenHeight = 988, ScreenWidth = 600, FormHeight = 988, FormWidth = 600;
 
         [DllImport("user32.dll")]
         public static extern bool AnimateWindow(IntPtr hwnd, int dwTime, int dwFlags);

@@ -16,9 +16,9 @@ namespace Tuto
 
         public static String userLogged = "";
         public static Form father;
-        //public static int ScreenHeight = 4096, ScreenWidth = 2160, FormHeight = 988, FormWidth = 600;
+        public static int ScreenHeight = 4096, ScreenWidth = 2160, FormHeight = 988, FormWidth = 600;
         //public static int ScreenHeight = 2500, ScreenWidth = 1400, FormHeight = 988, FormWidth = 600;
-        public static int ScreenHeight = 988, ScreenWidth = 600, FormHeight = 988, FormWidth = 600;
+        //public static int ScreenHeight = 988, ScreenWidth = 600, FormHeight = 988, FormWidth = 600;
 
         [DllImport("user32.dll")]
         public static extern bool AnimateWindow(IntPtr hwnd, int dwTime, int dwFlags);
@@ -51,21 +51,21 @@ namespace Tuto
             
             if (Language.SelectedLanguage == 1)
             {
-                this.label3.Text = "Bienvenido! Escoge una opción entre las siguientes";
-                this.label5.Text = "Mi horario personal";
-                this.label6.Text = "Menu del comedor";
-                this.label7.Text = "Informacion del profesorado";
-                this.label8.Text = "Peticiones administrativas";
-                this.label4.Text = "Localizaciones";
+                this.label3.Text = "Bienvenido al menú principal!";
+                this.label5.Text = "Horario";
+                this.label6.Text = "Menu";
+                this.label7.Text = "Profesores";
+                this.label8.Text = "Peticiones";
+                this.label4.Text = "Lugares";
                 this.label9.Text = "Para ir hacia atrás usa el gesto de pasar página hacia atrás";
             }
             else if (Language.SelectedLanguage == 2)
             {
-                this.label3.Text = "Welcome! Select an option of the following";
-                this.label5.Text = "My personal horario";
-                this.label6.Text = "Canteen menu";
-                this.label7.Text = "Teacher information";
-                this.label8.Text = "Administrative petitions";
+                this.label3.Text = "Welcome to the main menu!";
+                this.label5.Text = "Timetable";
+                this.label6.Text = "Menu";
+                this.label7.Text = "Teachers";
+                this.label8.Text = "Petitions";
                 this.label4.Text = "Locations";
                 this.label9.Text = "To go back use the page back gesture";
             }
@@ -346,6 +346,33 @@ namespace Tuto
 
         }
 
+        private void tableLayoutPanel1_MouseHover(object sender, EventArgs e)
+        {
+            this.panel2.BackColor = Color.Snow;
+            this.panel3.BackColor = Color.Snow;
+            this.panel4.BackColor = Color.Snow;
+            this.panel5.BackColor = Color.Snow;
+            this.tableLayoutPanel3.BackColor = Color.Snow;
+        }
+
+        private void NewHome_MouseHover(object sender, EventArgs e)
+        {
+            this.panel2.BackColor = Color.Snow;
+            this.panel3.BackColor = Color.Snow;
+            this.panel4.BackColor = Color.Snow;
+            this.panel5.BackColor = Color.Snow;
+            this.tableLayoutPanel3.BackColor = Color.Snow;
+        }
+
+        private void label3_MouseHover(object sender, EventArgs e)
+        {
+            this.panel2.BackColor = Color.Snow;
+            this.panel3.BackColor = Color.Snow;
+            this.panel4.BackColor = Color.Snow;
+            this.panel5.BackColor = Color.Snow;
+            this.tableLayoutPanel3.BackColor = Color.Snow;
+        }
+
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             MenuComedor horarioV = new MenuComedor();
@@ -363,9 +390,11 @@ namespace Tuto
         {
             Language newForm = new Language();
             newForm.Show();
-            //NewHome.userLogged = "";
-            //Language.lastForm = null;
+            NewHome.userLogged = "";
+            Language.lastForm = null;
             //this.label1.Text = this.label1.Text + "gesto";
+            newForm.Activate();
+
             this.Hide();
             //father.Visible = true;
             //father.Show();

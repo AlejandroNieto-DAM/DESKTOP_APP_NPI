@@ -35,38 +35,74 @@ namespace Tuto
             panel1.Width = panel1.Width * NewHome.ScreenWidth / NewHome.FormWidth;
             panel1.Height = panel1.Height * NewHome.ScreenHeight / NewHome.FormHeight;
 
-            if (optionSelected == 1)
-            {
-                label2.Text = "Gira a la derecha y sube las escaleras para subir la 3ra planta. Una vez llegado a la tercera planta verá dos pasillos, uno a la izquierda, otro a la derecha. Consulte" +
-                    "en la puerta el nombre del profesor/a que desea visitar.";
-                pictureBox1.Image = Properties.Resources.mapa_despachos_1;
-            }
+            if (Language.SelectedLanguage == 1) { 
+                if (optionSelected == 1)
+                {
+                    label2.Text = "Gira a la derecha y sube las escaleras para subir la 3ra planta. Una vez llegado a la tercera planta verá dos pasillos, uno a la izquierda, otro a la derecha. Consulte" +
+                        "en la puerta el nombre del profesor/a que desea visitar.";
+                    pictureBox1.Image = Properties.Resources.mapa_despachos_1;
+                }
 
-            if (optionSelected == 2)
-            {
-                label2.Text = "Mira a la derecha y salga por la puerta hacia el exterior. Continúe el camino hacia el siguiente edificio. Una vez dentro gire a la derecha y suba por las escaleras. En la primera planta" +
-                    "encontrará las clases 1.X, en la segunda las clases 2.X y en la tercera las 3.X.";
-                pictureBox1.Image = Properties.Resources.mapa_clases_1;
-            }
+                if (optionSelected == 2)
+                {
+                    label2.Text = "Mira a la derecha y salga por la puerta hacia el exterior. Continúe el camino hacia el siguiente edificio. Una vez dentro gire a la derecha y suba por las escaleras. En la primera planta" +
+                        "encontrará las clases 1.X, en la segunda las clases 2.X y en la tercera las 3.X.";
+                    pictureBox1.Image = Properties.Resources.mapa_clases_1;
+                }
 
-            if (optionSelected == 3)
-            {
-                label2.Text = "Mira a la derecha y salga por la puerta hacia el exterior. Continúe el camino hacia el siguiente edificio. Una vez dentro a la izquierda y a la derecha encontrará las clases 0.X no suba las escaleras" +
-                    "o el ascensor.";
-                pictureBox1.Image = Properties.Resources.mapa_clases_1;
-            }
+                if (optionSelected == 3)
+                {
+                    label2.Text = "Mira a la derecha y salga por la puerta hacia el exterior. Continúe el camino hacia el siguiente edificio. Una vez dentro a la izquierda y a la derecha encontrará las clases 0.X no suba las escaleras" +
+                        "o el ascensor.";
+                    pictureBox1.Image = Properties.Resources.mapa_clases_1;
+                }
 
-            if (optionSelected == 4)
-            {
-                label2.Text = "Gira a la derecha y antes de salir por la puerta que da al exterior baje por las escaleras que bajan a la planta inferior. Justo al bajar verá la cafetería y a la derecha el comerdor.";
-                pictureBox1.Image = Properties.Resources.mapa_comedor_1;
-            }
+                if (optionSelected == 4)
+                {
+                    label2.Text = "Gira a la derecha y antes de salir por la puerta que da al exterior baje por las escaleras que bajan a la planta inferior. Justo al bajar verá la cafetería y a la derecha el comedor.";
+                    pictureBox1.Image = Properties.Resources.mapa_comedor_1;
+                }
 
-            if (optionSelected == 5)
-            {
-                label2.Text = "A la izquierda puede ver un punto donde pedir ayuda. Si quiere ir al otro debido a que no hay gente debera salir por la puerta que ve a la derecha que da al exterior y continuar el camino hacia" +
-                    "el siguiente edificio. Una vez dentro justo a la izquierda lo encontrará.";
-                pictureBox1.Image = Properties.Resources.mapa_informacion_1;
+                if (optionSelected == 5)
+                {
+                    label2.Text = "A la izquierda puede ver un punto donde pedir ayuda. Si quiere ir al otro debido a que no hay gente debera salir por la puerta que ve a la derecha que da al exterior y continuar el camino hacia" +
+                        "el siguiente edificio. Una vez dentro justo a la izquierda lo encontrará.";
+                    pictureBox1.Image = Properties.Resources.mapa_informacion_1;
+                }
+
+            } else if (Language.SelectedLanguage == 2) {
+
+                if (optionSelected == 1)
+                {
+                    label2.Text = "Turn right and go up the stairs to the 3rd floor. Once you reach the third floor you will see two corridors, one on the left, one on the right. Consult" +
+                    "on the door the name of the teacher you wish to visit.";
+                    pictureBox1.Image = Properties.Resources.mapa_despachos_1;
+                }
+
+                if (optionSelected == 2)
+                {
+                    label2.Text = "Look to the right and exit through the door to the outside. Continue the path to the next building. Once inside, turn right and go up the stairs. On the first floor you will find classes 1.X, on the second you will find classes 2.X and on the third you will find 3.X.";
+                    pictureBox1.Image = Properties.Resources.mapa_clases_1;
+                }
+
+                if (optionSelected == 3)
+                {
+                    label2.Text = "Look to the right and exit through the door to the outside. Continue the path to the next building. Once inside on the left and right you will find classes 0.X do not go up the stairs or the elevator.";
+                    pictureBox1.Image = Properties.Resources.mapa_clases_1;
+                }
+
+                if (optionSelected == 4)
+                {
+                    label2.Text = "Turn right and before leaving through the door that leads outside, go down the stairs that go down to the lower floor. Just as you go down you will see the cafeteria and to the right the dining room.";
+                    pictureBox1.Image = Properties.Resources.mapa_comedor_1;
+                }
+
+                if (optionSelected == 5)
+                {
+                    label2.Text = "On the left you can see a point where you can ask for help. If you want to go to the other one because there are no people, you should go out through the door that you see on the right that leads to the outside and continue the path towards the next building. Once inside, just to the left you will find it.";
+                    pictureBox1.Image = Properties.Resources.mapa_informacion_1;
+                }
+
             }
 
             int ScreenWidth = NewHome.ScreenWidth;
@@ -90,29 +126,6 @@ namespace Tuto
             this.pictureBox1.Width = this.pictureBox1.Width * ScreenWidth / FormWidth;
             this.pictureBox1.Margin = new Padding(this.pictureBox1.Margin.Left * ScreenWidth / FormWidth, this.pictureBox1.Margin.Top * ScreenHeight / FormHeight, this.pictureBox1.Margin.Right * ScreenWidth / FormWidth, this.pictureBox1.Margin.Bottom * ScreenHeight / FormHeight);
             this.pictureBox1.Padding = new Padding(this.pictureBox1.Padding.Left * ScreenWidth / FormWidth, this.pictureBox1.Padding.Top * ScreenHeight / FormHeight, this.pictureBox1.Padding.Right * ScreenWidth / FormWidth, this.pictureBox1.Padding.Bottom * ScreenHeight / FormHeight);
-
-            this.panel1.Region = Region.FromHrgn(NewHome.CreateRoundRectRgn(0, 0, panel1.Width, panel1.Height, 20, 20));
-            this.label4.Region = Region.FromHrgn(NewHome.CreateRoundRectRgn(0, 0, label4.Width, label4.Height, 20, 20));
-
-        }
-
-        private void NewSchedule_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void NewSchedule_Resize(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Resize(object sender, EventArgs e)
-        {
 
             this.panel1.Region = Region.FromHrgn(NewHome.CreateRoundRectRgn(0, 0, panel1.Width, panel1.Height, 20, 20));
             this.label4.Region = Region.FromHrgn(NewHome.CreateRoundRectRgn(0, 0, label4.Width, label4.Height, 20, 20));

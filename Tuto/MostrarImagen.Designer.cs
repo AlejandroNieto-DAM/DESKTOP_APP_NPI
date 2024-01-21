@@ -52,7 +52,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "DESPACHOS PROFESORES";
             this.label1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel1
             // 
@@ -67,7 +66,6 @@
             this.panel1.Padding = new System.Windows.Forms.Padding(10);
             this.panel1.Size = new System.Drawing.Size(240, 722);
             this.panel1.TabIndex = 2;
-            this.panel1.Resize += new System.EventHandler(this.panel1_Resize);
             // 
             // pictureBox1
             // 
@@ -123,8 +121,6 @@
             this.Padding = new System.Windows.Forms.Padding(180, 0, 180, 0);
             this.Text = "s";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.NewSchedule_Load);
-            this.Resize += new System.EventHandler(this.NewSchedule_Resize);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

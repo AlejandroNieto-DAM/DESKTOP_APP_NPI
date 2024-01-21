@@ -25,7 +25,6 @@ namespace Tuto
             if (Language.SelectedLanguage == 1)
             {
                 this.label1.Text = "Bienvenido! " + NewHome.userLogged;
-                this.label2.Text = "Tu proxima clase comienza en: ";
                 this.label3.Text = "HOY";
                 this.label200.Text = "Para ir hacia atras haz el gesto de retornar pagina";
                 

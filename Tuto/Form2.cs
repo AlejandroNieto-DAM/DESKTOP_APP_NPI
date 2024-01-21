@@ -27,6 +27,7 @@ namespace Tuto
         {
             InitializeComponent();
             Language.lastForm = this;
+            Language.className = "Form2";
 
 
             /*

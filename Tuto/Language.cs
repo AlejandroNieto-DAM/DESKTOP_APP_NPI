@@ -224,9 +224,10 @@ namespace Tuto
         {
 
 
-            
+          
 
             Hand my_hand = frame.Hands[0];
+
 
             currentTime = frame.Timestamp;
             timeChange = currentTime - previousTime;
@@ -237,7 +238,7 @@ namespace Tuto
             {
 
 
-                if (last_hands_count > 0 && frame.Hands.Count > 0 && last_finger_count == 0 && frame.Fingers.Count > 0)
+                if (!gestoYaManejado && last_hands_count > 0 && frame.Hands.Count > 0 && last_finger_count == 0 && frame.Fingers.Count > 0)
                 {
                     Language.LeftClick(Cursor.Position.X, Cursor.Position.Y);
                     gestoYaManejado = true;
@@ -249,7 +250,10 @@ namespace Tuto
 
             }
 
-            movingMouse(frame, this.controller);
+            if (frame.Fingers.Count > 0)
+            {
+                movingMouse(frame, this.controller);
+            }
 
 
             previousTime = currentTime;
@@ -329,7 +333,7 @@ namespace Tuto
                 System.Threading.Timer resetTimer = new System.Threading.Timer((state) =>
                 {
                     gestoYaManejado = false;
-                }, null, 1000, Timeout.Infinite);
+                }, null, 1200, Timeout.Infinite);
             }
 
             
@@ -366,14 +370,27 @@ namespace Tuto
                     {
                         var x = (int)(xScreenIntersect * System.Windows.Forms.Screen.PrimaryScreen.Bounds.Width) / 100;
 
-                        var y = (int)(System.Windows.Forms.Screen.PrimaryScreen.Bounds.Height - (yScreenIntersect * System.Windows.Forms.Screen.PrimaryScreen.Bounds.Height) / 100) + NewHome.ScreenHeight / 2;
+                        var y = (int)(System.Windows.Forms.Screen.PrimaryScreen.Bounds.Height - (yScreenIntersect * System.Windows.Forms.Screen.PrimaryScreen.Bounds.Height) / 100) + NewHome.ScreenHeight;
 
-                        MouseCursor.MoveCursor(x, y);
+                        
 
+                       
+                       MouseCursor.MoveCursor(x, y);
+                        
                     }
 
                 }
             }
+
+        }
+
+        private void CenterCursor()
+        {
+            // Calcular las coordenadas del centro de la pantalla
+            int centerX = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Width / 2;
+            int centerY = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Height / 2;
+
+            MouseCursor.MoveCursor(centerX, centerY);
 
         }
 
@@ -395,6 +412,7 @@ namespace Tuto
             NewHome.father = this;
 
             home.Show();
+            home.Activate();
             this.Hide();
             //this.Visible = false;
             //home.Visible = true;
@@ -406,6 +424,8 @@ namespace Tuto
             NewHome home = new NewHome();
             NewHome.father = this;
             home.Show();
+            home.Activate();
+
             this.Hide();
         }
     }

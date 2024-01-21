@@ -14,9 +14,6 @@ namespace Tuto
 {
     public partial class Locations : Form
     {
-
-       
-
         
         public Locations()
         {
@@ -31,26 +28,24 @@ namespace Tuto
             int ScreenHeight = NewHome.ScreenHeight;
             int FormHeight = NewHome.FormHeight;
 
-           /* if (Language.SelectedLanguage == 1)
+           if (Language.SelectedLanguage == 1)
             {
-                this.label3.Text = "Bienvenido! Escoge una opción entre las siguientes";
-                this.label5.Text = "Mi horario personal";
-                this.label6.Text = "Menu del comedor";
-                this.label7.Text = "Informacion del profesorado";
-                this.label8.Text = "Peticiones administrativas";
-                this.label4.Text = "Localizaciones";
-                this.label9.Text = "Para ir hacia atrás usa el gesto de pasar página hacia atrás";
+                this.label3.Text = "¿A dónde quiere ir?";
+                this.label5.Text = "Despachos";
+                this.label6.Text = "Laboratorios";
+                this.label7.Text = "Clases";
+                this.label8.Text = "Comedor";
+                this.label4.Text = "Ayuda";
             }
             else if (Language.SelectedLanguage == 2)
             {
-                this.label3.Text = "Welcome! Select an option of the following";
-                this.label5.Text = "My personal horario";
-                this.label6.Text = "Canteen menu";
-                this.label7.Text = "Teacher information";
-                this.label8.Text = "Administrative petitions";
-                this.label4.Text = "Locations";
-                this.label9.Text = "To go back use the page back gesture";
-            }*/
+                this.label3.Text = "Where do you want to go?";
+                this.label5.Text = "Offices";
+                this.label6.Text = "Laboratories";
+                this.label7.Text = "Class";
+                this.label8.Text = "DiningRoom";
+                this.label4.Text = "Help";
+            }
 
 
             this.label1.Height = this.label1.Height * ScreenHeight / FormHeight;
@@ -345,6 +340,15 @@ namespace Tuto
             NewHome nh = new NewHome();
             nh.Show();
            
+        }
+
+        private void tableLayoutPanel1_MouseHover(object sender, EventArgs e)
+        {
+            this.panel2.BackColor = Color.Snow;
+            this.panel3.BackColor = Color.Snow;
+            this.panel4.BackColor = Color.Snow;
+            this.panel5.BackColor = Color.Snow;
+            this.tableLayoutPanel3.BackColor = Color.Snow;
         }
     }
 }

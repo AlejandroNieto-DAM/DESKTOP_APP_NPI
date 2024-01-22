@@ -79,7 +79,7 @@ namespace Tuto
                     pictureBox1.Image = Properties.Resources.mapa_informacion_1;
                 }
 
-                label4.Text = "Para más información accede desde la aplicación movil";
+                label4.Text = "Más información en la app movil";
 
             } else if (Language.SelectedLanguage == 2) {
 
@@ -119,7 +119,7 @@ namespace Tuto
                     pictureBox1.Image = Properties.Resources.mapa_informacion_1;
                 }
 
-                label4.Text = "For more information access from the mobile application";
+                label4.Text = "More information in the mobile app";
 
             }
 
@@ -130,7 +130,7 @@ namespace Tuto
 
            // this.label1.Margin = new Padding(this.label1.Margin.Left * ScreenWidth / FormWidth, this.label1.Margin.Top * ScreenHeight / FormHeight, this.label1.Margin.Right * ScreenWidth / FormWidth, this.label1.Margin.Bottom * ScreenHeight / FormHeight);
             //this.label1.Padding = new Padding(this.label1.Padding.Left * ScreenWidth / FormWidth, this.label1.Padding.Top * ScreenHeight / FormHeight, this.label1.Padding.Right * ScreenWidth / FormWidth, this.label1.Padding.Bottom * ScreenHeight / FormHeight);
-            this.label1.Font = new Font("Yu Gothic UI", this.label1.Font.Size * (ScreenHeight / FormHeight), FontStyle.Bold);
+            this.label1.Font = new Font("Cooper Black", this.label1.Font.Size * (ScreenHeight / FormHeight), FontStyle.Bold);
 
             //this.label2.Width = this.label2.Width * ScreenWidth / FormWidth;
             //this.label2.Margin = new Padding(this.label2.Margin.Left * ScreenWidth / FormWidth, this.label2.Margin.Top * ScreenHeight / FormHeight, this.label2.Margin.Right * ScreenWidth / FormWidth, this.label2.Margin.Bottom * ScreenHeight / FormHeight);

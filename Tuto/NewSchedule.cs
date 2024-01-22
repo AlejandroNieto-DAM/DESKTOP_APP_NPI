@@ -126,7 +126,7 @@ namespace Tuto
 
             label1.Width = label1.Width * NewHome.ScreenWidth / NewHome.FormWidth;
             label1.Height = label1.Height * NewHome.ScreenHeight / NewHome.FormHeight;
-            this.label1.Font = new Font("Yu Gothic UI", this.label1.Font.Size * (ScreenHeight / FormHeight), FontStyle.Bold);
+            this.label1.Font = new Font("Cooper Black", this.label1.Font.Size * (ScreenHeight / FormHeight), FontStyle.Bold);
 
             label2.Width = label2.Width * NewHome.ScreenWidth / NewHome.FormWidth;
             label2.Height = label2.Height * NewHome.ScreenHeight / NewHome.FormHeight;

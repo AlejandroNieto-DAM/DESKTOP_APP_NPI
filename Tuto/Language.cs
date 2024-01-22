@@ -14,6 +14,7 @@ using System.Windows.Forms;
 using Leap;
 
 
+
 namespace Tuto
 {
 
@@ -39,7 +40,13 @@ namespace Tuto
         private float current_radio = 99999;
         private int last_finger_count = 0;
         private int last_hands_count = 0;
-        private bool gestoYaManejado = false;
+        private bool gestoYaManejado;
+        private bool gestoYaManejadoClick;
+
+        private bool manoAbierta;
+        private bool moverRaton = true;
+        private System.Windows.Forms.Timer temporizador;
+        private int contador = 0;
 
 
         /***
@@ -88,7 +95,7 @@ namespace Tuto
 
             this.label1.Height = this.label1.Height * NewHome.ScreenHeight / NewHome.FormHeight;
             this.label1.Width = this.label1.Width * NewHome.ScreenWidth / NewHome.FormWidth;
-            this.label1.Font = new Font("Yu Gothic UI", this.label1.Font.Size * (NewHome.ScreenHeight / NewHome.FormHeight), FontStyle.Bold);
+            this.label1.Font = new Font("Cooper Black", this.label1.Font.Size * (NewHome.ScreenHeight / NewHome.FormHeight), FontStyle.Bold);
 
             this.tableLayoutPanel1.Height = this.tableLayoutPanel1.Height * NewHome.ScreenHeight / NewHome.FormHeight;
 
@@ -236,132 +243,176 @@ namespace Tuto
         {
 
 
-          
+
 
             Hand my_hand = frame.Hands[0];
-
 
             currentTime = frame.Timestamp;
             timeChange = currentTime - previousTime;
             float new_radio = my_hand.SphereRadius;
 
 
-            if (timeChange > 10000)
-            {
 
 
-                if (!gestoYaManejado && last_hands_count > 0 && frame.Hands.Count > 0 && last_finger_count == 0 && frame.Fingers.Count > 0)
-                {
-                    Language.LeftClick(Cursor.Position.X, Cursor.Position.Y);
-                    gestoYaManejado = true;
-                }
-
-                last_finger_count = frame.Fingers.Count;
-                last_hands_count = frame.Hands.Count();
-
-
-            }
-
-            if (frame.Fingers.Count > 0)
+            if (frame.Fingers.Count > 4 && new_radio > 40)
             {
                 movingMouse(frame, this.controller);
             }
 
 
-            previousTime = currentTime;
 
-            GestureList gestures = frame.Gestures();
-            for (int i = 0; i < gestures.Count(); i++)
+            /*if (timeChange > 10000)
             {
-                Gesture gesture = gestures[i];
 
-                if (!gestoYaManejado)
-                {
+                last_finger_count = frame.Fingers.Count;
+                last_hands_count = frame.Hands.Count();
+
+            }
+
+            if (frame.Fingers.Count() == 0 && frame.Hands.Count > 0 && last_finger_count == 5)
+            {
+                manoAbierta = true;
+                moverRaton = false;
+            }*/
+
+
+
+            if (gestoYaManejado == false)
+            {
 
                 
-                switch (gesture.Type)
+
+                GestureList gestures = frame.Gestures();
+                for (int i = 0; i < gestures.Count(); i++)
                 {
-                    case Gesture.GestureType.TYPEKEYTAP:
+                    Gesture gesture = gestures[i];
 
-                        break;
-                    case Gesture.GestureType.TYPESWIPE:
 
-                        if (Language.lastForm != null)
-                        {
 
-                            switch (Language.className)
+                    switch (gesture.Type)
+                    {
+
+
+
+                        case Gesture.GestureType.TYPESWIPE:
+
+                            gestoYaManejado = true;
+
+                            if (Language.lastForm != null)
                             {
-                                case "NewHome":
-                                    NewHome nh = (NewHome)Language.lastForm;
 
-                                    nh.close_Form();
-                                    break;
-                                case "Locations":
-                                    Locations lc = (Locations)Language.lastForm;
+                                switch (Language.className)
+                                {
+                                    case "NewHome":
+                                        NewHome nh = (NewHome)Language.lastForm;
 
-                                    lc.close_Form();
-                                    break;
-                                case "MostrarImagen":
-                                    MostrarImagen mi = (MostrarImagen)Language.lastForm;
+                                        nh.close_Form();
+                                        break;
+                                    case "Locations":
+                                        Locations lc = (Locations)Language.lastForm;
 
-                                    mi.close_Form();
-                                    break;
-                                case "Form2":
-                                    Form2 qr = (Form2)Language.lastForm;
+                                        lc.close_Form();
+                                        break;
+                                    case "MostrarImagen":
+                                        MostrarImagen mi = (MostrarImagen)Language.lastForm;
 
-                                    qr.close_Form();
-                                    break;
-                                case "NewSchedule":
-                                    NewSchedule ns = (NewSchedule)Language.lastForm;
+                                        mi.close_Form();
+                                        break;
+                                    case "Form2":
+                                        Form2 qr = (Form2)Language.lastForm;
 
-                                    ns.close_Form();
-                                    break;
-                              
+                                        qr.close_Form();
+                                        break;
+                                    case "NewSchedule":
+                                        NewSchedule ns = (NewSchedule)Language.lastForm;
+
+                                        ns.close_Form();
+                                        break;
+
                                 }
 
 
 
+                            }
+                            contador = 100;
 
-                        }
-
-                        gestoYaManejado = true;
-
-                        
-
-                        //this.label1.Text = this.label1.Text + "Cirlce";
-                        break;
+                            //this.label1.Text = this.label1.Text + "Cirlce";
+                            break;
 
 
-                }
+                    }
 
-                }
-
+               }                   
 
             }
 
-
-            if (gestoYaManejado)
-            {
-                // Inicia un temporizador para restablecer la bandera después de un período de tiempo
-                System.Threading.Timer resetTimer = new System.Threading.Timer((state) =>
+            if (!gestoYaManejadoClick){
+                if (timeChange > 1000)
                 {
-                    gestoYaManejado = false;
-                }, null, 1200, Timeout.Infinite);
+                    if (new_radio > 15 && new_radio < 40)
+                    {
+                        Language.LeftClick(Cursor.Position.X, Cursor.Position.Y);
+
+                        gestoYaManejadoClick = true;
+                    }
+                }
             }
 
-            
+
+            if(timeChange > 1000)
+            {
+                if(new_radio > 100)
+                {
+                    gestoYaManejadoClick = false;
+                }
+            }
+           
 
 
+            if (gestoYaManejado && contador == 0)
+            {
 
+                gestoYaManejado = false;
+            }
+
+            //label1.Text = contador.ToString();
+
+/*            if (gestoYaManejado)
+            {
+                label1.Text = "True";
+            } else
+            {
+                label1.Text = "False";
+            }*/
+
+
+            previousTime = currentTime;
+            if(contador > 0)
+            {
+                contador--;
+            }
 
         }
 
+        private void Temporizador_Tick(object sender, EventArgs e)
+        {
+            // Después de 5 segundos, cambia el valor de la variable a false
+            //moverRaton = true;
+            gestoYaManejado = false;
+
+
+            temporizador.Stop();
+            temporizador.Dispose();
+        }
+
+
+
         private void connectHandler()
         {
-            this.controller.EnableGesture(Gesture.GestureType.TYPEKEYTAP);
             this.controller.EnableGesture(Gesture.GestureType.TYPESWIPE);
+            this.controller.EnableGesture(Gesture.GestureType.TYPESCREENTAP);
+            this.controller.EnableGesture(Gesture.GestureType.TYPEKEYTAP);
 
-            this.controller.EnableGesture(Gesture.GestureType.TYPECIRCLE);
         }
 
         /**
@@ -426,13 +477,7 @@ namespace Tuto
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            Language.SelectedLanguage = 2;
-            NewHome home = new NewHome();
-            NewHome.father = this;
-            home.Show();
-            home.Activate();
 
-            this.Hide();
         }
 
         private void pictureBox3_MouseHover(object sender, EventArgs e)
@@ -447,12 +492,12 @@ namespace Tuto
 
         private void pictureBox4_MouseHover(object sender, EventArgs e)
         {
-            this.pictureBox4.Image = Properties.Resources.englishrounded_bold;
+            this.pictureBox4.Image = Properties.Resources.netherlands_bold;
         }
 
         private void pictureBox4_MouseLeave(object sender, EventArgs e)
         {
-            this.pictureBox4.Image = Properties.Resources.englishrounded;
+            this.pictureBox4.Image = Properties.Resources.netherlands;
         }
 
         private void pictureBox5_MouseHover(object sender, EventArgs e)
@@ -477,12 +522,12 @@ namespace Tuto
 
         private void pictureBox7_MouseHover(object sender, EventArgs e)
         {
-            this.pictureBox7.Image = Properties.Resources.netherlands_bold;
+            this.pictureBox7.Image = Properties.Resources.englishrounded_bold;
         }
 
         private void pictureBox7_MouseLeave(object sender, EventArgs e)
         {
-            this.pictureBox7.Image = Properties.Resources.netherlands;
+            this.pictureBox7.Image = Properties.Resources.englishrounded;
         }
 
         private void pictureBox8_MouseHover(object sender, EventArgs e)
@@ -513,6 +558,17 @@ namespace Tuto
         private void pictureBox2_MouseLeave(object sender, EventArgs e)
         {
             this.pictureBox2.Image = Properties.Resources.france;
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            Language.SelectedLanguage = 2;
+            NewHome home = new NewHome();
+            NewHome.father = this;
+            home.Show();
+            home.Activate();
+
+            this.Hide();
         }
     }
 

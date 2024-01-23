@@ -22,6 +22,9 @@ namespace Tuto
     public partial class MenuComedor : Form
     {
 
+
+        private int screenHeight = 4096, screenWidth = 2160, formHeight = 1024, formWidth = 540;
+
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
          (
@@ -32,6 +35,7 @@ namespace Tuto
              int nWidthEllipse,
              int nHeightEllipse
          );
+
 
         public string[] menuDelDia =
         {
@@ -60,11 +64,23 @@ namespace Tuto
         private Image dropRight;
         private Image dropDown;
 
-
+        private int ratioHeight;
+        private int ratioWidth;
 
         public MenuComedor()
         {
             InitializeComponent();
+
+            int formHeight = this.Size.Height;
+            int formWidth = this.Size.Width;
+
+            ratioHeight = screenHeight / formHeight;
+            ratioWidth = screenWidth / formWidth;
+
+            FormBorderStyle = FormBorderStyle.None;
+            WindowState = FormWindowState.Maximized;
+            this.Height = screenHeight;
+            this.Width = screenWidth;
 
             dropRight = Tuto.Properties.Resources.dropRightTrans;
             dropDown = Tuto.Properties.Resources.dropDownTrans;
@@ -97,24 +113,48 @@ namespace Tuto
             preorderArray[4] = Preorder4;
             preorderArray[5] = Preorder5;
 
+            this.button1.Font = new Font("Yu Gothic UI", (int)this.button1.Font.Unit * ratioWidth * 3);
+
+            this.week1Panel.Height = this.week1Panel.Height * ratioHeight;
+            this.week1Panel.Width = this.week1Panel.Width * ratioWidth;
+            //this.week1Panel.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, week1Panel.Width, week1Panel.Height, 20, 20));
+
+
             for (int i = 0; i < 6; i++)
             {
-                this.panelArray[i].Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, panelArray[i].Width, panelArray[i].Height, 20, 20));
-                this.collapseArray[i].Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, collapseArray[i].Width, collapseArray[i].Height, 20, 20));
-                this.menuArray[i].Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, menuArray[i].Width, menuArray[i].Height, 20, 20));
+                this.panelArray[i].MinimumSize = new Size(this.panelArray[i].MinimumSize.Width * ratioWidth, (this.panelArray[i].MinimumSize.Height +5) * ratioHeight);
+                this.panelArray[i].MaximumSize = new Size(this.panelArray[i].MaximumSize.Width * ratioWidth, this.panelArray[i].MaximumSize.Height * ratioHeight);
+                this.panelArray[i].Height = this.panelArray[i].MinimumSize.Height;
+                this.panelArray[i].Width = this.panelArray[i].MinimumSize.Width;
+                this.panelArray[i].Margin = new Padding(this.panelArray[i].Margin.Left * ratioWidth, this.panelArray[i].Margin.Top * ratioHeight, this.panelArray[i].Margin.Right * ratioWidth, this.panelArray[i].Margin.Bottom * ratioHeight); 
+                //
+                this.collapseArray[i].Height = (this.collapseArray[i].Height + 5) * ratioHeight;
+                this.collapseArray[i].Width = this.collapseArray[i].Width * ratioWidth;
+                this.collapseArray[i].Font = new Font("Yu Gothic UI", (int)this.collapseArray[i].Font.Unit * ratioWidth * 3);
+                //
+                this.menuArray[i].Location = new Point(panelArray[i].Width/10, (int)(collapseArray[i].Height + 5*ratioHeight));
+                this.menuArray[i].Height = this.panelArray[i].MaximumSize.Height / 2;
+                this.menuArray[i].Width = this.panelArray[i].MaximumSize.Width / 5 * 4;
+                this.menuArray[i].Font = new Font("Yu Gothic UI", (int)this.menuArray[i].Font.Unit * ratioWidth * 3);
+                //
                 this.menuArray[i].Text = menuDelDia[i];
-                this.preorderArray[i].Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, preorderArray[i].Width, preorderArray[i].Height, 20, 20));
+                this.preorderArray[i].Location = new Point(panelArray[i].Width/10, menuArray[i].Height + menuArray[i].Location.Y + 5*ratioHeight);
+                this.preorderArray[i].Height = (int)(this.panelArray[i].MaximumSize.Height / 6.66);
+                this.preorderArray[i].Width = this.panelArray[i].MaximumSize.Width / 5 * 4;
+                this.preorderArray[i].Font = new Font("Yu Gothic UI", (int)this.preorderArray[i].Font.Unit * ratioWidth * 3);
+                //
                 this.collapseArray[i].Image = dropRight;
+                
             }
-            this.week1Panel.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, week1Panel.Width, week1Panel.Height, 20, 20));
-            /*
-            this.MenuPanel1.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, MenuPanel1.Width, MenuPanel1.Height, 20, 20));
-            this.Collapse1.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Collapse1.Width, Collapse1.Height, 20, 20));
-            this.Menu1.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Menu1.Width, Menu1.Height, 20, 20));
-            this.Preorder1.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Preorder1.Width, Preorder1.Height, 20, 20));
-            */
-
-
+            this.week1.Height = this.week1.Height * ratioHeight;
+            this.week1.Width = this.week1.Width * ratioWidth;
+            for (int i = 0; i < 6; i++)
+            {
+                this.panelArray[i].Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, panelArray[i].Width, panelArray[i].Height, 20 * ratioWidth, 20 * ratioWidth));
+                this.collapseArray[i].Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, collapseArray[i].Width, collapseArray[i].Height, 20 * ratioWidth, 20 * ratioWidth));
+                this.menuArray[i].Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, menuArray[i].Width, menuArray[i].Height, 20 * ratioWidth, 20 * ratioWidth));
+                this.preorderArray[i].Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, preorderArray[i].Width, preorderArray[i].Height, 20 * ratioWidth, 20 * ratioWidth));
+            }
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -151,8 +191,8 @@ namespace Tuto
         {
             if (open != change && open != -1)
             {
-                panelArray[open].Height -= 8;
-                this.panelArray[open].Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, panelArray[open].Width, panelArray[open].Height, 20, 20));
+                panelArray[open].Height -= 8 * ratioHeight;
+                this.panelArray[open].Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, panelArray[open].Width, panelArray[open].Height, 20 * ratioWidth, 20 * ratioWidth));
                 if (panelArray[open].Height == panelArray[open].MinimumSize.Height)
                 {
                     collapseArray[open].Image = dropRight;
@@ -163,8 +203,8 @@ namespace Tuto
             {
                 if (collapseArray[change].Image == dropRight)
                     collapseArray[change].Image = dropDown;
-                panelArray[change].Height += 8;
-                this.panelArray[change].Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, panelArray[change].Width, panelArray[change].Height, 20, 20));
+                panelArray[change].Height += 8*ratioHeight;
+                this.panelArray[change].Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, panelArray[change].Width, panelArray[change].Height, 20 * ratioWidth, 20 * ratioWidth));
                 if (panelArray[change].Height == panelArray[change].MaximumSize.Height)
                 {
                     open = change;
@@ -174,8 +214,8 @@ namespace Tuto
             }
             else if (open == change)
             {
-                panelArray[open].Height -= 8;
-                this.panelArray[open].Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, panelArray[open].Width, panelArray[open].Height, 20, 20));
+                panelArray[open].Height -= 8 * ratioHeight;
+                this.panelArray[open].Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, panelArray[open].Width, panelArray[open].Height, 20 * ratioWidth, 20 * ratioWidth));
                 if (panelArray[open].Height == panelArray[open].MinimumSize.Height)
                 {
                     collapseArray[open].Image = dropRight;
@@ -266,6 +306,53 @@ namespace Tuto
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Preorder5_Click(object sender, EventArgs e)
+        {
+            QRscan QR = new QRscan("saturday");
+            QR.Show();
+            this.Hide();
+        }
+
+        private void Preorder4_Click(object sender, EventArgs e)
+        {
+            QRscan QR = new QRscan("friday");
+            QR.Show();
+            this.Hide();
+        }
+
+        private void Preorder3_Click(object sender, EventArgs e)
+        {
+            QRscan QR = new QRscan("thursday");
+            QR.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Preorder2_Click(object sender, EventArgs e)
+        {
+            QRscan QR = new QRscan("wednesday");
+            QR.Show();
+            this.Hide();
+        }
+
+        private void Preorder1_Click(object sender, EventArgs e)
+        {
+            QRscan QR = new QRscan("tuesday");
+            QR.Show();
+            this.Hide();
+        }
+
+        private void Preorder0_Click(object sender, EventArgs e)
+        {
+            QRscan QR = new QRscan("monday");
+            QR.Show();
+            this.Hide();
         }
     }
 

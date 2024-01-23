@@ -57,7 +57,7 @@ namespace Tuto
 
             this.label3.Height = this.label3.Height * ScreenHeight / FormHeight;
             this.label3.Width = this.label3.Width * ScreenWidth / FormWidth;
-            this.label3.Font = new Font("Yu Gothic UI", this.label3.Font.Size * (ScreenHeight / FormHeight), FontStyle.Bold);
+            this.label3.Font = new Font("Cooper Black", this.label3.Font.Size * (ScreenHeight / FormHeight), FontStyle.Bold);
 
             this.panel1.Height = this.panel1.Height * ScreenHeight / FormHeight;
             this.panel1.Width = this.panel1.Width * ScreenWidth / FormWidth;
@@ -78,7 +78,7 @@ namespace Tuto
             this.pictureBox1.Width = this.pictureBox1.Width * ScreenWidth / FormWidth;
             this.label5.Height = this.label5.Height * ScreenHeight / FormHeight;
             this.label5.Width = this.label5.Width * ScreenWidth / FormWidth;
-            this.label5.Font = new Font("Yu Gothic UI", this.label5.Font.Size * (ScreenHeight / FormHeight), FontStyle.Bold);
+            this.label5.Font = new Font("Yu Gothic UI", this.label5.Font.Size * (ScreenHeight / FormHeight));
 
 
             this.panel3.Height = this.panel3.Height * ScreenHeight / FormHeight;
@@ -89,7 +89,7 @@ namespace Tuto
             this.pictureBox2.Width = this.pictureBox2.Width * ScreenWidth / FormWidth;
             this.label6.Height = this.label6.Height * ScreenHeight / FormHeight;
             this.label6.Width = this.label6.Width * ScreenWidth / FormWidth;
-            this.label6.Font = new Font("Yu Gothic UI", this.label6.Font.Size * (ScreenHeight / FormHeight), FontStyle.Bold);
+            this.label6.Font = new Font("Yu Gothic UI", this.label6.Font.Size * (ScreenHeight / FormHeight));
 
             this.panel4.Height = this.panel4.Height * ScreenHeight / FormHeight;
             this.panel4.Width = this.panel4.Width * ScreenWidth / FormWidth;
@@ -99,7 +99,7 @@ namespace Tuto
             this.pictureBox3.Width = this.pictureBox3.Width * ScreenWidth / FormWidth;
             this.label7.Height = this.label7.Height * ScreenHeight / FormHeight;
             this.label7.Width = this.label7.Width * ScreenWidth / FormWidth;
-            this.label7.Font = new Font("Yu Gothic UI", this.label7.Font.Size * (ScreenHeight / FormHeight), FontStyle.Bold);
+            this.label7.Font = new Font("Yu Gothic UI", this.label7.Font.Size * (ScreenHeight / FormHeight));
 
             this.panel5.Height = this.panel5.Height * ScreenHeight / FormHeight;
             this.panel5.Width = this.panel5.Width * ScreenWidth / FormWidth;
@@ -109,7 +109,7 @@ namespace Tuto
             this.pictureBox4.Width = this.pictureBox4.Width * ScreenWidth / FormWidth;
             this.label8.Height = this.label8.Height * ScreenHeight / FormHeight;
             this.label8.Width = this.label8.Width * ScreenWidth / FormWidth;
-            this.label8.Font = new Font("Yu Gothic UI", this.label8.Font.Size * (ScreenHeight / FormHeight), FontStyle.Bold);
+            this.label8.Font = new Font("Yu Gothic UI", this.label8.Font.Size * (ScreenHeight / FormHeight));
 
 
             this.tableLayoutPanel2.Height = this.tableLayoutPanel2.Height * ScreenHeight / FormHeight;
@@ -120,7 +120,7 @@ namespace Tuto
             this.pictureBox5.Width = this.pictureBox5.Width * ScreenWidth / FormWidth;
             this.label4.Height = this.label4.Height * ScreenHeight / FormHeight;
             this.label4.Width = this.label4.Width * ScreenWidth / FormWidth;
-            this.label4.Font = new Font("Yu Gothic UI", this.label4.Font.Size * (ScreenHeight / FormHeight), FontStyle.Bold);
+            this.label4.Font = new Font("Yu Gothic UI", this.label4.Font.Size * (ScreenHeight / FormHeight));
 
         
             this.label9.Height = this.label9.Height * ScreenHeight / FormHeight;

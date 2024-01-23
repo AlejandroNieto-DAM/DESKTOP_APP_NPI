@@ -43,7 +43,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 35.25F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("Cooper Black", 35.25F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(180, 0);
             this.label1.Name = "label1";
@@ -64,7 +64,7 @@
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 40, 3, 30);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(10);
-            this.panel1.Size = new System.Drawing.Size(240, 722);
+            this.panel1.Size = new System.Drawing.Size(240, 701);
             this.panel1.TabIndex = 2;
             this.panel1.Resize += new System.EventHandler(this.panel1_Resize);
             // 
@@ -73,9 +73,9 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Snow;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::Tuto.Properties.Resources.mapa_informacion_1;
-            this.pictureBox1.Location = new System.Drawing.Point(10, 162);
+            this.pictureBox1.Location = new System.Drawing.Point(10, 219);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(220, 473);
+            this.pictureBox1.Size = new System.Drawing.Size(220, 391);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
@@ -85,9 +85,9 @@
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(204)))), ((int)(((byte)(69)))));
             this.label4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label4.Font = new System.Drawing.Font("Yu Gothic UI", 20.75F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(10, 635);
+            this.label4.Location = new System.Drawing.Point(10, 610);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(220, 77);
+            this.label4.Size = new System.Drawing.Size(220, 81);
             this.label4.TabIndex = 9;
             this.label4.Text = "Para más información accede desde la aplicación movil";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -96,11 +96,11 @@
             // 
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label2.Font = new System.Drawing.Font("Yu Gothic UI", 18.75F);
+            this.label2.Font = new System.Drawing.Font("Yu Gothic UI", 16.75F);
             this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label2.Location = new System.Drawing.Point(10, 10);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(220, 152);
+            this.label2.Size = new System.Drawing.Size(220, 209);
             this.label2.TabIndex = 4;
             this.label2.Text = "A partir de la ubicación en la que se encuentra, mira a la derecha y suba por las" +
     " escaleras o ascensor que puede visualiizar";

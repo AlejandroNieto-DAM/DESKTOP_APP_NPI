@@ -106,7 +106,7 @@
             // 
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label3.Font = new System.Drawing.Font("Yu Gothic UI", 35.25F, System.Drawing.FontStyle.Bold);
+            this.label3.Font = new System.Drawing.Font("Cooper Black", 35.25F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(0, 48);
             this.label3.Name = "label3";

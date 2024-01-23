@@ -16,9 +16,9 @@ namespace Tuto
 
         public static String userLogged = "";
         public static Form father;
-        public static int ScreenHeight = 4096, ScreenWidth = 2160, FormHeight = 988, FormWidth = 600;
+        //public static int ScreenHeight = 4096, ScreenWidth = 2160, FormHeight = 988, FormWidth = 600;
         //public static int ScreenHeight = 2500, ScreenWidth = 1400, FormHeight = 988, FormWidth = 600;
-        //public static int ScreenHeight = 988, ScreenWidth = 600, FormHeight = 988, FormWidth = 600;
+        public static int ScreenHeight = 988, ScreenWidth = 600, FormHeight = 988, FormWidth = 600;
 
     
 
@@ -80,7 +80,7 @@ namespace Tuto
 
             this.label3.Height = this.label3.Height * ScreenHeight / FormHeight;
             this.label3.Width = this.label3.Width * ScreenWidth / FormWidth;
-            this.label3.Font = new Font("Yu Gothic UI", this.label3.Font.Size * (ScreenHeight / FormHeight), FontStyle.Bold);
+            this.label3.Font = new Font("Cooper Black", this.label3.Font.Size * (ScreenHeight / FormHeight), FontStyle.Bold);
 
             this.panel1.Height = this.panel1.Height * ScreenHeight / FormHeight;
             this.panel1.Width = this.panel1.Width * ScreenWidth / FormWidth;
@@ -263,11 +263,13 @@ namespace Tuto
                 Form2 qrForm;
                 qrForm = new Form2();
                 qrForm.Show();
+                this.Hide();
             } else
             {
                 NewSchedule qrForm;
                 qrForm = new NewSchedule();
                 qrForm.Show();
+                this.Hide();
             }
 
         }

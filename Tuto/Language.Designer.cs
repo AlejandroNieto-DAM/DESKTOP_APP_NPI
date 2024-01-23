@@ -57,7 +57,7 @@
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 35.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Cooper Black", 35.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
@@ -114,7 +114,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox4.Image = global::Tuto.Properties.Resources.englishrounded;
+            this.pictureBox4.Image = global::Tuto.Properties.Resources.netherlands;
             this.pictureBox4.Location = new System.Drawing.Point(390, 92);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(30, 0, 0, 30);
             this.pictureBox4.Name = "pictureBox4";
@@ -122,7 +122,6 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             this.pictureBox4.MouseLeave += new System.EventHandler(this.pictureBox4_MouseLeave);
             this.pictureBox4.MouseHover += new System.EventHandler(this.pictureBox4_MouseHover);
             // 
@@ -157,7 +156,7 @@
             // pictureBox7
             // 
             this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox7.Image = global::Tuto.Properties.Resources.netherlands;
+            this.pictureBox7.Image = global::Tuto.Properties.Resources.englishrounded;
             this.pictureBox7.Location = new System.Drawing.Point(255, 383);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(15);
             this.pictureBox7.Name = "pictureBox7";
@@ -165,6 +164,7 @@
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 6;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             this.pictureBox7.MouseLeave += new System.EventHandler(this.pictureBox7_MouseLeave);
             this.pictureBox7.MouseHover += new System.EventHandler(this.pictureBox7_MouseHover);
             // 

@@ -32,7 +32,6 @@ namespace Tuto
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuComedor));
             this.MenuPanel1 = new System.Windows.Forms.Panel();
             this.Preorder1 = new System.Windows.Forms.Button();
             this.Menu1 = new System.Windows.Forms.Label();
@@ -80,12 +79,12 @@ namespace Tuto
             this.MenuPanel1.Controls.Add(this.Menu1);
             this.MenuPanel1.Controls.Add(this.Collapse1);
             this.MenuPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MenuPanel1.Location = new System.Drawing.Point(29, 242);
-            this.MenuPanel1.Margin = new System.Windows.Forms.Padding(29, 2, 29, 2);
-            this.MenuPanel1.MaximumSize = new System.Drawing.Size(245, 194);
-            this.MenuPanel1.MinimumSize = new System.Drawing.Size(245, 30);
+            this.MenuPanel1.Location = new System.Drawing.Point(22, 199);
+            this.MenuPanel1.Margin = new System.Windows.Forms.Padding(22, 2, 22, 2);
+            this.MenuPanel1.MaximumSize = new System.Drawing.Size(184, 158);
+            this.MenuPanel1.MinimumSize = new System.Drawing.Size(184, 24);
             this.MenuPanel1.Name = "MenuPanel1";
-            this.MenuPanel1.Size = new System.Drawing.Size(245, 30);
+            this.MenuPanel1.Size = new System.Drawing.Size(184, 24);
             this.MenuPanel1.TabIndex = 3;
             this.MenuPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -98,10 +97,10 @@ namespace Tuto
             this.Preorder1.FlatAppearance.BorderSize = 0;
             this.Preorder1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Preorder1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Preorder1.Location = new System.Drawing.Point(23, 160);
+            this.Preorder1.Location = new System.Drawing.Point(17, 130);
             this.Preorder1.Margin = new System.Windows.Forms.Padding(0);
             this.Preorder1.Name = "Preorder1";
-            this.Preorder1.Size = new System.Drawing.Size(199, 28);
+            this.Preorder1.Size = new System.Drawing.Size(149, 23);
             this.Preorder1.TabIndex = 5;
             this.Preorder1.Text = "button2";
             this.Preorder1.UseVisualStyleBackColor = false;
@@ -113,10 +112,10 @@ namespace Tuto
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Menu1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Menu1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Menu1.Location = new System.Drawing.Point(23, 39);
+            this.Menu1.Location = new System.Drawing.Point(17, 32);
             this.Menu1.Margin = new System.Windows.Forms.Padding(0);
             this.Menu1.Name = "Menu1";
-            this.Menu1.Size = new System.Drawing.Size(199, 112);
+            this.Menu1.Size = new System.Drawing.Size(149, 91);
             this.Menu1.TabIndex = 4;
             this.Menu1.Text = "label1";
             this.Menu1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -134,10 +133,10 @@ namespace Tuto
             this.Collapse1.Image = global::Tuto.Properties.Resources.dropRightTrans;
             this.Collapse1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Collapse1.Location = new System.Drawing.Point(0, 0);
-            this.Collapse1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Collapse1.Margin = new System.Windows.Forms.Padding(2);
             this.Collapse1.Name = "Collapse1";
-            this.Collapse1.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.Collapse1.Size = new System.Drawing.Size(245, 30);
+            this.Collapse1.Padding = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Collapse1.Size = new System.Drawing.Size(184, 24);
             this.Collapse1.TabIndex = 4;
             this.Collapse1.Text = "Tuesday";
             this.Collapse1.UseVisualStyleBackColor = false;
@@ -145,7 +144,7 @@ namespace Tuto
             // 
             // CollapseTimer1
             // 
-            this.CollapseTimer1.Interval = 5;
+            this.CollapseTimer1.Interval = 1;
             this.CollapseTimer1.Tick += new System.EventHandler(this.CollapseTimer_Tick);
             // 
             // week1Panel
@@ -161,10 +160,10 @@ namespace Tuto
             this.week1Panel.Controls.Add(this.MenuPanel4);
             this.week1Panel.Controls.Add(this.MenuPanel5);
             this.week1Panel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.week1Panel.Location = new System.Drawing.Point(83, 113);
+            this.week1Panel.Location = new System.Drawing.Point(61, 91);
             this.week1Panel.Margin = new System.Windows.Forms.Padding(0);
             this.week1Panel.Name = "week1Panel";
-            this.week1Panel.Size = new System.Drawing.Size(303, 603);
+            this.week1Panel.Size = new System.Drawing.Size(228, 433);
             this.week1Panel.TabIndex = 0;
             // 
             // week1
@@ -174,16 +173,17 @@ namespace Tuto
             this.week1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.week1.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.week1.FlatAppearance.BorderSize = 0;
+            this.week1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.week1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.week1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.week1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.week1.ImageKey = "(none)";
-            this.week1.Location = new System.Drawing.Point(16, 2);
-            this.week1.Margin = new System.Windows.Forms.Padding(16, 2, 16, 2);
+            this.week1.Location = new System.Drawing.Point(12, 2);
+            this.week1.Margin = new System.Windows.Forms.Padding(12, 2, 12, 2);
             this.week1.Name = "week1";
-            this.week1.Size = new System.Drawing.Size(271, 38);
+            this.week1.Size = new System.Drawing.Size(184, 31);
             this.week1.TabIndex = 4;
-            this.week1.Text = "This week";
+            this.week1.Text = "             This week";
             this.week1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.week1.UseVisualStyleBackColor = false;
             this.week1.Click += new System.EventHandler(this.week1_Click);
@@ -195,12 +195,12 @@ namespace Tuto
             this.MenuPanel0.Controls.Add(this.Menu0);
             this.MenuPanel0.Controls.Add(this.Collapse0);
             this.MenuPanel0.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MenuPanel0.Location = new System.Drawing.Point(29, 44);
-            this.MenuPanel0.Margin = new System.Windows.Forms.Padding(29, 2, 29, 2);
-            this.MenuPanel0.MaximumSize = new System.Drawing.Size(245, 194);
-            this.MenuPanel0.MinimumSize = new System.Drawing.Size(245, 30);
+            this.MenuPanel0.Location = new System.Drawing.Point(22, 37);
+            this.MenuPanel0.Margin = new System.Windows.Forms.Padding(22, 2, 22, 2);
+            this.MenuPanel0.MaximumSize = new System.Drawing.Size(184, 158);
+            this.MenuPanel0.MinimumSize = new System.Drawing.Size(184, 24);
             this.MenuPanel0.Name = "MenuPanel0";
-            this.MenuPanel0.Size = new System.Drawing.Size(245, 194);
+            this.MenuPanel0.Size = new System.Drawing.Size(184, 158);
             this.MenuPanel0.TabIndex = 6;
             // 
             // Preorder0
@@ -212,10 +212,10 @@ namespace Tuto
             this.Preorder0.FlatAppearance.BorderSize = 0;
             this.Preorder0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Preorder0.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Preorder0.Location = new System.Drawing.Point(23, 160);
+            this.Preorder0.Location = new System.Drawing.Point(17, 130);
             this.Preorder0.Margin = new System.Windows.Forms.Padding(0);
             this.Preorder0.Name = "Preorder0";
-            this.Preorder0.Size = new System.Drawing.Size(199, 28);
+            this.Preorder0.Size = new System.Drawing.Size(149, 23);
             this.Preorder0.TabIndex = 5;
             this.Preorder0.Text = "Preorder";
             this.Preorder0.UseVisualStyleBackColor = false;
@@ -227,10 +227,10 @@ namespace Tuto
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Menu0.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Menu0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Menu0.Location = new System.Drawing.Point(23, 39);
+            this.Menu0.Location = new System.Drawing.Point(17, 32);
             this.Menu0.Margin = new System.Windows.Forms.Padding(0);
             this.Menu0.Name = "Menu0";
-            this.Menu0.Size = new System.Drawing.Size(199, 112);
+            this.Menu0.Size = new System.Drawing.Size(149, 91);
             this.Menu0.TabIndex = 4;
             this.Menu0.Text = "Menu 1: - Rancho canario - Fritura de pescado";
             this.Menu0.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -243,13 +243,13 @@ namespace Tuto
             this.Collapse0.FlatAppearance.BorderSize = 0;
             this.Collapse0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Collapse0.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Collapse0.Image = global::Tuto.Properties.Resources.dropRightTrans;
+            this.Collapse0.Image = global::Tuto.Properties.Resources.dropDown;
             this.Collapse0.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Collapse0.Location = new System.Drawing.Point(0, 0);
             this.Collapse0.Margin = new System.Windows.Forms.Padding(0);
             this.Collapse0.Name = "Collapse0";
-            this.Collapse0.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.Collapse0.Size = new System.Drawing.Size(245, 30);
+            this.Collapse0.Padding = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Collapse0.Size = new System.Drawing.Size(184, 24);
             this.Collapse0.TabIndex = 4;
             this.Collapse0.Text = "Monday";
             this.Collapse0.UseVisualStyleBackColor = false;
@@ -262,12 +262,12 @@ namespace Tuto
             this.MenuPanel2.Controls.Add(this.Menu2);
             this.MenuPanel2.Controls.Add(this.Collapse2);
             this.MenuPanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MenuPanel2.Location = new System.Drawing.Point(29, 276);
-            this.MenuPanel2.Margin = new System.Windows.Forms.Padding(29, 2, 29, 2);
-            this.MenuPanel2.MaximumSize = new System.Drawing.Size(245, 194);
-            this.MenuPanel2.MinimumSize = new System.Drawing.Size(245, 30);
+            this.MenuPanel2.Location = new System.Drawing.Point(22, 227);
+            this.MenuPanel2.Margin = new System.Windows.Forms.Padding(22, 2, 22, 2);
+            this.MenuPanel2.MaximumSize = new System.Drawing.Size(184, 158);
+            this.MenuPanel2.MinimumSize = new System.Drawing.Size(184, 24);
             this.MenuPanel2.Name = "MenuPanel2";
-            this.MenuPanel2.Size = new System.Drawing.Size(245, 30);
+            this.MenuPanel2.Size = new System.Drawing.Size(184, 24);
             this.MenuPanel2.TabIndex = 6;
             // 
             // Preorder2
@@ -279,10 +279,10 @@ namespace Tuto
             this.Preorder2.FlatAppearance.BorderSize = 0;
             this.Preorder2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Preorder2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Preorder2.Location = new System.Drawing.Point(23, 160);
+            this.Preorder2.Location = new System.Drawing.Point(17, 130);
             this.Preorder2.Margin = new System.Windows.Forms.Padding(0);
             this.Preorder2.Name = "Preorder2";
-            this.Preorder2.Size = new System.Drawing.Size(199, 28);
+            this.Preorder2.Size = new System.Drawing.Size(149, 23);
             this.Preorder2.TabIndex = 5;
             this.Preorder2.Text = "Preorder";
             this.Preorder2.UseVisualStyleBackColor = false;
@@ -294,10 +294,10 @@ namespace Tuto
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Menu2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Menu2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Menu2.Location = new System.Drawing.Point(23, 39);
+            this.Menu2.Location = new System.Drawing.Point(17, 32);
             this.Menu2.Margin = new System.Windows.Forms.Padding(0);
             this.Menu2.Name = "Menu2";
-            this.Menu2.Size = new System.Drawing.Size(199, 112);
+            this.Menu2.Size = new System.Drawing.Size(149, 91);
             this.Menu2.TabIndex = 4;
             this.Menu2.Text = "label1";
             this.Menu2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -314,10 +314,10 @@ namespace Tuto
             this.Collapse2.Image = global::Tuto.Properties.Resources.dropRightTrans;
             this.Collapse2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Collapse2.Location = new System.Drawing.Point(0, 0);
-            this.Collapse2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Collapse2.Margin = new System.Windows.Forms.Padding(2);
             this.Collapse2.Name = "Collapse2";
-            this.Collapse2.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.Collapse2.Size = new System.Drawing.Size(245, 30);
+            this.Collapse2.Padding = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Collapse2.Size = new System.Drawing.Size(184, 24);
             this.Collapse2.TabIndex = 4;
             this.Collapse2.Text = "Wednesday";
             this.Collapse2.UseVisualStyleBackColor = false;
@@ -330,12 +330,12 @@ namespace Tuto
             this.MenuPanel3.Controls.Add(this.Menu3);
             this.MenuPanel3.Controls.Add(this.Collapse3);
             this.MenuPanel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MenuPanel3.Location = new System.Drawing.Point(29, 310);
-            this.MenuPanel3.Margin = new System.Windows.Forms.Padding(29, 2, 29, 2);
-            this.MenuPanel3.MaximumSize = new System.Drawing.Size(245, 194);
-            this.MenuPanel3.MinimumSize = new System.Drawing.Size(245, 30);
+            this.MenuPanel3.Location = new System.Drawing.Point(22, 255);
+            this.MenuPanel3.Margin = new System.Windows.Forms.Padding(22, 2, 22, 2);
+            this.MenuPanel3.MaximumSize = new System.Drawing.Size(184, 158);
+            this.MenuPanel3.MinimumSize = new System.Drawing.Size(184, 24);
             this.MenuPanel3.Name = "MenuPanel3";
-            this.MenuPanel3.Size = new System.Drawing.Size(245, 30);
+            this.MenuPanel3.Size = new System.Drawing.Size(184, 24);
             this.MenuPanel3.TabIndex = 7;
             // 
             // Preorder3
@@ -347,10 +347,10 @@ namespace Tuto
             this.Preorder3.FlatAppearance.BorderSize = 0;
             this.Preorder3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Preorder3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Preorder3.Location = new System.Drawing.Point(23, 160);
+            this.Preorder3.Location = new System.Drawing.Point(17, 130);
             this.Preorder3.Margin = new System.Windows.Forms.Padding(0);
             this.Preorder3.Name = "Preorder3";
-            this.Preorder3.Size = new System.Drawing.Size(199, 28);
+            this.Preorder3.Size = new System.Drawing.Size(149, 23);
             this.Preorder3.TabIndex = 5;
             this.Preorder3.Text = "Preorder";
             this.Preorder3.UseVisualStyleBackColor = false;
@@ -362,10 +362,10 @@ namespace Tuto
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Menu3.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Menu3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Menu3.Location = new System.Drawing.Point(23, 39);
+            this.Menu3.Location = new System.Drawing.Point(17, 32);
             this.Menu3.Margin = new System.Windows.Forms.Padding(0);
             this.Menu3.Name = "Menu3";
-            this.Menu3.Size = new System.Drawing.Size(199, 112);
+            this.Menu3.Size = new System.Drawing.Size(149, 91);
             this.Menu3.TabIndex = 4;
             this.Menu3.Text = "label1";
             this.Menu3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -382,10 +382,10 @@ namespace Tuto
             this.Collapse3.Image = global::Tuto.Properties.Resources.dropRightTrans;
             this.Collapse3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Collapse3.Location = new System.Drawing.Point(0, 0);
-            this.Collapse3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Collapse3.Margin = new System.Windows.Forms.Padding(2);
             this.Collapse3.Name = "Collapse3";
-            this.Collapse3.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.Collapse3.Size = new System.Drawing.Size(245, 30);
+            this.Collapse3.Padding = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Collapse3.Size = new System.Drawing.Size(184, 24);
             this.Collapse3.TabIndex = 4;
             this.Collapse3.Text = "Thursday";
             this.Collapse3.UseVisualStyleBackColor = false;
@@ -398,12 +398,12 @@ namespace Tuto
             this.MenuPanel4.Controls.Add(this.Menu4);
             this.MenuPanel4.Controls.Add(this.Collapse4);
             this.MenuPanel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MenuPanel4.Location = new System.Drawing.Point(29, 344);
-            this.MenuPanel4.Margin = new System.Windows.Forms.Padding(29, 2, 29, 2);
-            this.MenuPanel4.MaximumSize = new System.Drawing.Size(245, 194);
-            this.MenuPanel4.MinimumSize = new System.Drawing.Size(245, 30);
+            this.MenuPanel4.Location = new System.Drawing.Point(22, 283);
+            this.MenuPanel4.Margin = new System.Windows.Forms.Padding(22, 2, 22, 2);
+            this.MenuPanel4.MaximumSize = new System.Drawing.Size(184, 158);
+            this.MenuPanel4.MinimumSize = new System.Drawing.Size(184, 24);
             this.MenuPanel4.Name = "MenuPanel4";
-            this.MenuPanel4.Size = new System.Drawing.Size(245, 30);
+            this.MenuPanel4.Size = new System.Drawing.Size(184, 24);
             this.MenuPanel4.TabIndex = 8;
             // 
             // Preorder4
@@ -415,10 +415,10 @@ namespace Tuto
             this.Preorder4.FlatAppearance.BorderSize = 0;
             this.Preorder4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Preorder4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Preorder4.Location = new System.Drawing.Point(23, 160);
+            this.Preorder4.Location = new System.Drawing.Point(17, 130);
             this.Preorder4.Margin = new System.Windows.Forms.Padding(0);
             this.Preorder4.Name = "Preorder4";
-            this.Preorder4.Size = new System.Drawing.Size(199, 28);
+            this.Preorder4.Size = new System.Drawing.Size(149, 23);
             this.Preorder4.TabIndex = 5;
             this.Preorder4.Text = "Preorder";
             this.Preorder4.UseVisualStyleBackColor = false;
@@ -430,10 +430,10 @@ namespace Tuto
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Menu4.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Menu4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Menu4.Location = new System.Drawing.Point(23, 39);
+            this.Menu4.Location = new System.Drawing.Point(17, 32);
             this.Menu4.Margin = new System.Windows.Forms.Padding(0);
             this.Menu4.Name = "Menu4";
-            this.Menu4.Size = new System.Drawing.Size(199, 112);
+            this.Menu4.Size = new System.Drawing.Size(149, 91);
             this.Menu4.TabIndex = 4;
             this.Menu4.Text = "label3";
             this.Menu4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -451,10 +451,10 @@ namespace Tuto
             this.Collapse4.Image = global::Tuto.Properties.Resources.dropRightTrans;
             this.Collapse4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Collapse4.Location = new System.Drawing.Point(0, 0);
-            this.Collapse4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Collapse4.Margin = new System.Windows.Forms.Padding(2);
             this.Collapse4.Name = "Collapse4";
-            this.Collapse4.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.Collapse4.Size = new System.Drawing.Size(245, 30);
+            this.Collapse4.Padding = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Collapse4.Size = new System.Drawing.Size(184, 24);
             this.Collapse4.TabIndex = 4;
             this.Collapse4.Text = "Friday";
             this.Collapse4.UseVisualStyleBackColor = false;
@@ -467,12 +467,12 @@ namespace Tuto
             this.MenuPanel5.Controls.Add(this.Menu5);
             this.MenuPanel5.Controls.Add(this.Collapse5);
             this.MenuPanel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MenuPanel5.Location = new System.Drawing.Point(29, 378);
-            this.MenuPanel5.Margin = new System.Windows.Forms.Padding(29, 2, 29, 2);
-            this.MenuPanel5.MaximumSize = new System.Drawing.Size(245, 194);
-            this.MenuPanel5.MinimumSize = new System.Drawing.Size(245, 30);
+            this.MenuPanel5.Location = new System.Drawing.Point(22, 311);
+            this.MenuPanel5.Margin = new System.Windows.Forms.Padding(22, 2, 22, 2);
+            this.MenuPanel5.MaximumSize = new System.Drawing.Size(184, 158);
+            this.MenuPanel5.MinimumSize = new System.Drawing.Size(184, 24);
             this.MenuPanel5.Name = "MenuPanel5";
-            this.MenuPanel5.Size = new System.Drawing.Size(245, 30);
+            this.MenuPanel5.Size = new System.Drawing.Size(184, 24);
             this.MenuPanel5.TabIndex = 8;
             // 
             // Preorder5
@@ -484,10 +484,10 @@ namespace Tuto
             this.Preorder5.FlatAppearance.BorderSize = 0;
             this.Preorder5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Preorder5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Preorder5.Location = new System.Drawing.Point(23, 160);
+            this.Preorder5.Location = new System.Drawing.Point(17, 130);
             this.Preorder5.Margin = new System.Windows.Forms.Padding(0);
             this.Preorder5.Name = "Preorder5";
-            this.Preorder5.Size = new System.Drawing.Size(199, 28);
+            this.Preorder5.Size = new System.Drawing.Size(149, 23);
             this.Preorder5.TabIndex = 5;
             this.Preorder5.Text = "Preorder";
             this.Preorder5.UseVisualStyleBackColor = false;
@@ -499,10 +499,10 @@ namespace Tuto
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Menu5.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Menu5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Menu5.Location = new System.Drawing.Point(23, 42);
+            this.Menu5.Location = new System.Drawing.Point(17, 34);
             this.Menu5.Margin = new System.Windows.Forms.Padding(0);
             this.Menu5.Name = "Menu5";
-            this.Menu5.Size = new System.Drawing.Size(199, 112);
+            this.Menu5.Size = new System.Drawing.Size(149, 91);
             this.Menu5.TabIndex = 4;
             this.Menu5.Text = "label2";
             this.Menu5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -520,10 +520,10 @@ namespace Tuto
             this.Collapse5.Image = global::Tuto.Properties.Resources.dropRightTrans;
             this.Collapse5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Collapse5.Location = new System.Drawing.Point(0, 0);
-            this.Collapse5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Collapse5.Margin = new System.Windows.Forms.Padding(2);
             this.Collapse5.Name = "Collapse5";
-            this.Collapse5.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.Collapse5.Size = new System.Drawing.Size(245, 30);
+            this.Collapse5.Padding = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Collapse5.Size = new System.Drawing.Size(184, 24);
             this.Collapse5.TabIndex = 4;
             this.Collapse5.Text = "Saturday";
             this.Collapse5.UseVisualStyleBackColor = false;
@@ -534,9 +534,10 @@ namespace Tuto
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(68, 80);
+            this.label1.Location = new System.Drawing.Point(51, 65);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(296, 51);
+            this.label1.Size = new System.Drawing.Size(239, 39);
             this.label1.TabIndex = 1;
             this.label1.Text = "¡Bienvenidos!";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -553,16 +554,13 @@ namespace Tuto
             this.tableLayoutPanel1.Controls.Add(this.button1, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.882353F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.055119F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 79.13386F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.882353F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(470, 762);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(352, 619);
             this.tableLayoutPanel1.TabIndex = 2;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
@@ -570,29 +568,29 @@ namespace Tuto
             // 
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(85, 47);
+            this.button1.Location = new System.Drawing.Point(63, 32);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(299, 63);
+            this.button1.Size = new System.Drawing.Size(224, 57);
             this.button1.TabIndex = 1;
             this.button1.Text = "Bienvenid@";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = true;
             // 
             // MenuComedor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.Color.NavajoWhite;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(470, 762);
+            this.ClientSize = new System.Drawing.Size(352, 619);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MenuComedor";
             this.Text = "MenuComedor";
             this.Load += new System.EventHandler(this.MenuComedor_Load);

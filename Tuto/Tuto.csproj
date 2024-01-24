@@ -403,5 +403,23 @@
   <ItemGroup>
     <None Include="Resources\france.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrowRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrowDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrowRight1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrowDown1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrowDown2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrowRight2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

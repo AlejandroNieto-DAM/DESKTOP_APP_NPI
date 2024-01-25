@@ -41,6 +41,9 @@ namespace Tuto
         {
             InitializeComponent();
 
+            Language.lastForm = this;
+            Language.className = "QRscan";
+
             int formHeight = this.Size.Height;
             int formWidth = this.Size.Width;
 
@@ -96,13 +99,6 @@ namespace Tuto
 
         }
 
-        public void close_Form()
-        {
-            this.Hide();
-            NewHome newForm = new NewHome();
-            newForm.Show();
-        }
-
         private void closingForm()
         {
             this.Hide();
@@ -131,6 +127,13 @@ namespace Tuto
         private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        public void close_Form()
+        {
+            this.Hide();
+            MenuComedor nh = new MenuComedor();
+            nh.Show();
         }
     }
 }

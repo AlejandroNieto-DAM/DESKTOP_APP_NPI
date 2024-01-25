@@ -329,6 +329,18 @@ namespace Tuto
                                         ns.close_Form();
                                         break;
 
+                                    case "MenuComedor":
+                                        MenuComedor mc = (MenuComedor)Language.lastForm;
+
+                                        mc.close_Form();
+                                        break;
+
+                                    case "QRscan":
+                                        QRscan qrs = (QRscan)Language.lastForm;
+
+                                        qrs.close_Form();
+                                        break;
+
                                 }
 
 

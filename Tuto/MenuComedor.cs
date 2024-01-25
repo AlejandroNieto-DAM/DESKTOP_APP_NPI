@@ -69,7 +69,13 @@ namespace Tuto
 
         public MenuComedor()
         {
+
+           
+
             InitializeComponent();
+
+            Language.lastForm = this;
+            Language.className = "MenuComedor";
 
             this.BackColor = Color.FromArgb(238, 186, 164);
 
@@ -164,6 +170,8 @@ namespace Tuto
                 this.preorderArray[i].Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, preorderArray[i].Width, preorderArray[i].Height, 20 * ratioWidth, 20 * ratioWidth));
             }
             this.week1Panel.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, week1Panel.Width, week1Panel.Height, 20 * ratioWidth, 20 * ratioWidth));
+
+            //this.MenuComedor_Resize();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -371,6 +379,13 @@ namespace Tuto
             QRscan QR = new QRscan("monday");
             QR.Show();
             this.Hide();
+        }
+
+        public void close_Form()
+        {
+            this.Hide();
+            NewHome nh = new NewHome();
+            nh.Show();
         }
     }
 

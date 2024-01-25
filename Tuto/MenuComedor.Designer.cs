@@ -79,7 +79,7 @@ namespace Tuto
             this.MenuPanel1.Controls.Add(this.Menu1);
             this.MenuPanel1.Controls.Add(this.Collapse1);
             this.MenuPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MenuPanel1.Location = new System.Drawing.Point(22, 199);
+            this.MenuPanel1.Location = new System.Drawing.Point(22, 203);
             this.MenuPanel1.Margin = new System.Windows.Forms.Padding(22, 2, 22, 2);
             this.MenuPanel1.MaximumSize = new System.Drawing.Size(184, 158);
             this.MenuPanel1.MinimumSize = new System.Drawing.Size(184, 24);
@@ -181,7 +181,7 @@ namespace Tuto
             this.week1.Location = new System.Drawing.Point(12, 2);
             this.week1.Margin = new System.Windows.Forms.Padding(12, 2, 12, 2);
             this.week1.Name = "week1";
-            this.week1.Size = new System.Drawing.Size(184, 31);
+            this.week1.Size = new System.Drawing.Size(219, 35);
             this.week1.TabIndex = 4;
             this.week1.Text = "             This week";
             this.week1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -195,7 +195,7 @@ namespace Tuto
             this.MenuPanel0.Controls.Add(this.Menu0);
             this.MenuPanel0.Controls.Add(this.Collapse0);
             this.MenuPanel0.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MenuPanel0.Location = new System.Drawing.Point(22, 37);
+            this.MenuPanel0.Location = new System.Drawing.Point(22, 41);
             this.MenuPanel0.Margin = new System.Windows.Forms.Padding(22, 2, 22, 2);
             this.MenuPanel0.MaximumSize = new System.Drawing.Size(184, 158);
             this.MenuPanel0.MinimumSize = new System.Drawing.Size(184, 24);
@@ -262,7 +262,7 @@ namespace Tuto
             this.MenuPanel2.Controls.Add(this.Menu2);
             this.MenuPanel2.Controls.Add(this.Collapse2);
             this.MenuPanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MenuPanel2.Location = new System.Drawing.Point(22, 227);
+            this.MenuPanel2.Location = new System.Drawing.Point(22, 231);
             this.MenuPanel2.Margin = new System.Windows.Forms.Padding(22, 2, 22, 2);
             this.MenuPanel2.MaximumSize = new System.Drawing.Size(184, 158);
             this.MenuPanel2.MinimumSize = new System.Drawing.Size(184, 24);
@@ -330,7 +330,7 @@ namespace Tuto
             this.MenuPanel3.Controls.Add(this.Menu3);
             this.MenuPanel3.Controls.Add(this.Collapse3);
             this.MenuPanel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MenuPanel3.Location = new System.Drawing.Point(22, 255);
+            this.MenuPanel3.Location = new System.Drawing.Point(22, 259);
             this.MenuPanel3.Margin = new System.Windows.Forms.Padding(22, 2, 22, 2);
             this.MenuPanel3.MaximumSize = new System.Drawing.Size(184, 158);
             this.MenuPanel3.MinimumSize = new System.Drawing.Size(184, 24);
@@ -398,7 +398,7 @@ namespace Tuto
             this.MenuPanel4.Controls.Add(this.Menu4);
             this.MenuPanel4.Controls.Add(this.Collapse4);
             this.MenuPanel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MenuPanel4.Location = new System.Drawing.Point(22, 283);
+            this.MenuPanel4.Location = new System.Drawing.Point(22, 287);
             this.MenuPanel4.Margin = new System.Windows.Forms.Padding(22, 2, 22, 2);
             this.MenuPanel4.MaximumSize = new System.Drawing.Size(184, 158);
             this.MenuPanel4.MinimumSize = new System.Drawing.Size(184, 24);
@@ -467,7 +467,7 @@ namespace Tuto
             this.MenuPanel5.Controls.Add(this.Menu5);
             this.MenuPanel5.Controls.Add(this.Collapse5);
             this.MenuPanel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MenuPanel5.Location = new System.Drawing.Point(22, 311);
+            this.MenuPanel5.Location = new System.Drawing.Point(22, 315);
             this.MenuPanel5.Margin = new System.Windows.Forms.Padding(22, 2, 22, 2);
             this.MenuPanel5.MaximumSize = new System.Drawing.Size(184, 158);
             this.MenuPanel5.MinimumSize = new System.Drawing.Size(184, 24);
@@ -537,7 +537,7 @@ namespace Tuto
             this.label1.Location = new System.Drawing.Point(51, 65);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(239, 39);
+            this.label1.Size = new System.Drawing.Size(349, 59);
             this.label1.TabIndex = 1;
             this.label1.Text = "¡Bienvenidos!";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;

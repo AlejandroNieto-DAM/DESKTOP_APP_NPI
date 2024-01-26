@@ -16,8 +16,6 @@ namespace Tuto
         public Becas()
         {
             InitializeComponent();
-            //tableLayoutPanel1.BackColor = Color.Transparent;
-            //tableLayoutPanel2.BackColor = Color.Transparent;
             this.Size = FormSize;
             ApplyCommonStyleButton();
 
@@ -42,35 +40,33 @@ namespace Tuto
 
         private void buttonOffers_Click_1(object sender, EventArgs e)
         {
-            offersExchange form4 = new offersExchange(isNationalExchange);
+            RequirementsMov form4 = new RequirementsMov("UGR");
             form4.Show();
             this.Hide();
         }
 
         private void buttonRequirements_Click_1(object sender, EventArgs e)
         {
-            RequirementsMov formRequirements = new RequirementsMov(this.isNationalExchange);
+            RequirementsMov formRequirements = new RequirementsMov("ANDALUCIA");
             formRequirements.Show();
             this.Hide();
         }
 
         private void buttonCalendar_Click(object sender, EventArgs e)
         {
-            CalendarWindow formCalendar = new CalendarWindow(this.isNationalExchange);
+            RequirementsMov formCalendar = new RequirementsMov("MINISTERIO");
             formCalendar.Show();
             this.Hide();
         }
 
         private void ApplyCommonStyleButton()
         {
-            // TODO: this is not working
-            // Iterar sobre todos los controles en el formulario
             foreach (Control control in tableLayoutPanel2.Controls)
             {
                 if (control is Button)
                 {
                     Button boton = (Button)control;
-                    boton.Font = new Font("Arial", 16 * 4, FontStyle.Bold);
+                    boton.Font = new Font("Yu Gothic UI", multiplier_size * textFontSize, FontStyle.Bold);
                 }
             }
         }

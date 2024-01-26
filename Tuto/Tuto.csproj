@@ -115,12 +115,6 @@
     <Compile Include="Becas.Designer.cs">
       <DependentUpon>Becas.cs</DependentUpon>
     </Compile>
-    <Compile Include="CalendarWindow.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CalendarWindow.Designer.cs">
-      <DependentUpon>CalendarWindow.cs</DependentUpon>
-    </Compile>
     <Compile Include="keyboard_screen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -217,9 +211,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Becas.resx">
       <DependentUpon>Becas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CalendarWindow.resx">
-      <DependentUpon>CalendarWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="keyboard_screen.resx">
       <DependentUpon>keyboard_screen.cs</DependentUpon>

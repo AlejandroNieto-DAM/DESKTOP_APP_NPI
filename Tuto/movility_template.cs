@@ -13,7 +13,7 @@ namespace Tuto
     public partial class movility_template : Form
     {
         int multiplier = 1;
-        int textFontSize = 16;
+        int textFontSize = 40;
         string nameUniversity;
         string number_plazas;
         string duracion;
@@ -31,8 +31,15 @@ namespace Tuto
             this.requisitos = requisitos;
             this.notas = notas;
 
+            multiplier = ObtenerAlturaVentana() / 640;
+            Console.WriteLine(multiplier);
+
             configuredata();
             ApplyCommonStyleLabel();
+        }
+        protected int ObtenerAlturaVentana()
+        {
+            return this.ClientSize.Height;
         }
 
         public void configuredata()
@@ -52,16 +59,32 @@ namespace Tuto
 
         private void ApplyCommonStyleLabel()
         {
-            foreach (Control control in tableLayoutPanel1.Controls)
+            try
             {
-                if (control is Label)
+                foreach (Control control in tableLayoutPanel1.Controls)
                 {
-                    Label label = (Label)control;  // Corrected the variable name
-                    label.Font = new Font("Yu Gothic UI", multiplier * textFontSize, FontStyle.Regular);
-                    label.ForeColor = Color.White;
+                    if (control is Label)
+                    {
+                        Label label = (Label)control;
+
+                        // Ensure font size is not negative
+                        float newFontSize = Math.Max(40, multiplier * textFontSize);
+
+                        // Set label font
+                        label.Font = new Font("Yu Gothic UI", newFontSize);
+
+                        // Set label text color
+                        label.ForeColor = Color.White;
+                    }
                 }
             }
+            catch (Exception ex)
+            {
+                // Handle exceptions
+                Console.WriteLine($"An error occurred: {ex.Message}");
+            }
         }
+
 
     }
 }

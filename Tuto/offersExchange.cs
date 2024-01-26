@@ -34,6 +34,7 @@ namespace Tuto
             //BackgroundImage = Properties.Resources.Pantalla_Background;
             //BackgroundImageLayout = ImageLayout.Zoom;
 
+            setStyle();
             setdestination();
 
         }
@@ -141,6 +142,20 @@ namespace Tuto
             movility_template movilitytemplate = new movility_template(nameUniversity, number_plazas, duracion, requisitos, notas);
             loadform(movilitytemplate);
 
+        }
+
+        private void setStyle()
+        {
+            labeltitle.Font = new Font("Yu Gothic UI", multiplier_size * titleFontSize, FontStyle.Regular);
+
+            foreach (Control control in panelside.Controls)
+            {
+                if (control is Label)
+                {
+                    Label boton = (Label)control;
+                    boton.Font = new Font("Yu Gothic UI", multiplier_size * titleFontSize, FontStyle.Regular);
+                }
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)

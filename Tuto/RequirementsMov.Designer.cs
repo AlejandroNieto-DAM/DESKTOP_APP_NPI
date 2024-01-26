@@ -29,12 +29,9 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.panelInformation = new System.Windows.Forms.Panel();
-            this.listRequirements = new System.Windows.Forms.Label();
             this.labelTitle = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.labelreq = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
-            this.panelInformation.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -44,42 +41,19 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel1.Controls.Add(this.panelInformation, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.labelTitle, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button1, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.labelreq, 1, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 42);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 5;
+            this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 408);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(360, 598);
             this.tableLayoutPanel1.TabIndex = 3;
-            // 
-            // panelInformation
-            // 
-            this.panelInformation.Controls.Add(this.listRequirements);
-            this.panelInformation.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelInformation.ForeColor = System.Drawing.Color.Black;
-            this.panelInformation.Location = new System.Drawing.Point(123, 43);
-            this.panelInformation.Name = "panelInformation";
-            this.panelInformation.Size = new System.Drawing.Size(554, 157);
-            this.panelInformation.TabIndex = 0;
-            // 
-            // listRequirements
-            // 
-            this.listRequirements.AutoSize = true;
-            this.listRequirements.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listRequirements.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listRequirements.Location = new System.Drawing.Point(0, 0);
-            this.listRequirements.Margin = new System.Windows.Forms.Padding(0);
-            this.listRequirements.Name = "listRequirements";
-            this.listRequirements.Size = new System.Drawing.Size(61, 25);
-            this.listRequirements.TabIndex = 0;
-            this.listRequirements.Text = "label1";
             // 
             // labelTitle
             // 
@@ -87,28 +61,29 @@
             this.labelTitle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelTitle.Font = new System.Drawing.Font("Yu Gothic UI", 32.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitle.ForeColor = System.Drawing.Color.White;
-            this.labelTitle.Location = new System.Drawing.Point(123, 0);
+            this.labelTitle.Location = new System.Drawing.Point(57, 0);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(554, 40);
+            this.labelTitle.Size = new System.Drawing.Size(246, 59);
             this.labelTitle.TabIndex = 1;
             this.labelTitle.Text = "Requisitos";
             this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button1
+            // labelreq
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Location = new System.Drawing.Point(123, 246);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(554, 116);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Descargar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.labelreq.AutoSize = true;
+            this.labelreq.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelreq.Font = new System.Drawing.Font("Yu Gothic UI", 30F);
+            this.labelreq.Location = new System.Drawing.Point(57, 118);
+            this.labelreq.Name = "labelreq";
+            this.labelreq.Size = new System.Drawing.Size(246, 480);
+            this.labelreq.TabIndex = 2;
+            this.labelreq.Text = "Información";
             // 
             // RequirementsMov
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(360, 640);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "RequirementsMov";
             this.Text = "Form5";
@@ -116,8 +91,6 @@
             this.Controls.SetChildIndex(this.tableLayoutPanel1, 0);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            this.panelInformation.ResumeLayout(false);
-            this.panelInformation.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -125,9 +98,7 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Panel panelInformation;
-        private System.Windows.Forms.Label listRequirements;
         private System.Windows.Forms.Label labelTitle;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label labelreq;
     }
 }

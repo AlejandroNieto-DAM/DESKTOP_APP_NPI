@@ -13,32 +13,48 @@ namespace Tuto
 {
     public partial class RequirementsMov : BasicFormLayout
     {
-        private bool isNationalExchange;
-        public RequirementsMov(bool isNationalExchange)
+        private string typeScholarship;
+        public RequirementsMov(string typeScholarship)
         {
             InitializeComponent();
-            this.isNationalExchange = isNationalExchange;
             this.Language = "es";
             this.Size = FormSize;
+            this.typeScholarship = typeScholarship;
 
+            setStyle();
             loadRequirements();
+           
         }
 
         private void Form5_Load(object sender, EventArgs e)
         {
         }
-
+        private void setStyle()
+        {
+            labelTitle.Font = new Font("Yu Gothic UI", multiplier_size * titleFontSize, FontStyle.Regular);
+            labelreq.Font = new Font("Yu Gothic UI", multiplier_size * textFontSize, FontStyle.Regular);
+        }
         private void loadRequirements()
         {
-            panelInformation.BackColor = Color.White;
-            if (isNationalExchange)
+            if (typeScholarship == "UGR")
             {
-                listRequirements.Text = "45 creditos\nCodigo UGR\nMatricula Valida";
+                labelreq.Text = "Beca UGR";
+            } else if (typeScholarship == "ANDALUCIA")
+            {
+                labelreq.Text = "Beca Andalucia";
+            } else if (typeScholarship == "MINISTERIO")
+            {
+                labelreq.Text = "Beca Ministerio";
             }
             else
             {
-                listRequirements.Text = "Certificado de lenguaje de la Universidad";
+                labelreq.Text = "";
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(adminOptions));
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -40,7 +39,6 @@
             this.dayInfoPanel = new System.Windows.Forms.TableLayoutPanel();
             this.dayLabel = new System.Windows.Forms.Label();
             this.hourLabel = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -95,7 +93,6 @@
             this.tableLayoutPanel2.Controls.Add(this.buttonMovInterna, 1, 4);
             this.tableLayoutPanel2.Controls.Add(this.labelTitle, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.buttonBecas, 1, 6);
-            this.tableLayoutPanel2.Controls.Add(this.button1, 1, 8);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -200,17 +197,6 @@
             this.hourLabel.TabIndex = 1;
             this.hourLabel.Text = "hour";
             // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Location = new System.Drawing.Point(36, 408);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(265, 75);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Procedimientos/solicitudes";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
             // adminOptions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -244,6 +230,5 @@
         private System.Windows.Forms.Button buttonMovInterna;
         private System.Windows.Forms.Label labelTitle;
         private System.Windows.Forms.Button buttonBecas;
-        private System.Windows.Forms.Button button1;
     }
 }

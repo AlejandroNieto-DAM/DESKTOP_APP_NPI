@@ -12,11 +12,23 @@ using AForge.Video;
 using AForge.Video.DirectShow;
 using ZXing;
 using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+using System.Windows.Media;
 
 namespace Tuto
 {
     public partial class QRscan : Form
     {
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn
+         (
+             int nLeftRect,
+             int nTopRect,
+             int nRightRect,
+             int nBottomRect,
+             int nWidthEllipse,
+             int nHeightEllipse
+         );
 
 
         private Timer timer;
@@ -29,38 +41,38 @@ namespace Tuto
         {
             InitializeComponent();
 
+            Language.lastForm = this;
+            Language.className = "QRscan";
 
             int formHeight = this.Size.Height;
             int formWidth = this.Size.Width;
 
+            FormBorderStyle = FormBorderStyle.None;
+            WindowState = FormWindowState.Maximized;
+
             ratioHeight = screenHeight / formHeight;
             ratioWidth = screenWidth / formWidth;
 
-
             panel2.Padding = new Padding(5 * ratioWidth, 5 * ratioHeight, 5 * ratioWidth, 5 * ratioHeight);
-            panel1.Height *= ratioHeight;
-            dayLabel.Height *= ratioHeight;
-            dayLabel.Width *= ratioWidth;
 
             if (Language.SelectedLanguage == 1)
             {
-                this.label1.Text = "Para acceder necesitas tu código QR personal. \r\nPuedes encontrarlo en tu App de la UGR\r\n";
-                this.label2.Text = "Para ir hacia atrás usa el gesto de pasar página hacia atrás";
-
-
+                this.label1.Text = "Scanea el QR para hacer preorder";
             }
             else if (Language.SelectedLanguage == 2)
             {
-                this.label1.Text = "To log in you need your personal UGR QR code. \r\nYou can find it in your UGR App profile!\r\n";
-                this.label2.Text = "To go back use the page back gesture";
-
-
+                this.label1.Text = "Scan the QR to preorder your meal";
             }
+
+
+            label1.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, label1.Size.Width * ratioWidth, label1.Size.Height * ratioHeight, 20 * ratioWidth, 20 * ratioWidth));
+            this.label1.Font = new Font("Yu Gothic UI", (int)this.label1.Font.Unit * ratioWidth * 10);
+
 
             QRCoder.QRCodeGenerator QRgen = new QRCoder.QRCodeGenerator();
             var MyData = QRgen.CreateQrCode("Menu " + dia, QRCoder.QRCodeGenerator.ECCLevel.H);
             var code = new QRCoder.QRCode(MyData);
-            pictureBox2.Image = code.GetGraphic(50);
+            pictureBox1.Image = code.GetGraphic(50);
 
         }
 
@@ -79,22 +91,12 @@ namespace Tuto
 
         private void time_Tick(object sender, EventArgs e)
         {
-            // Update the Label's text with the current time
-            dayLabel.Text = DateTime.Now.ToString("HH:mm");
-            dayLabel.Text = DateTime.Now.ToString("dd.MM.yy");
 
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
-        }
-
-        public void close_Form()
-        {
-            this.Hide();
-            NewHome newForm = new NewHome();
-            newForm.Show();
         }
 
         private void closingForm()
@@ -112,9 +114,26 @@ namespace Tuto
 
         }
 
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+        }
+
         private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        public void close_Form()
+        {
+            this.Hide();
+            MenuComedor nh = new MenuComedor();
+            nh.Show();
         }
     }
 }

@@ -69,7 +69,17 @@ namespace Tuto
 
         public MenuComedor()
         {
+
+           
+
             InitializeComponent();
+
+            Language.lastForm = this;
+            Language.className = "MenuComedor";
+
+            this.BackColor = Color.FromArgb(238, 186, 164);
+
+            this.DoubleBuffered = true;
 
             int formHeight = this.Size.Height;
             int formWidth = this.Size.Width;
@@ -82,8 +92,8 @@ namespace Tuto
             this.Height = screenHeight;
             this.Width = screenWidth;
 
-            dropRight = Tuto.Properties.Resources.dropRightTrans;
-            dropDown = Tuto.Properties.Resources.dropDownTrans;
+            dropRight = Tuto.Properties.Resources.arrowRight2;
+            dropDown = Tuto.Properties.Resources.arrowDown2;
 
             panelArray[0] = MenuPanel0;
             panelArray[1] = MenuPanel1;
@@ -119,16 +129,17 @@ namespace Tuto
             this.week1Panel.Width = this.week1Panel.Width * ratioWidth;
             //this.week1Panel.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, week1Panel.Width, week1Panel.Height, 20, 20));
 
+            int minHeight = (this.collapseArray[0].Height + 5) * ratioHeight;
 
             for (int i = 0; i < 6; i++)
             {
-                this.panelArray[i].MinimumSize = new Size(this.panelArray[i].MinimumSize.Width * ratioWidth, (this.panelArray[i].MinimumSize.Height +5) * ratioHeight);
+                this.panelArray[i].MinimumSize = new Size(this.panelArray[i].MinimumSize.Width * ratioWidth, minHeight);
                 this.panelArray[i].MaximumSize = new Size(this.panelArray[i].MaximumSize.Width * ratioWidth, this.panelArray[i].MaximumSize.Height * ratioHeight);
                 this.panelArray[i].Height = this.panelArray[i].MinimumSize.Height;
                 this.panelArray[i].Width = this.panelArray[i].MinimumSize.Width;
-                this.panelArray[i].Margin = new Padding(this.panelArray[i].Margin.Left * ratioWidth, this.panelArray[i].Margin.Top * ratioHeight, this.panelArray[i].Margin.Right * ratioWidth, this.panelArray[i].Margin.Bottom * ratioHeight); 
+                this.panelArray[i].Margin = new Padding(this.panelArray[i].Margin.Left * ratioWidth, 0, this.panelArray[i].Margin.Right * ratioWidth, 0); 
                 //
-                this.collapseArray[i].Height = (this.collapseArray[i].Height + 5) * ratioHeight;
+                this.collapseArray[i].Height = minHeight;
                 this.collapseArray[i].Width = this.collapseArray[i].Width * ratioWidth;
                 this.collapseArray[i].Font = new Font("Yu Gothic UI", (int)this.collapseArray[i].Font.Unit * ratioWidth * 3);
                 //
@@ -146,8 +157,11 @@ namespace Tuto
                 this.collapseArray[i].Image = dropRight;
                 
             }
+            //this.week1.Margin = new Padding(this.week1.Margin.Left * ratioWidth, 0, week1.Margin.Right * ratioWidth, 0);
             this.week1.Height = this.week1.Height * ratioHeight;
             this.week1.Width = this.week1.Width * ratioWidth;
+            this.week1.Font = new Font("Yu Gothic UI", (int)this.week1.Font.Unit * ratioWidth * 3);
+            this.button1.Font = new Font("Yu Gothic UI", (int)this.button1.Font.Unit * ratioWidth * 7);
             for (int i = 0; i < 6; i++)
             {
                 this.panelArray[i].Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, panelArray[i].Width, panelArray[i].Height, 20 * ratioWidth, 20 * ratioWidth));
@@ -155,6 +169,9 @@ namespace Tuto
                 this.menuArray[i].Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, menuArray[i].Width, menuArray[i].Height, 20 * ratioWidth, 20 * ratioWidth));
                 this.preorderArray[i].Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, preorderArray[i].Width, preorderArray[i].Height, 20 * ratioWidth, 20 * ratioWidth));
             }
+            this.week1Panel.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, week1Panel.Width, week1Panel.Height, 20 * ratioWidth, 20 * ratioWidth));
+
+            //this.MenuComedor_Resize();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -191,37 +208,46 @@ namespace Tuto
         {
             if (open != change && open != -1)
             {
-                panelArray[open].Height -= 8 * ratioHeight;
-                this.panelArray[open].Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, panelArray[open].Width, panelArray[open].Height, 20 * ratioWidth, 20 * ratioWidth));
                 if (panelArray[open].Height == panelArray[open].MinimumSize.Height)
                 {
                     collapseArray[open].Image = dropRight;
                     open = -1;
                 }
+                else
+                {
+                    panelArray[open].Height -= 10;
+                    this.panelArray[open].Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, panelArray[open].Width, panelArray[open].Height, 20 * ratioWidth, 20 * ratioWidth));
+                }
             }
-            if (open == -1 && change != -1)
+            else if (open == -1 && change != -1)
             {
                 if (collapseArray[change].Image == dropRight)
                     collapseArray[change].Image = dropDown;
-                panelArray[change].Height += 8*ratioHeight;
-                this.panelArray[change].Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, panelArray[change].Width, panelArray[change].Height, 20 * ratioWidth, 20 * ratioWidth));
                 if (panelArray[change].Height == panelArray[change].MaximumSize.Height)
                 {
                     open = change;
                     change = -1;
                     CollapseTimer1.Stop();
                 }
+                else
+                {
+                    panelArray[change].Height += 10;
+                    this.panelArray[change].Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, panelArray[change].Width, panelArray[change].Height, 20 * ratioWidth, 20 * ratioWidth));
+                }
             }
             else if (open == change)
             {
-                panelArray[open].Height -= 8 * ratioHeight;
-                this.panelArray[open].Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, panelArray[open].Width, panelArray[open].Height, 20 * ratioWidth, 20 * ratioWidth));
                 if (panelArray[open].Height == panelArray[open].MinimumSize.Height)
                 {
                     collapseArray[open].Image = dropRight;
                     open = -1;
                     change = -1;
                     CollapseTimer1.Stop();
+                }
+                else
+                {
+                    panelArray[open].Height -= 10;
+                    this.panelArray[open].Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, panelArray[open].Width, panelArray[open].Height, 20 * ratioWidth, 20 * ratioWidth));
                 }
             }
         }
@@ -353,6 +379,13 @@ namespace Tuto
             QRscan QR = new QRscan("monday");
             QR.Show();
             this.Hide();
+        }
+
+        public void close_Form()
+        {
+            this.Hide();
+            NewHome nh = new NewHome();
+            nh.Show();
         }
     }
 

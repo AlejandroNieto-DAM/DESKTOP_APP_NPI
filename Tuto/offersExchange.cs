@@ -27,6 +27,8 @@ namespace Tuto
             isNationalExchange = nationalExchange;
 
             InitializeComponent();
+            Language.className = "offersExchange";
+            Language.lastForm = this;
 
             this.Size = FormSize;
             //this.BackColor = Color.Transparent;
@@ -37,6 +39,13 @@ namespace Tuto
             setStyle();
             setdestination();
 
+        }
+
+        public void close_Form()
+        {
+            this.Hide();
+            adminOptions adminOptions = new adminOptions();
+            adminOptions.Show();
         }
 
         public void loadform(object  Form)

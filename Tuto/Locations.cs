@@ -140,6 +140,9 @@ namespace Tuto
             this.tableLayoutPanel3.Region = Region.FromHrgn(NewHome.CreateRoundRectRgn(0, 0, tableLayoutPanel3.Width,
             tableLayoutPanel3.Height, 20, 20));
 
+            label1.Text = DateTime.Now.ToString("HH:mm");
+            label2.Text = DateTime.Now.ToString("dd.MM.yy");
+
         }
 
         private void NewHome_Resize(object sender, EventArgs e)

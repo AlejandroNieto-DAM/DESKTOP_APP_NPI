@@ -19,7 +19,7 @@ namespace Tuto
         protected float textFontSize = 25;
         protected float titleFontSize = 50;
 
-        public string Language { get; set; }
+        public string LayoutLanguage { get; set; }
         //public Image BackgroundImageBasic { get; set; }
         public Color BackgroundColor { get; set; }
         public Size FormSize { get; set; } 
@@ -27,11 +27,14 @@ namespace Tuto
 
         public float diffwidth, diffheight;
 
+        
+
         public BasicFormLayout()
         {
             InitializeComponent();
+
             // Set default values
-            Language = "es";
+            LayoutLanguage = "es";
             FormSize = new Size(540, 960); // Default form size
 
             timer = new Timer();

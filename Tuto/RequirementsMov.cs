@@ -17,13 +17,22 @@ namespace Tuto
         public RequirementsMov(string typeScholarship)
         {
             InitializeComponent();
-            this.Language = "es";
+            Language.className = "RequirementsMov";
+            Language.lastForm = this;
+            this.LayoutLanguage = "es";
             this.Size = FormSize;
             this.typeScholarship = typeScholarship;
 
             setStyle();
             loadRequirements();
            
+        }
+
+        public void close_Form()
+        {
+            this.Hide();
+            adminOptions adminOptions = new adminOptions();
+            adminOptions.Show();
         }
 
         private void Form5_Load(object sender, EventArgs e)

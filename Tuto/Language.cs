@@ -18,18 +18,13 @@ using Leap;
 namespace Tuto
 {
 
-    public interface ICerrarForm
-    {
-        void cerrar();
-    }
     public partial class Language : Form, ILeapEventDelegate
     {
         public static int SelectedLanguage = -1;
         public static int FormStates = 0;
         public static Form lastForm;
         public static String className = "";
-        private int chage = 0;
-        NewHome home;
+
 
         private Controller controller;
         private LeapEventListener listener;
@@ -339,6 +334,28 @@ namespace Tuto
                                         QRscan qrs = (QRscan)Language.lastForm;
 
                                         qrs.close_Form();
+                                        break;
+
+                                    case "adminOptions":
+                                        adminOptions ao = (adminOptions)Language.lastForm;
+
+                                        ao.close_Form();
+                                        break;
+
+                                    case "RequirementsMov":
+                                        RequirementsMov rm = (RequirementsMov)Language.lastForm;
+
+                                        rm.close_Form();
+                                        break;
+                                    case "offersExchange":
+                                        offersExchange oe = (offersExchange)Language.lastForm;
+
+                                        oe.close_Form();
+                                        break;
+                                    case "professorMain":
+                                        professorMain pm = (professorMain)Language.lastForm;
+
+                                        pm.close_Form();
                                         break;
 
                                 }

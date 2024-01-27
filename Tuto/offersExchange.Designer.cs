@@ -72,7 +72,7 @@
             this.panelside.ForeColor = System.Drawing.Color.Silver;
             this.panelside.Location = new System.Drawing.Point(0, 142);
             this.panelside.Name = "panelside";
-            this.panelside.Size = new System.Drawing.Size(465, 545);
+            this.panelside.Size = new System.Drawing.Size(653, 545);
             this.panelside.TabIndex = 3;
             // 
             // opt1movbutton
@@ -86,7 +86,7 @@
             this.opt1movbutton.Location = new System.Drawing.Point(3, 3);
             this.opt1movbutton.Name = "opt1movbutton";
             this.opt1movbutton.Padding = new System.Windows.Forms.Padding(10);
-            this.opt1movbutton.Size = new System.Drawing.Size(444, 143);
+            this.opt1movbutton.Size = new System.Drawing.Size(601, 200);
             this.opt1movbutton.TabIndex = 0;
             this.opt1movbutton.Text = "AUSTRIA";
             this.opt1movbutton.UseVisualStyleBackColor = true;
@@ -100,10 +100,10 @@
             this.opt2movbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.opt2movbutton.Font = new System.Drawing.Font("Yu Gothic UI", 63.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.opt2movbutton.ForeColor = System.Drawing.Color.Black;
-            this.opt2movbutton.Location = new System.Drawing.Point(3, 152);
+            this.opt2movbutton.Location = new System.Drawing.Point(3, 209);
             this.opt2movbutton.Name = "opt2movbutton";
             this.opt2movbutton.Padding = new System.Windows.Forms.Padding(10);
-            this.opt2movbutton.Size = new System.Drawing.Size(459, 143);
+            this.opt2movbutton.Size = new System.Drawing.Size(647, 200);
             this.opt2movbutton.TabIndex = 0;
             this.opt2movbutton.Text = "LITUANIA";
             this.opt2movbutton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -118,10 +118,10 @@
             this.opt3movbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.opt3movbutton.Font = new System.Drawing.Font("Yu Gothic UI", 63.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.opt3movbutton.ForeColor = System.Drawing.Color.Black;
-            this.opt3movbutton.Location = new System.Drawing.Point(3, 301);
+            this.opt3movbutton.Location = new System.Drawing.Point(3, 415);
             this.opt3movbutton.Name = "opt3movbutton";
             this.opt3movbutton.Padding = new System.Windows.Forms.Padding(10);
-            this.opt3movbutton.Size = new System.Drawing.Size(454, 143);
+            this.opt3movbutton.Size = new System.Drawing.Size(640, 200);
             this.opt3movbutton.TabIndex = 0;
             this.opt3movbutton.Text = "POLONIA";
             this.opt3movbutton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -132,9 +132,9 @@
             // 
             this.mainpanel.BackColor = System.Drawing.Color.White;
             this.mainpanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainpanel.Location = new System.Drawing.Point(465, 142);
+            this.mainpanel.Location = new System.Drawing.Point(653, 142);
             this.mainpanel.Name = "mainpanel";
-            this.mainpanel.Size = new System.Drawing.Size(335, 545);
+            this.mainpanel.Size = new System.Drawing.Size(147, 545);
             this.mainpanel.TabIndex = 4;
             // 
             // paneltitle
@@ -153,9 +153,9 @@
             // 
             this.labeltitle.AutoSize = true;
             this.labeltitle.Dock = System.Windows.Forms.DockStyle.Right;
-            this.labeltitle.Location = new System.Drawing.Point(379, 0);
+            this.labeltitle.Location = new System.Drawing.Point(164, 0);
             this.labeltitle.Name = "labeltitle";
-            this.labeltitle.Size = new System.Drawing.Size(421, 113);
+            this.labeltitle.Size = new System.Drawing.Size(636, 170);
             this.labeltitle.TabIndex = 0;
             this.labeltitle.Text = "ERASMUS";
             this.labeltitle.Click += new System.EventHandler(this.labeltitle_Click);

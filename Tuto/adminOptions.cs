@@ -18,8 +18,10 @@ namespace Tuto
         public adminOptions()
         {
             InitializeComponent();
-        
-            
+
+            Language.className = "adminOptions"; 
+            Language.lastForm = this;
+
             // Initialize the timer
             timer = new Timer();
             timer.Interval = 1000; // Set the interval in milliseconds (1000 ms = 1 second)
@@ -75,6 +77,14 @@ namespace Tuto
             hourLabel.Text = DateTime.Now.ToString("HH:mm");
             dayLabel.Text = DateTime.Now.ToString("dd.MM.yy");
 
+        }
+
+
+        public void close_Form()
+        {
+            this.Hide();
+            NewHome h = new NewHome();
+            h.Show();
         }
         
         private void dayInfoPanel_Paint(object sender, PaintEventArgs e)

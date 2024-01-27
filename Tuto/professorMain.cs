@@ -25,9 +25,18 @@ namespace Tuto
         public professorMain()
         {
             InitializeComponent();
+            Language.className = "professorMain";
+            Language.lastForm = this;
             setStyle();
             readfileCSV();
 
+        }
+
+        public void close_Form()
+        {
+            this.Hide();
+            NewHome newHome = new NewHome();
+            newHome.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)

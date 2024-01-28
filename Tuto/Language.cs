@@ -347,15 +347,20 @@ namespace Tuto
 
                                         rm.close_Form();
                                         break;
+
                                     case "offersExchange":
                                         offersExchange oe = (offersExchange)Language.lastForm;
-
                                         oe.close_Form();
                                         break;
+
                                     case "professorMain":
                                         professorMain pm = (professorMain)Language.lastForm;
-
                                         pm.close_Form();
+                                        break;
+
+                                    case "Becas":
+                                        Becas bc = (Becas)Language.lastForm;
+                                        bc.close_Form();
                                         break;
 
                                 }

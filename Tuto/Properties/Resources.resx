@@ -124,6 +124,12 @@
   <data name="poland_bold" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\poland_bold.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="andaluciaqr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\andaluciaqr1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dropRightTrans" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dropRightTrans.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="spanishrounded" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\spanishrounded.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -145,9 +151,6 @@
   <data name="mapaPintado" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mapaPintado1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="englishrounded_bold" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\englishrounded_bold.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="maps_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\maps_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -157,8 +160,8 @@
   <data name="dropDownTrans" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dropDownTrans.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mapa_comedor_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mapa_comedor_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="arrowDown2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrowDown2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="german_bold" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\german_bold.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,14 +208,17 @@
   <data name="map_spain" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\map_spain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="englishrounded" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\englishrounded.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="englishrounded_bold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\englishrounded_bold.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="menu_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mapa_informacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mapa_informacion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="englishrounded" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\englishrounded.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrowRight2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrowRight2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="german" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\german.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -235,8 +241,8 @@
   <data name="italy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\italy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dropRightTrans" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dropRightTrans.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mapa_informacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mapa_informacion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mapa_comedor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mapa_comedor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -244,13 +250,19 @@
   <data name="dropRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dropRight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="mapa_comedor_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mapa_comedor_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="BG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BG.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="arrowDown2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\arrowDown2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ministerioqr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ministerioqr1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="arrowRight2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\arrowRight2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ugr_becas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ugr_becas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="andaluciaqr1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\andaluciaqr1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Tuto.Properties;
 
 namespace Tuto
 {
@@ -19,13 +20,26 @@ namespace Tuto
             InitializeComponent();
             Language.className = "RequirementsMov";
             Language.lastForm = this;
-            this.LayoutLanguage = "es";
             this.Size = FormSize;
             this.typeScholarship = typeScholarship;
-
+            change_language();
             setStyle();
             loadRequirements();
            
+        }
+
+        public void change_language()
+        {
+            if (Language.SelectedLanguage == 1)
+            {
+                labelTitle.Text = "Requisitos";
+                labelreq.Text = "Escanee el código QR para obtener más información";
+            }
+            else if (Language.SelectedLanguage == 2)
+            {
+                labelTitle.Text = "Requirements";
+                labelreq.Text = "Scan QR code for more information";
+            }
         }
 
         public void close_Form()
@@ -47,17 +61,19 @@ namespace Tuto
         {
             if (typeScholarship == "UGR")
             {
-                labelreq.Text = "Beca UGR";
-            } else if (typeScholarship == "ANDALUCIA")
+                //labelreq.Text = "Beca UGR";
+                pictureBox1.Image = Resources.ugr_becas;
+                pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            } 
+            else if (typeScholarship == "ANDALUCIA")
             {
-                labelreq.Text = "Beca Andalucia";
-            } else if (typeScholarship == "MINISTERIO")
+                pictureBox1.Image = Resources.andaluciaqr;
+                pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            } 
+            else if (typeScholarship == "MINISTERIO")
             {
-                labelreq.Text = "Beca Ministerio";
-            }
-            else
-            {
-                labelreq.Text = "";
+                pictureBox1.Image = Resources.ministerioqr;
+                pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             }
         }
 

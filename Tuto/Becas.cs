@@ -15,6 +15,8 @@ namespace Tuto
         bool isNationalExchange;
         public Becas()
         {
+            Language.lastForm = this;
+            Language.className = "Becas";
             InitializeComponent();
             this.Size = FormSize;
             ApplyCommonStyleButton();
@@ -70,5 +72,13 @@ namespace Tuto
                 }
             }
         }
+
+        public void close_Form()
+        {
+            this.Hide();
+            adminOptions h = new adminOptions();
+            h.Show();
+        }
+
     }
 }

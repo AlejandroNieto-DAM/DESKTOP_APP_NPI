@@ -114,6 +114,7 @@
             // buttonMovNacional
             // 
             this.buttonMovNacional.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonMovNacional.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.buttonMovNacional.Location = new System.Drawing.Point(36, 84);
             this.buttonMovNacional.Name = "buttonMovNacional";
             this.buttonMovNacional.Size = new System.Drawing.Size(265, 75);

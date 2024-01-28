@@ -8,6 +8,7 @@ using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Leap;
 
 namespace Tuto
 {
@@ -29,10 +30,10 @@ namespace Tuto
 
             // Start the timer
             timer.Start();
-            
-            
+
+            change_language();
             ApplyCommonStyleButton();
-            //AdjustBackgroundPicture();
+           
 
             //hourLabel.Text = hourLabelText;
             //dayLabel.Text = dayLabelText;
@@ -40,6 +41,24 @@ namespace Tuto
             this.Size = FormSize;
 
 
+        }
+
+        private void change_language()
+        {
+            if (Language.SelectedLanguage == 1)
+            {
+                labelTitle.Text = "Trámites";
+                buttonMovInterna.Text = "Movilidad Internacional";
+                buttonMovNacional.Text = "Movilidad Nacional";
+                buttonBecas.Text = "Becas";
+            }
+            else if (Language.SelectedLanguage == 2)
+            {
+                labelTitle.Text = "Procedures";
+                buttonMovInterna.Text = "International exchange";
+                buttonMovNacional.Text = "National exchange";
+                buttonBecas.Text = "Scholarships";
+            }
         }
 
         private void AdjustBackgroundPicture()
@@ -65,10 +84,10 @@ namespace Tuto
                 if (control is Button)
                 {
                     Button boton = (Button)control;
-                    boton.Font = new Font("Arial", textFontSize * multiplier_size, FontStyle.Bold);
+                    boton.Font = new Font("Yu Gothic UI", textFontSize * multiplier_size, FontStyle.Bold);
                 }
             }
-            labelTitle.Font = new Font("Arial", titleFontSize * multiplier_size, FontStyle.Bold);
+            labelTitle.Font = new Font("Yu Gothic UI", titleFontSize * multiplier_size, FontStyle.Bold);
         }
         
         private void time_Tick(object sender, EventArgs e)
@@ -142,31 +161,6 @@ namespace Tuto
         {
 
         }
-        /*
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            int indice = languageBox.SelectedIndex;
-            if (indice == 1)
-            {
-                welcomeLabel.Text = "Welcome";
-                nationalButton.Text = "My personal schedule";
-                menuButton.Text = "Canteen Menu";
-                Button.Text = "Professors information";
-                adminButton.Text = "Administrative requests";
-                placeButton.Text = "Search place";
-            }
-            else
-            {
-                welcomeLabel.Text = "Bienvenidos";
-                nationalButton.Text = "Mi horario";
-                menuButton.Text = "Menú cafetería";
-                Button.Text = "Información profesores";
-                adminButton.Text = "Procesos administrativos";
-                placeButton.Text = "Buscar lugar";
-            }
-        }
-        
-        */
         private void Home_FormClosing(object sender, FormClosingEventArgs e)
         {
             // Stop the timer when the form is closing

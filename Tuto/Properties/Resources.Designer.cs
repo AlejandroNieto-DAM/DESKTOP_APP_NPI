@@ -63,6 +63,26 @@ namespace Tuto.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap andaluciaqr {
+            get {
+                object obj = ResourceManager.GetObject("andaluciaqr", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap andaluciaqr1 {
+            get {
+                object obj = ResourceManager.GetObject("andaluciaqr1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap arrowDown {
             get {
                 object obj = ResourceManager.GetObject("arrowDown", resourceCulture);
@@ -391,6 +411,16 @@ namespace Tuto.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ministerioqr {
+            get {
+                object obj = ResourceManager.GetObject("ministerioqr", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Mínimo 45 créditos;Matrícula formalizada;Correo electrónico.
         /// </summary>
         internal static string national_requirements {
@@ -505,6 +535,16 @@ namespace Tuto.Properties {
         internal static System.Drawing.Bitmap sweden_bold {
             get {
                 object obj = ResourceManager.GetObject("sweden_bold", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ugr_becas {
+            get {
+                object obj = ResourceManager.GetObject("ugr_becas", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

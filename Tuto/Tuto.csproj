@@ -412,5 +412,14 @@
   <ItemGroup>
     <None Include="Resources\arrowRight2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ministerioqr1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ugr_becas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\andaluciaqr1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

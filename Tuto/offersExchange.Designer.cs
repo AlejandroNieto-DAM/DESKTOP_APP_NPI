@@ -153,9 +153,9 @@
             // 
             this.labeltitle.AutoSize = true;
             this.labeltitle.Dock = System.Windows.Forms.DockStyle.Right;
-            this.labeltitle.Location = new System.Drawing.Point(164, 0);
+            this.labeltitle.Location = new System.Drawing.Point(379, 0);
             this.labeltitle.Name = "labeltitle";
-            this.labeltitle.Size = new System.Drawing.Size(636, 170);
+            this.labeltitle.Size = new System.Drawing.Size(421, 113);
             this.labeltitle.TabIndex = 0;
             this.labeltitle.Text = "ERASMUS";
             this.labeltitle.Click += new System.EventHandler(this.labeltitle_Click);

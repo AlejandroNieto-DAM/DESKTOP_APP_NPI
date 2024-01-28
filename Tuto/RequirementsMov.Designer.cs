@@ -31,7 +31,9 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.labelTitle = new System.Windows.Forms.Label();
             this.labelreq = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -43,15 +45,15 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.Controls.Add(this.labelTitle, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.labelreq, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 1, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 42);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(360, 598);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
@@ -71,13 +73,26 @@
             // labelreq
             // 
             this.labelreq.AutoSize = true;
-            this.labelreq.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelreq.Font = new System.Drawing.Font("Yu Gothic UI", 30F);
+            this.labelreq.BackColor = System.Drawing.Color.White;
+            this.labelreq.Dock = System.Windows.Forms.DockStyle.Top;
+            this.labelreq.Font = new System.Drawing.Font("Yu Gothic UI", 20F);
+            this.labelreq.ForeColor = System.Drawing.Color.Black;
             this.labelreq.Location = new System.Drawing.Point(57, 118);
             this.labelreq.Name = "labelreq";
-            this.labelreq.Size = new System.Drawing.Size(246, 480);
+            this.labelreq.Size = new System.Drawing.Size(246, 111);
             this.labelreq.TabIndex = 2;
-            this.labelreq.Text = "Información";
+            this.labelreq.Text = "Escanea el código QR para obtener más infromación";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::Tuto.Properties.Resources.andaluciaqr1;
+            this.pictureBox1.Location = new System.Drawing.Point(57, 240);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(246, 355);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // RequirementsMov
             // 
@@ -91,6 +106,7 @@
             this.Controls.SetChildIndex(this.tableLayoutPanel1, 0);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -100,5 +116,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label labelTitle;
         private System.Windows.Forms.Label labelreq;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
